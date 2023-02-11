@@ -1,0 +1,47 @@
+.section-home {
+  background-color: #f1f3f5;
+  height: 100vh;
+  border-top: none;
+}
+
+.home-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  margin: 0 auto;
+  padding: 3.6rem 0;
+}
+
+.home-text-area {
+  margin-top: 6.2rem;
+}
+
+.home-paragraph {
+  font-size: 2.4rem;
+  font-weight: 500;
+  line-height: 1.9;
+  margin-bottom: 2.2rem;
+  color: #444;
+}
+
+.home-buttons-div {
+  display: flex;
+  gap: 1.2rem;
+}
+
+.home-button-about {
+  background-color: #fff;
+  color: #222;
+}
+
+.home-right {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.image {
+  width: 85%;
+}
+
+.hero-nav-patch {
+  padding: 6.2rem 0;
+}
