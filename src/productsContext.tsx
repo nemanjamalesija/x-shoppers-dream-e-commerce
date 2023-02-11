@@ -30,7 +30,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
 
     if (e.type === 'click') {
       key = e.target.getAttribute('data-type') as string;
-      value = e.target.textContent as string;
+      value = e.target.getAttribute('data-value') as string;
     } else {
       key = e.target.name as string;
       value = e.target.value as string;

@@ -19,6 +19,7 @@ const Categories = ({ currentCategory, categories }: categoriesProps) => {
               : 'product-category-btn'
           }`}
           data-type="currentCategory"
+          data-value={item}
           onClick={storeProductsFilterValuesHandler}
         >
           {item}

@@ -1,7 +1,25 @@
+import { useProductsContext } from '../../productsContext';
+
 type companiesProps = { currentCompany: string; companies: string[] };
 
 const Companies = ({ currentCompany, companies }: companiesProps) => {
-  return <div>Companies</div>;
+  const { storeProductsFilterValuesHandler } = useProductsContext();
+  return (
+    <div className="products-companies">
+      <h5 className="heading-fifth">Company</h5>
+      <select
+        name="currentCompany"
+        value={currentCompany}
+        onChange={storeProductsFilterValuesHandler}
+      >
+        {companies.map((item, i) => (
+          <option key={i} className="product-company-item" value={item}>
+            {item}
+          </option>
+        ))}
+      </select>
+    </div>
+  );
 };
 
 export default Companies;
