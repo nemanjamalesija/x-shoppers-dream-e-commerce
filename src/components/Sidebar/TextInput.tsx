@@ -1,9 +1,8 @@
-import React from 'react';
-import { filters } from '../../../constants/types/productsTypes';
+import { useProductsContext } from '../../productsContext';
 
-import { useProductsContext } from '../../../contexts/productsContext';
+type textInputProps = { name: string };
 
-const TextInput = ({ name }: filters) => {
+const TextInput = ({ name }: textInputProps) => {
   const { storeProductsFilterValuesHandler } = useProductsContext();
 
   return (

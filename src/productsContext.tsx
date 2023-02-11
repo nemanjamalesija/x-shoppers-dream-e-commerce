@@ -1,7 +1,7 @@
 import React, { useContext, useEffect, useReducer } from 'react';
-import reducerProducts from '../reducers/productsReducer';
-import { productsInitialState } from '../constants/initialStates/productsInitialState';
-import { allProductsURL } from '../utils/urls';
+import reducerProducts from './reducers/productsReducer';
+import { productsInitialState } from './constants/initialStates/productsInitialState';
+import { allProductsURL } from './utils/urls';
 
 const ProductsContext = React.createContext(productsInitialState);
 
@@ -28,14 +28,21 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     let key;
     let value;
 
-    key = e.target.name as string;
-    value = e.target.value as string;
+    if (e.type === 'click') {
+      key = e.target.getAttribute('data-type') as string;
+      value = e.target.textContent as string;
+    } else {
+      key = e.target.name as string;
+      value = e.target.value as string;
+    }
 
     dispatch({
       type: 'STORE_FILTERS_VALUES',
       payload: { key, value },
     });
   };
+
+  console.log(stateProducts.filters);
 
   return (
     <ProductsContext.Provider

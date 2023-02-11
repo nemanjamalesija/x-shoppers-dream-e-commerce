@@ -5,8 +5,9 @@ import Colors from './Colors';
 import Price from './Price';
 import Shippingg from './Shipping';
 import ButtonClearFilters from './ButtonClearFilters';
-import { useProductsContext } from '../../../contexts/productsContext';
+
 import './sidebar.css';
+import { useProductsContext } from '../../productsContext';
 
 const Sidebar = () => {
   const { loading, products } = useProductsContext();
@@ -22,6 +23,8 @@ const Sidebar = () => {
       shipping,
     },
   } = useProductsContext();
+
+  console.log(products);
 
   const categories = Array.from(
     new Set(['all', ...products.map((prod) => prod.category)])

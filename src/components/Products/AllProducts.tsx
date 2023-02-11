@@ -1,4 +1,4 @@
-import { useProductsContext } from '../../contexts/productsContext';
+import { useProductsContext } from '../../productsContext';
 import OneProduct from './OneProduct';
 import './allProducts.css';
 

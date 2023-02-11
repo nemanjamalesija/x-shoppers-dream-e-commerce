@@ -11,7 +11,13 @@ export type product = {
 };
 
 export type filters = {
-  [key: string]: string | string[] | number | boolean;
+  name: string;
+  currentCategory: string;
+  currentCompany: string;
+  currentColor: string;
+  price: number;
+  maxPrice: number;
+  shipping: boolean;
 };
 
 export type filtersPayload = {
