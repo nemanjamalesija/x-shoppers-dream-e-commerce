@@ -40,6 +40,11 @@ a:visited {
   transition: transform 1s, opacity 1s;
 }
 
+.section-featured-products,
+.section-creeds {
+  padding: 9.6rem 0;
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
@@ -50,6 +55,16 @@ a:visited {
   margin-bottom: 2rem;
   color: #444;
   line-height: 1.4;
+}
+
+.heading-tertiary {
+  font-size: 1.6rem;
+  font-weight: 500;
+  color: #5ec576;
+  text-transform: uppercase;
+  margin-bottom: 3.2rem;
+  letter-spacing: 0.75px;
+  text-align: center;
 }
 
 .btn {
@@ -95,4 +110,10 @@ a:visited {
 .featured-product-price {
   /* color: #222; */
   color: #5ec576;
+}
+
+.creed-article-paragraph {
+  font-size: 1.4rem;
+  line-height: 1.9;
+  color: #666;
 }

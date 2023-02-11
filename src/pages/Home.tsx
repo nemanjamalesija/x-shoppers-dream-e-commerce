@@ -1,5 +1,7 @@
 import React from 'react';
+import Creeds from '../components/Home/Creeds';
 import Featuredin from '../components/Home/FeaturedIn';
+import FeaturedProducts from '../components/Home/FeaturedProducts';
 import Hero from '../components/Home/Hero';
 
 const Home = () => {
@@ -7,6 +9,8 @@ const Home = () => {
     <>
       <Hero />
       <Featuredin />
+      <FeaturedProducts />
+      <Creeds />
     </>
   );
 };

@@ -1,7 +1,6 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
 import { product } from '../../constants/productsTypes';
-import './home.css';
+import './featuredProducts.css';
 
 const SingleFeaturedProduct = ({ id, name, image, price }: product) => {
   return (

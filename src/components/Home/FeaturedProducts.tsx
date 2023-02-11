@@ -5,7 +5,8 @@ import './featuredProducts.css';
 
 const FeaturedProducts = () => {
   const { products } = useProductsContext();
-  const featuredProducts = products.slice(15, 18);
+  const featuredProducts = products.slice(14, 17);
+  console.log(products);
 
   return (
     <section className="section section-featured-products">
