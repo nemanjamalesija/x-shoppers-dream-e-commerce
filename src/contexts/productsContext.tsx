@@ -1,7 +1,5 @@
 import React, { useContext, useEffect, useReducer } from 'react';
 import reducerProducts from '../reducers/productsReducer';
-import { actions, payloadActions } from '../constants/productsActions';
-import { stateProducts } from '../constants/productsTypes';
 import { productsInitialState } from '../constants/productsInitialState';
 import { allProductsURL } from '../utils/urls';
 
@@ -22,8 +20,6 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
 
     fetchProducts();
   }, []);
-
-  console.log(stateProducts.products);
 
   return (
     <ProductsContext.Provider

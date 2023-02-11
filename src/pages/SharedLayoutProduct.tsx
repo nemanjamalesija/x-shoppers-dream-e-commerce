@@ -1,9 +1,5 @@
-import React from 'react'
-
 const SharedLayoutProduct = () => {
-  return (
-    <div>SharedLayoutProduct</div>
-  )
-}
+  return <div>SharedLayoutProduct</div>;
+};
 
-export default SharedLayoutProduct
+export default SharedLayoutProduct;
