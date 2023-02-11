@@ -6,7 +6,12 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
 
   switch (type) {
     case 'SET_PRODUCTS':
-      return { ...state, products: payload, filteredProducts: payload };
+      return {
+        ...state,
+        products: payload,
+        filteredProducts: payload,
+        loading: false,
+      };
 
     default:
       return { ...state };

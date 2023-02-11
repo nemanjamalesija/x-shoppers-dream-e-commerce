@@ -8,8 +8,8 @@ export const productsInitialState: stateProducts = {
   sort: 'price lowest',
   filters: {
     name: '',
-    category: 'All',
-    company: 'All',
+    currentCategory: 'All',
+    currentCompany: 'All',
     currentColor: 'All',
     price: 0,
     maxPrice: 0,

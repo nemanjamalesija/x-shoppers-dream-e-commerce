@@ -1,5 +1,7 @@
-const SharedLayoutProduct = () => {
-  return <div>SharedLayoutProduct</div>;
+import { Outlet } from 'react-router-dom';
+
+const SharedLayoutProject = () => {
+  return <Outlet />;
 };
 
-export default SharedLayoutProduct;
+export default SharedLayoutProject;
