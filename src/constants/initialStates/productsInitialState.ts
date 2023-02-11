@@ -1,4 +1,4 @@
-import { stateProducts } from './productsTypes';
+import { stateProducts } from '../types/productsTypes';
 
 export const productsInitialState: stateProducts = {
   loading: true,
@@ -15,4 +15,5 @@ export const productsInitialState: stateProducts = {
     maxPrice: 0,
     shipping: false,
   },
+  storeProductsFilterValuesHandler: (e: any) => void {},
 };

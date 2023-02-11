@@ -44,7 +44,7 @@ const Sidebar = () => {
     );
 
   return (
-    <div className="products-sidebar">
+    <aside className="products-sidebar">
       <TextInput name={name as string} />
       <Categories currentCategory={currentCategory} categories={categories} />
       <Companies currentCompany={currentCompany} companies={companies} />
@@ -52,7 +52,7 @@ const Sidebar = () => {
       <Price price={price} maxPrice={maxPrice} />
       <Shippingg shipping={shipping} />
       <ButtonClearFilters />
-    </div>
+    </aside>
   );
 };
 

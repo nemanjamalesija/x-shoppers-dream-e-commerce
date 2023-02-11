@@ -1,5 +1,5 @@
 import React from 'react';
-import { filters } from '../../../constants/productsTypes';
+import { filters } from '../../../constants/types/productsTypes';
 
 const Companies = ({ currentCompany, companies }: filters) => {
   return <div>Companies</div>;

@@ -1,0 +1,82 @@
+.products-sidebar {
+  display: flex;
+  flex-direction: column;
+  position: sticky;
+  gap: 1.4rem;
+}
+
+.heading-fifth {
+  margin-bottom: 0.8rem;
+  font-size: 1.6rem;
+}
+
+.products-categories {
+  display: flex;
+  flex-direction: column;
+}
+
+.product-category-btn,
+.product-color-item-all {
+  margin: 0.25em 0px;
+  padding: 0.25rem 0px;
+  text-transform: capitalize;
+  background: transparent;
+  border-top: none;
+  border-right: none;
+  border-left: none;
+  border-image: initial;
+  border-bottom: 1px solid transparent;
+  letter-spacing: 0.1rem;
+  color: #666;
+  cursor: pointer;
+  align-self: start;
+}
+
+.product-btn-active {
+  border-bottom: 1px solid #5ec576;
+}
+
+.products-companies select,
+.products-text-input input {
+  padding: 0.25rem 0.5rem;
+  border: transparent;
+  background-color: #eff9f1;
+  text-transform: capitalize;
+  letter-spacing: 0.1rem;
+  color: #666;
+  cursor: pointer;
+  margin-top: 0.5rem;
+  border: 1px solid #bfe8c8;
+}
+
+.products-text-input input {
+  padding: 0.5em 1rem;
+  color: #444;
+}
+
+.product-colors-container {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+}
+
+.heading-price {
+  margin-bottom: 1.4rem;
+}
+
+.product-price-container input {
+  display: block;
+}
+
+.product-shipping-container {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.btn-clear-filters {
+  padding: 1rem 2rem;
+  background-color: #e81616;
+  color: #fff;
+  width: 50%;
+}

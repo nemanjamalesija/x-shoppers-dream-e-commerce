@@ -14,10 +14,15 @@ export type filters = {
   [key: string]: string | string[] | number | boolean;
 };
 
+export type filtersPayload = {
+  [key: string]: string | number;
+};
+
 export type stateProducts = {
   loading: boolean;
   products: product[];
   filteredProducts: product[];
   sort: string;
   filters: filters;
+  storeProductsFilterValuesHandler(e: any): void;
 };

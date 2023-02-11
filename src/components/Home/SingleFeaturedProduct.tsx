@@ -1,5 +1,5 @@
 import { Link } from 'react-router-dom';
-import { product } from '../../constants/productsTypes';
+import { product } from '../../constants/types/productsTypes';
 import './featuredProducts.css';
 
 const SingleFeaturedProduct = ({ id, name, image, price }: product) => {
