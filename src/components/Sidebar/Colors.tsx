@@ -1,5 +1,6 @@
 import { IoIosCheckmark } from 'react-icons/io';
 import { useProductsContext } from '../../productsContext';
+import './sidebar.css';
 
 type colorsProps = { currentColor: string; colors: string[] };
 
@@ -31,7 +32,6 @@ const Colors = ({ currentColor, colors }: colorsProps) => {
                 ? 'product-color-item color-active'
                 : 'product-color-item'
             }`}
-            name="currentColor"
             data-type="currentColor"
             data-value={item}
             onClick={storeProductsFilterValuesHandler}

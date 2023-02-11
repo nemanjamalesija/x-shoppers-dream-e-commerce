@@ -21,7 +21,7 @@ export type filters = {
 };
 
 export type filtersPayload = {
-  [key: string]: string | number;
+  [key: string]: any;
 };
 
 export type stateProducts = {

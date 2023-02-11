@@ -10,6 +10,8 @@
   font-size: 1.6rem;
 }
 
+/* CATEGORIES */
+
 .products-categories {
   display: flex;
   flex-direction: column;
@@ -32,9 +34,7 @@
   align-self: start;
 }
 
-.product-btn-active {
-  border-bottom: 1px solid #5ec576;
-}
+/* COMPANIES */
 
 .products-companies select,
 .products-text-input input {
@@ -54,11 +54,40 @@
   color: #444;
 }
 
+/* COLORS */
+
 .product-colors-container {
   display: flex;
   gap: 0.5rem;
   align-items: center;
 }
+
+.product-color-item {
+  border-radius: 50%;
+  height: 1.4rem;
+  width: 1.4rem;
+  opacity: 0.5;
+  border: none;
+  position: relative;
+}
+
+.checkmark-icon {
+  color: #fff;
+  font-weight: 700;
+}
+
+.color-active {
+  opacity: 1;
+}
+
+.btn-clear-filters {
+  padding: 1rem 2rem;
+  background-color: #e81616;
+  color: #fff;
+  width: 50%;
+}
+
+/* PRICE */
 
 .heading-price {
   margin-bottom: 1.4rem;
@@ -68,15 +97,14 @@
   display: block;
 }
 
+/* SHIPPING */
+
 .product-shipping-container {
   display: flex;
   gap: 1rem;
   align-items: center;
 }
 
-.btn-clear-filters {
-  padding: 1rem 2rem;
-  background-color: #e81616;
-  color: #fff;
-  width: 50%;
+.product-btn-active {
+  border-bottom: 1px solid #5ec576;
 }

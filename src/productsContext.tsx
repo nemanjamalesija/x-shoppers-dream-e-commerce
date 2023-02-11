@@ -28,6 +28,10 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     let key;
     let value;
 
+    if (e.type === 'change' && e.target.type === 'checkbox') {
+      key = e.target.name as string;
+    }
+
     if (e.type === 'click') {
       key = e.target.getAttribute('data-type') as string;
       value = e.target.getAttribute('data-value') as string;
@@ -41,8 +45,6 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
       payload: { key, value },
     });
   };
-
-  console.log(stateProducts.filters);
 
   return (
     <ProductsContext.Provider

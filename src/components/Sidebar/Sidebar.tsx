@@ -24,8 +24,6 @@ const Sidebar = () => {
     },
   } = useProductsContext();
 
-  console.log(products);
-
   const categories = Array.from(
     new Set(['all', ...products.map((prod) => prod.category)])
   );
