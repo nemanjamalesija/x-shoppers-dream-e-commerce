@@ -1,8 +1,8 @@
-import businessInsider from '../../images/logos/business-insider.png';
-import forbes from '../../images/logos/forbes.png';
-import techCrunch from '../../images/logos/techcrunch.png';
-import newYorkTimes from '../../images/logos/the-new-york-times.png';
-import usaToday from '../../images/logos/usa-today.png';
+import businessInsider from '../../constants/images/businessInsider.png';
+import forbes from '../../constants/images/forbes.png';
+import techCrunch from '../../constants/images/techCrunch.png';
+import newYorkTimes from '../../constants/images/newYorkTimes.png';
+import usaToday from '../../constants/images/usaToday.png';
 import './featuredIn.css';
 
 const Featuredin = () => {
