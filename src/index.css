@@ -44,3 +44,25 @@ a:visited {
   max-width: 120rem;
   margin: 0 auto;
 }
+
+.heading-primary {
+  font-size: 4.8rem;
+  margin-bottom: 2rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.btn {
+  padding: 1.2rem 2.4rem;
+  border: none;
+  display: inline-block;
+  cursor: pointer;
+  border-radius: 0.5rem;
+  font-weight: 600;
+  transition: all 0.3s;
+}
+
+.btn-home-explore {
+  background-color: #5ec576;
+  color: #fff;
+}

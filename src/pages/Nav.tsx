@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { navLinks } from '../constants/navLinks';
+import { navLinks } from '../constants/links/navLinks';
 import { BsBag } from 'react-icons/bs';
 import './nav.css';
 

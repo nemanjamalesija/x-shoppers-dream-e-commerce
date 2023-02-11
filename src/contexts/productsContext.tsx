@@ -3,7 +3,7 @@ import reducerProducts from '../reducers/productsReducer';
 import { actions, payloadActions } from '../constants/productsActions';
 import { stateProducts } from '../constants/productsTypes';
 import { productsInitialState } from '../constants/productsInitialState';
-import { allProductsURL } from '../constants/urls';
+import { allProductsURL } from '../constants/links/urls';
 
 const ProductsContext = React.createContext(productsInitialState);
 
