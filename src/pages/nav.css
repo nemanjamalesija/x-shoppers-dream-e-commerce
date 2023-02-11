@@ -1,0 +1,88 @@
+.section-nav {
+  background-color: #f1f3f5;
+  padding: 3.6rem 0;
+}
+
+.nav {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  font-size: 1.6rem;
+}
+
+.sticky {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  background-color: rgba(255, 255, 255, 0.95);
+  z-index: 10;
+}
+
+.logo-div,
+.shopping-icon {
+  font-weight: 500;
+  cursor: pointer;
+}
+
+.shopping-icon {
+  font-size: 2rem;
+  color: #444;
+}
+
+.logo-text {
+  font-weight: 500;
+  color: #444;
+}
+
+.nav-list {
+  display: flex;
+  gap: 4rem;
+}
+
+.nav-list-item {
+  display: inline-block;
+}
+
+.shopping-card-div,
+.logo-div {
+  display: flex;
+  gap: 0.5rem;
+  align-items: center;
+  justify-items: center;
+}
+
+.badge {
+  padding-left: 0.9rem;
+  padding-right: 0.9rem;
+  -webkit-border-radius: 0.9rem;
+  -moz-border-radius: 0.9rem;
+  border-radius: 0.9rem;
+}
+
+#lblCartCount {
+  font-size: 1.2rem;
+  background: #5ec576;
+  color: #fff;
+  padding: 0 5px;
+  vertical-align: top;
+  margin-left: -1rem;
+}
+
+.icon-text-cart {
+  display: flex;
+  gap: 0.5rem;
+}
+
+.icon-text-cart {
+  color: #444;
+}
+
+.cart-icon {
+  color: #444;
+  font-weight: 500;
+}
+
+.active-link {
+  border-bottom: 1px solid #5ec576;
+}
