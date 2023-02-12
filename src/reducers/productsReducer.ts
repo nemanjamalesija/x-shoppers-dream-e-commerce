@@ -104,6 +104,26 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
         },
       };
 
+    case 'STORE_SORT_VALUES':
+      return { ...state, sort: payload as string };
+
+    case 'SORT_PRODUCTS':
+      const { sort, filteredProducts } = state;
+      const sortedProducts = [...filteredProducts];
+
+      if (sort === 'price lowest')
+        sortedProducts.sort((a, b) => a.price - b.price);
+
+      if (sort === 'price highest')
+        sortedProducts.sort((a, b) => b.price - a.price);
+
+      if (sort === 'name a-z')
+        sortedProducts.sort((a, b) => a.name.localeCompare(b.name));
+
+      if (sort === 'name z-a')
+        sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
+
+      return { ...state, filteredProducts: sortedProducts };
     default:
       return { ...state };
   }

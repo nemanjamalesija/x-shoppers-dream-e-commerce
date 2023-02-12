@@ -17,4 +17,6 @@ export const productsInitialState: stateProducts = {
   },
   storeProductsFilterValuesHandler: (e: any) => void {},
   removeFiltersHandler: () => void {},
+  storeFiltersValuesHandler: (e: React.ChangeEvent<HTMLSelectElement>) =>
+    void {},
 };

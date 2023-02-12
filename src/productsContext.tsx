@@ -46,9 +46,18 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     dispatch({ type: 'REMOVE_FILTERS' });
   };
 
+  const storeFiltersValuesHandler = (
+    e: React.ChangeEvent<HTMLSelectElement>
+  ) => {
+    const value = e.target.value;
+
+    dispatch({ type: 'STORE_SORT_VALUES', payload: value });
+  };
+
   useEffect(() => {
     dispatch({ type: 'FILTER_PRODUCTS' });
-  }, [stateProducts.filters]);
+    dispatch({ type: 'SORT_PRODUCTS' });
+  }, [stateProducts.filters, stateProducts.sort]);
 
   return (
     <ProductsContext.Provider
@@ -56,6 +65,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
         ...stateProducts,
         storeProductsFilterValuesHandler,
         removeFiltersHandler,
+        storeFiltersValuesHandler,
       }}
     >
       {children}

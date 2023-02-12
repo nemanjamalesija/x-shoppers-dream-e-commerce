@@ -1,3 +1,5 @@
+import React from 'react';
+
 export type product = {
   id: string;
   category: string;
@@ -21,7 +23,7 @@ export type filters = {
 };
 
 export type filtersPayload = {
-  [key: string]: any;
+  [key: string]: string | number;
 };
 
 export type stateProducts = {
@@ -32,4 +34,5 @@ export type stateProducts = {
   filters: filters;
   storeProductsFilterValuesHandler(e: any): void;
   removeFiltersHandler(): void;
+  storeFiltersValuesHandler(e: React.ChangeEvent<HTMLSelectElement>): void;
 };
