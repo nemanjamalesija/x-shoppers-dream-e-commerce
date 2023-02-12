@@ -43,6 +43,11 @@ a:visited {
   padding: 9.6rem 0;
 }
 
+.section--hidden {
+  opacity: 0;
+  transform: translateY(8rem);
+}
+
 .container {
   max-width: 120rem;
   margin: 0 auto;
