@@ -2,15 +2,14 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../utils/navLinks';
 import { BsBag } from 'react-icons/bs';
+import { useObserverContext } from '../observerContext';
 import './nav.css';
-
-import './nav.css';
-
 const Nav = () => {
+  const { navRef } = useObserverContext();
   const [activeLink, setActiveLink] = useState(0);
 
   return (
-    <section className="section-nav">
+    <section className="section-nav" ref={navRef}>
       <nav className="container nav nav">
         <Link
           className="nav-list-item-link"

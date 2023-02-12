@@ -2,6 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ProductsProvider } from './productsContext';
+import { ObserverProvider } from './observerContext';
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -9,8 +10,10 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ProductsProvider>
-      <App />
-    </ProductsProvider>
+    <ObserverProvider>
+      <ProductsProvider>
+        <App />
+      </ProductsProvider>
+    </ObserverProvider>
   </React.StrictMode>
 );
