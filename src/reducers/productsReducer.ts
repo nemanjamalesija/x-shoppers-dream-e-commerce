@@ -46,6 +46,19 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
         filters: { ...state.filters, [key]: value },
       };
 
+    case 'FILTER_PRODUCTS':
+      const { currentCategory } = state.filters;
+
+      let filteredProductsTemp = [...state.products];
+
+      if (currentCategory && currentCategory !== 'All') {
+        filteredProductsTemp = filteredProductsTemp.filter(
+          (prod) => prod.category === currentCategory
+        );
+      }
+
+      return { ...state, filteredProducts: filteredProductsTemp };
+
     default:
       return { ...state };
   }

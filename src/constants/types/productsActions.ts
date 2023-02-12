@@ -3,7 +3,7 @@ import { filtersPayload, product } from './productsTypes';
 export type actions = {
   type: 'FILTER_PRODUCTS';
 
-  payload: undefined;
+  payload?: null;
 };
 
 export type payloadActions = {

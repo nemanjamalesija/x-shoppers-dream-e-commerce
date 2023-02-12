@@ -46,6 +46,10 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     });
   };
 
+  useEffect(() => {
+    dispatch({ type: 'FILTER_PRODUCTS' });
+  }, [stateProducts.filters]);
+
   return (
     <ProductsContext.Provider
       value={{

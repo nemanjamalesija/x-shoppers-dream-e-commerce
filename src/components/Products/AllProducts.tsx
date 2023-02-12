@@ -3,7 +3,7 @@ import OneProduct from './OneProduct';
 import './allProducts.css';
 
 const Products = () => {
-  const { filteredProducts, sort } = useProductsContext();
+  const { filteredProducts } = useProductsContext();
   return (
     <div className="products-filter-sort-div">
       <div className="products-sort-div">
@@ -13,7 +13,7 @@ const Products = () => {
         <hr className="products-line"></hr>
         <form className="sort-products-form">
           <label className="sort-products-label">Sort by</label>
-          <select name="sort" value={sort}>
+          <select name="sort">
             <option value="price lowest">Price (Lowest)</option>
             <option value="price highest">Price (Highest)</option>
             <option value="name a-z">Name (A-Z)</option>
