@@ -1,4 +1,3 @@
-import { productsInitialState } from '../constants/initialStates/productsInitialState';
 import { actions, payloadActions } from '../constants/types/productsActions';
 import {
   filtersPayload,
