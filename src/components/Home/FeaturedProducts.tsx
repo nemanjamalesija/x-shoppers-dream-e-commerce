@@ -11,7 +11,7 @@ const FeaturedProducts = () => {
   return (
     <section className="section section-featured-products">
       <div className="container">
-        <h3 className="heading-tertiary">Featured Products</h3>
+        <h3 className="heading-tertiary heading-featured-products">Featured Products</h3>
         <div className="container-featured-products container-featured-products">
           {featuredProducts.map((el) => {
             return <SingleFeaturedProduct key={el.id} {...el} />;

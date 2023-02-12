@@ -4,7 +4,7 @@
 .container-featured-products {
   display: flex;
   justify-content: center;
-  gap: 2.5rem;
+  gap: 2rem;
   margin-bottom: 4.6rem;
 }
 

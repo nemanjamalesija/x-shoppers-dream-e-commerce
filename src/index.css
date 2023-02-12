@@ -60,9 +60,13 @@ a:visited {
   font-weight: 500;
   color: #5ec576;
   text-transform: uppercase;
-  margin-bottom: 3.2rem;
+  margin-bottom: 1rem;
   letter-spacing: 0.75px;
   text-align: center;
+}
+
+.heading-featured-products {
+  margin-bottom: 2rem;
 }
 
 .btn {

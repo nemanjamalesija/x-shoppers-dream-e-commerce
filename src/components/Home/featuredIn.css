@@ -1,7 +1,7 @@
 .section-featured-in {
-  padding: 0rem 9.6rem 9.6rem;
   background-color: #f1f3f5;
   margin-top: -3.6rem;
+  padding: 0 9.6rem 9.6rem;
 }
 
 .about-image-container {
@@ -27,6 +27,6 @@
   font-size: 1.4rem;
   letter-spacing: 0.75px;
   font-weight: 500;
-  margin-bottom: 2rem;
+  margin-bottom: 1.4rem;
   color: #888;
 }
