@@ -31,4 +31,5 @@ export type stateProducts = {
   sort: string;
   filters: filters;
   storeProductsFilterValuesHandler(e: any): void;
+  removeFiltersHandler(): void;
 };

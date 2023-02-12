@@ -1,7 +1,7 @@
 import { filtersPayload, product } from './productsTypes';
 
 export type actions = {
-  type: 'FILTER_PRODUCTS';
+  type: 'FILTER_PRODUCTS' | 'REMOVE_FILTERS';
 
   payload?: null;
 };

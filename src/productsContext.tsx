@@ -28,10 +28,6 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     let key;
     let value;
 
-    if (e.type === 'change' && e.target.type === 'checkbox') {
-      key = e.target.name as string;
-    }
-
     if (e.type === 'click') {
       key = e.target.getAttribute('data-type') as string;
       value = e.target.getAttribute('data-value') as string;
@@ -46,6 +42,10 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     });
   };
 
+  const removeFiltersHandler = () => {
+    dispatch({ type: 'REMOVE_FILTERS' });
+  };
+
   useEffect(() => {
     dispatch({ type: 'FILTER_PRODUCTS' });
   }, [stateProducts.filters]);
@@ -55,6 +55,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
       value={{
         ...stateProducts,
         storeProductsFilterValuesHandler,
+        removeFiltersHandler,
       }}
     >
       {children}

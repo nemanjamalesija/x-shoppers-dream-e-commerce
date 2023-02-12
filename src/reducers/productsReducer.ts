@@ -1,3 +1,4 @@
+import { productsInitialState } from '../constants/initialStates/productsInitialState';
 import { actions, payloadActions } from '../constants/types/productsActions';
 import {
   filtersPayload,
@@ -89,6 +90,20 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
         );
 
       return { ...state, filteredProducts: filteredProductsTemp };
+
+    case 'REMOVE_FILTERS':
+      return {
+        ...state,
+        filters: {
+          ...state.filters,
+          name: '',
+          currentCategory: 'All',
+          currentCompany: 'All',
+          currentColor: 'All',
+          price: state.filters.maxPrice,
+          shipping: false,
+        },
+      };
 
     default:
       return { ...state };

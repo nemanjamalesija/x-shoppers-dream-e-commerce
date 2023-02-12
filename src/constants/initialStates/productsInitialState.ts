@@ -16,4 +16,5 @@ export const productsInitialState: stateProducts = {
     shipping: false,
   },
   storeProductsFilterValuesHandler: (e: any) => void {},
+  removeFiltersHandler: () => void {},
 };
