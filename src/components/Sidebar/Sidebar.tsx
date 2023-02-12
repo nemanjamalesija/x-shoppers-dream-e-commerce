@@ -24,11 +24,11 @@ const Sidebar = () => {
   } = useProductsContext();
 
   const categories = Array.from(
-    new Set(['all', ...products.map((prod) => prod.category)])
+    new Set(['All', ...products.map((prod) => prod.category)])
   );
 
   const companies = Array.from(
-    new Set(['all', ...products.map((prod) => prod.company)])
+    new Set(['All', ...products.map((prod) => prod.company)])
   );
   const colors = Array.from(
     new Set([...products.flatMap((prod) => prod.colors)])

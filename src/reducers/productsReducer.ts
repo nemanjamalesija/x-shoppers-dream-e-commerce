@@ -47,15 +47,36 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
       };
 
     case 'FILTER_PRODUCTS':
-      const { currentCategory } = state.filters;
+      const {
+        name,
+        currentCategory,
+        currentCompany,
+        currentColor,
+        price,
+        shipping,
+      } = state.filters;
 
       let filteredProductsTemp = [...state.products];
 
-      if (currentCategory && currentCategory !== 'All') {
+      if (name)
+        filteredProductsTemp = filteredProductsTemp.filter((prod) =>
+          prod.name.toLowerCase().includes(name.toLowerCase())
+        );
+
+      if (currentCategory && currentCategory !== 'All')
         filteredProductsTemp = filteredProductsTemp.filter(
           (prod) => prod.category === currentCategory
         );
-      }
+
+      if (currentCompany && currentCompany !== 'All')
+        filteredProductsTemp = filteredProductsTemp.filter(
+          (prod) => prod.company === currentCompany
+        );
+
+      if (currentColor && currentColor !== 'All')
+        filteredProductsTemp = filteredProductsTemp.filter((prod) =>
+          prod.colors.includes(currentColor)
+        );
 
       return { ...state, filteredProducts: filteredProductsTemp };
 
