@@ -37,10 +37,8 @@
   text-align: start;
   border: 1px solid #bfe8c8;
   background-color: #eff9f1;
-}
-
-.sort-products-form select {
   color: #444;
+  border-radius: 0.25rem;
 }
 
 .single-product-image {
