@@ -78,6 +78,16 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
           prod.colors.includes(currentColor)
         );
 
+      if (price)
+        filteredProductsTemp = filteredProductsTemp.filter(
+          (prod) => prod.price <= price
+        );
+
+      if (shipping)
+        filteredProductsTemp = filteredProductsTemp.filter(
+          (prod) => prod.shipping === true
+        );
+
       return { ...state, filteredProducts: filteredProductsTemp };
 
     default:
