@@ -1,6 +1,5 @@
 import { actions, payloadActions } from '../constants/types/productsActions';
 import {
-  filters,
   filtersPayload,
   product,
   stateProducts,
@@ -35,9 +34,10 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
       const { key, value } = payload as filtersPayload;
 
       if (key === 'shipping') {
+        const { shipping } = state.filters;
         return {
           ...state,
-          filters: { ...state.filters, shipping: !state.filters.shipping },
+          filters: { ...state.filters, shipping: !shipping },
         };
       }
 

@@ -75,6 +75,13 @@ a:visited {
   transition: all 0.3s;
 }
 
+.btn-clear-filters {
+  padding: 1rem 2rem;
+  background-color: #e81616;
+  color: #fff;
+  width: 50%;
+}
+
 .btn-home-explore,
 .btn-all-products {
   background-color: #5ec576;

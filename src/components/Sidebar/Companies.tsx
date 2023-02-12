@@ -1,4 +1,5 @@
 import { useProductsContext } from '../../productsContext';
+import './sidebar.css';
 
 type companiesProps = { currentCompany: string; companies: string[] };
 

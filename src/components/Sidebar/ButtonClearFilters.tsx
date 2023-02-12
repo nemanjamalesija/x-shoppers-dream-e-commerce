@@ -1,7 +1,8 @@
 import React from 'react';
+import './sidebar.css';
 
 const ButtonClearFilters = () => {
-  return <div>ButtonClearFilters</div>;
+  return <button className="btn btn-clear-filters">Clear filters</button>;
 };
 
 export default ButtonClearFilters;

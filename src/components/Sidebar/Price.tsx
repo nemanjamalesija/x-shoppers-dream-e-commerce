@@ -1,5 +1,6 @@
 import React from 'react';
 import { useProductsContext } from '../../productsContext';
+import './sidebar.css';
 
 type priceProps = { price: number; maxPrice: number };
 

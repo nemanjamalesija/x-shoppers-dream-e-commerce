@@ -5,9 +5,8 @@ import Colors from './Colors';
 import Price from './Price';
 import Shippingg from './Shipping';
 import ButtonClearFilters from './ButtonClearFilters';
-
-import './sidebar.css';
 import { useProductsContext } from '../../productsContext';
+import './sidebar.css';
 
 const Sidebar = () => {
   const { loading, products } = useProductsContext();
