@@ -1,0 +1,27 @@
+.about-us-img-text-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 4rem;
+}
+
+.heading-secondary-about-us {
+  font-size: 3.6rem;
+  color: #444;
+  line-height: 1.4;
+}
+
+.underline {
+  width: 10rem;
+  height: 0.25rem;
+  background: #5ec576;
+  margin-bottom: 2rem;
+}
+
+.about-us-image {
+  width: 100%;
+  border-radius: 0.25rem;
+}
+
+.text-about-us-div p {
+  font-size: 1.6rem;
+}
