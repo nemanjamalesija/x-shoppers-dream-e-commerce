@@ -1,7 +1,7 @@
 import { useProductsContext } from '../../productsContext';
 import OneProduct from './OneProduct';
 
-const ProductsApi = () => {
+const ProductsFromApi = () => {
   const { filteredProducts } = useProductsContext();
   return (
     <div className="products-filter-div">
@@ -12,4 +12,4 @@ const ProductsApi = () => {
   );
 };
 
-export default ProductsApi;
+export default ProductsFromApi;

@@ -14,7 +14,7 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
 
       // later use for filtering
       const newMaxPrice = productsTemp.reduce((acc, product) => {
-        if (product.price) return acc + product.price;
+        if (product.price >= acc) return product.price;
         else return acc;
       }, 0);
 
@@ -78,10 +78,11 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
           prod.colors.includes(currentColor)
         );
 
-      if (price)
+      if (price) {
         filteredProductsTemp = filteredProductsTemp.filter(
           (prod) => prod.price <= price
         );
+      }
 
       if (shipping)
         filteredProductsTemp = filteredProductsTemp.filter(

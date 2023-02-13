@@ -2,7 +2,7 @@ import { Link } from 'react-router-dom';
 import { BsBag } from 'react-icons/bs';
 import '../../pages/nav.css';
 
-const NavDummy = () => {
+const NavSticky = () => {
   return (
     <section className="section-nav">
       <nav className="container nav nav">
@@ -35,4 +35,4 @@ const NavDummy = () => {
   );
 };
 
-export default NavDummy;
+export default NavSticky;

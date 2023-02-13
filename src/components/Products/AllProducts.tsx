@@ -1,7 +1,7 @@
 import { useProductsContext } from '../../productsContext';
 import './allProducts.css';
 import SortByForm from './SortByForm';
-import ProductsApi from './ProductsApi';
+import ProductsFromApi from './ProductsFromApi';
 
 const Products = () => {
   const { filteredProducts } = useProductsContext();
@@ -14,7 +14,7 @@ const Products = () => {
         <hr className="products-line"></hr>
         <SortByForm />
       </div>
-      <ProductsApi />
+      <ProductsFromApi />
     </div>
   );
 };

@@ -1,9 +1,7 @@
-import React from 'react';
 import { useProductsContext } from '../../productsContext';
 
 const SortByForm = () => {
   const { sort, storeFiltersValuesHandler } = useProductsContext();
-  console.log(sort);
 
   return (
     <form className="sort-products-form">
