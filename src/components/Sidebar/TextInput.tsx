@@ -4,7 +4,9 @@ import './sidebar.css';
 type textInputProps = { name: string };
 
 const TextInput = ({ name }: textInputProps) => {
-  const { storeProductsFilterValuesHandler } = useProductsContext();
+  const {
+    state: { storeProductsFilterValuesHandler },
+  } = useProductsContext();
 
   return (
     <div className="products-text-input">

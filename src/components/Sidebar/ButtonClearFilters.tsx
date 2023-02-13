@@ -3,7 +3,9 @@ import { useProductsContext } from '../../productsContext';
 import './sidebar.css';
 
 const ButtonClearFilters = () => {
-  const { removeFiltersHandler } = useProductsContext();
+  const {
+    state: { removeFiltersHandler },
+  } = useProductsContext();
   return (
     <button className="btn btn-clear-filters" onClick={removeFiltersHandler}>
       Clear filters

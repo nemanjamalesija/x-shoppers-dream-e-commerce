@@ -4,13 +4,15 @@ import AllProducts from '../components/Products/AllProducts';
 import Loading from '../components/Loading';
 import Sidebar from '../components/Sidebar/Sidebar';
 import './products.css';
-import { useObserverContext } from '../observerContext';
 
 const Products = () => {
-  const { loading } = useProductsContext();
-  const { navRef } = useObserverContext();
+  const {
+    state: { loading },
+  } = useProductsContext();
+  const { navRef } = useProductsContext();
 
   useEffect(() => {
+    if (!navRef.current) return;
     window.scrollTo(0, 0);
     navRef.current.classList.remove('sticky');
   }, [navRef]);

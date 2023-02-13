@@ -9,17 +9,19 @@ import { useProductsContext } from '../../productsContext';
 import './sidebar.css';
 
 const Sidebar = () => {
-  const { loading, products } = useProductsContext();
-
   const {
-    filters: {
-      name,
-      currentCategory,
-      currentCompany,
-      currentColor,
-      price,
-      maxPrice,
-      shipping,
+    state: {
+      loading,
+      products,
+      filters: {
+        name,
+        currentCategory,
+        currentCompany,
+        currentColor,
+        price,
+        maxPrice,
+        shipping,
+      },
     },
   } = useProductsContext();
 

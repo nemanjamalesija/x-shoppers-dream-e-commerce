@@ -1,7 +1,9 @@
 import { useProductsContext } from '../../productsContext';
 
 const SortByForm = () => {
-  const { sort, storeFiltersValuesHandler } = useProductsContext();
+  const {
+    state: { sort, storeFiltersValuesHandler },
+  } = useProductsContext();
 
   return (
     <form className="sort-products-form">

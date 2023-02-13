@@ -2,10 +2,10 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { navLinks } from '../utils/navLinks';
 import { BsBag } from 'react-icons/bs';
-import { useObserverContext } from '../observerContext';
 import './nav.css';
+import { useProductsContext } from '../productsContext';
 const Nav = () => {
-  const { navRef } = useObserverContext();
+  const { navRef } = useProductsContext();
   const [activeLink, setActiveLink] = useState(0);
 
   return (

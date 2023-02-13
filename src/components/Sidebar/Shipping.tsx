@@ -4,7 +4,9 @@ import './sidebar.css';
 type shippingProps = { shipping: boolean };
 
 const Shipping = ({ shipping }: shippingProps) => {
-  const { storeProductsFilterValuesHandler } = useProductsContext();
+  const {
+    state: { storeProductsFilterValuesHandler },
+  } = useProductsContext();
   return (
     <div className="product-shipping-container">
       <h5 className="heading-fifth">Free Shipping</h5>

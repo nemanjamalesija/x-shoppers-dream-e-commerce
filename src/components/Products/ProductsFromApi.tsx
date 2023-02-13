@@ -2,7 +2,9 @@ import { useProductsContext } from '../../productsContext';
 import OneProduct from './OneProduct';
 
 const ProductsFromApi = () => {
-  const { filteredProducts } = useProductsContext();
+  const {
+    state: { filteredProducts },
+  } = useProductsContext();
   return (
     <div className="products-filter-div">
       {filteredProducts.map((item) => {

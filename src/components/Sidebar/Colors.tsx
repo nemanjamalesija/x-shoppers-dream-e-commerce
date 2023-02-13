@@ -5,7 +5,9 @@ import './sidebar.css';
 type colorsProps = { currentColor: string; colors: string[] };
 
 const Colors = ({ currentColor, colors }: colorsProps) => {
-  const { storeProductsFilterValuesHandler } = useProductsContext();
+  const {
+    state: { storeProductsFilterValuesHandler },
+  } = useProductsContext();
 
   return (
     <div className="product-colors">

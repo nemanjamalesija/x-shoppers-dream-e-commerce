@@ -6,7 +6,9 @@ import './sidebar.css';
 type priceProps = { price: number; maxPrice: number };
 
 const Price = ({ price, maxPrice }: priceProps) => {
-  const { storeProductsFilterValuesHandler } = useProductsContext();
+  const {
+    state: { storeProductsFilterValuesHandler },
+  } = useProductsContext();
   return (
     <div className="product-price-container">
       <h5 className="heading-fifth heading-price">Price</h5>

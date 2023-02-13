@@ -1,21 +1,21 @@
 import { useState, useEffect, useRef } from 'react';
 import CreedArticle from './CreedArticle';
 import { creeds } from '../../utils/creedCards';
+import useObserver from '../../helpers/useObserver';
 import './creeds.css';
-import { useObserverContext } from '../../observerContext';
 
 const Creeds = () => {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   const [isHidden, setIsHidden] = useState(false);
-  const { sectionObserver, isObserving } = useObserverContext();
+  const { sectionObserver, isObserving } = useObserver();
   const creedsObserver = sectionObserver();
 
   useEffect(() => {
+    if (!sectionRef.current) return;
     setIsHidden(true);
-    const sectionCreeds = sectionRef.current;
-    creedsObserver.observe(sectionCreeds);
+    creedsObserver.observe(sectionRef.current);
 
-    return () => creedsObserver.unobserve(sectionCreeds);
+    return () => creedsObserver.disconnect();
   }, [isObserving, creedsObserver]);
 
   return (

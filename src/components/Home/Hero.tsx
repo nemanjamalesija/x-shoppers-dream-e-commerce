@@ -2,11 +2,11 @@ import heroImg from '../../utils/images/heroImg.png';
 import React, { useState, useEffect, useRef } from 'react';
 import { Link } from 'react-router-dom';
 import NavSticky from './NavSticky';
-import { useObserverContext } from '../../observerContext';
+import { useProductsContext } from '../../productsContext';
 import './hero.css';
 
 const Hero = () => {
-  const { navRef } = useObserverContext();
+  const { navRef } = useProductsContext();
   const heroRef = useRef(null);
   const [navHeight, setNavRefHeight] = useState(0);
   const [isObserving, setIsObserving] = useState(false);
@@ -15,7 +15,7 @@ const Hero = () => {
   const navObserverOptionsCallback = React.useCallback(() => {
     return {
       root: null,
-      rootMargin: `${-navHeight + 125}px`,
+      rootMargin: `${-navHeight + 130}px`,
     };
   }, [navHeight]);
 
@@ -25,6 +25,8 @@ const Hero = () => {
     return function (entries: any) {
       const [entry] = entries;
       setIsObserving(entry.isIntersecting);
+
+      if (!navRef.current) return;
 
       if (!entry.isIntersecting) {
         setnavSticky(true);
@@ -48,12 +50,13 @@ const Hero = () => {
   const heroObserver = observer();
 
   useEffect(() => {
+    if (!navRef.current) return;
+    if (!heroRef.current) return;
+
     setNavRefHeight(navRef.current.clientHeight);
-    const heroSection = heroRef.current as any;
+    heroObserver.observe(heroRef.current);
 
-    heroObserver.observe(heroSection as Element);
-
-    return () => heroObserver.unobserve(heroSection);
+    return () => heroObserver.disconnect();
   }, [isObserving, navRef, heroObserver]);
 
   return (

@@ -7,7 +7,9 @@ type categoriesProps = {
 };
 
 const Categories = ({ currentCategory, categories }: categoriesProps) => {
-  const { storeProductsFilterValuesHandler } = useProductsContext();
+  const {
+    state: { storeProductsFilterValuesHandler },
+  } = useProductsContext();
   return (
     <div className="products-categories">
       <h5 className="heading-fifth">Category</h5>

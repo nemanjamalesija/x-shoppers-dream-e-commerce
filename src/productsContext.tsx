@@ -1,15 +1,28 @@
-import React, { useContext, useEffect, useReducer } from 'react';
+import React, { useContext, useEffect, useReducer, useRef } from 'react';
 import reducerProducts from './reducers/productsReducer';
 import { productsInitialState } from './constants/initialStates/productsInitialState';
 import { allProductsURL } from './utils/urls';
+import { actions, payloadActions } from './constants/types/productsActions';
+import { stateProducts } from './constants/types/productsTypes';
 
-const ProductsContext = React.createContext(productsInitialState);
+export type ContextValue = {
+  state: stateProducts;
+  dispatch: React.Dispatch<actions | payloadActions>;
+  navRef: React.RefObject<HTMLDivElement>;
+};
+
+const ProductsContext = React.createContext<ContextValue>({
+  state: productsInitialState,
+  dispatch: (action: actions | payloadActions) => {},
+  navRef: React.createRef<any>(),
+});
 
 const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
   const [stateProducts, dispatch] = useReducer(
     reducerProducts,
     productsInitialState
   );
+  const navRef = useRef<any>(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -62,10 +75,14 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
   return (
     <ProductsContext.Provider
       value={{
-        ...stateProducts,
-        storeProductsFilterValuesHandler,
-        removeFiltersHandler,
-        storeFiltersValuesHandler,
+        state: {
+          ...stateProducts,
+          storeProductsFilterValuesHandler,
+          removeFiltersHandler,
+          storeFiltersValuesHandler,
+        },
+        dispatch,
+        navRef,
       }}
     >
       {children}

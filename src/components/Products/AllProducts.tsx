@@ -1,15 +1,17 @@
 import { useEffect } from 'react';
 import { useProductsContext } from '../../productsContext';
-import './allProducts.css';
 import SortByForm from './SortByForm';
 import ProductsFromApi from './ProductsFromApi';
-import { useObserverContext } from '../../observerContext';
+import './allProducts.css';
 
 const Products = () => {
-  const { filteredProducts } = useProductsContext();
-  const { navRef } = useObserverContext();
+  const {
+    navRef,
+    state: { filteredProducts },
+  } = useProductsContext();
 
   useEffect(() => {
+    if (!navRef.current) return;
     window.scrollTo(0, 0);
     navRef.current.classList.remove('sticky');
   }, [navRef]);

@@ -3,23 +3,25 @@ import { Link } from 'react-router-dom';
 import { useProductsContext } from '../../productsContext';
 import SingleFeaturedProduct from './SingleFeaturedProduct';
 import Loading from '../Loading';
+import useObserver from '../../helpers/useObserver';
 import './featuredProducts.css';
-import { useObserverContext } from '../../observerContext';
 
 const FeaturedProducts = () => {
-  const sectionRef = useRef(null);
+  const sectionRef = useRef<HTMLDivElement>(null);
   const [isHidden, setIsHidden] = useState(false);
-  const { sectionObserver, isObserving } = useObserverContext();
+  const { sectionObserver, isObserving } = useObserver();
   const featuredProductsObserver = sectionObserver();
-  const { products, loading } = useProductsContext();
+  const {
+    state: { products, loading },
+  } = useProductsContext();
   const featuredProducts = products.slice(14, 17);
 
   useEffect(() => {
+    if (!sectionRef.current) return;
     setIsHidden(true);
-    const sectionFeaturedProducts = sectionRef.current;
-    featuredProductsObserver.observe(sectionFeaturedProducts);
+    featuredProductsObserver.observe(sectionRef.current);
 
-    return () => featuredProductsObserver.unobserve(sectionFeaturedProducts);
+    return () => featuredProductsObserver.disconnect();
   }, [isObserving, featuredProductsObserver]);
 
   if (loading) return <Loading sectionRef={sectionRef} isHidden={isHidden} />;

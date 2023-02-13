@@ -1,12 +1,13 @@
 import { useEffect } from 'react';
 import storyImg from '../utils/images/storyImg.jpg';
-import { useObserverContext } from '../observerContext';
+import { useProductsContext } from '../productsContext';
 import './about.css';
 
 const About = () => {
-  const { navRef } = useObserverContext();
+  const { navRef } = useProductsContext();
 
   useEffect(() => {
+    if (!navRef.current) return;
     navRef.current.classList.remove('sticky');
   }, [navRef]);
 

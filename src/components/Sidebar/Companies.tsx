@@ -4,7 +4,9 @@ import './sidebar.css';
 type companiesProps = { currentCompany: string; companies: string[] };
 
 const Companies = ({ currentCompany, companies }: companiesProps) => {
-  const { storeProductsFilterValuesHandler } = useProductsContext();
+  const {
+    state: { storeProductsFilterValuesHandler },
+  } = useProductsContext();
   return (
     <div className="products-companies">
       <h5 className="heading-fifth">Company</h5>
