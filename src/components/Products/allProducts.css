@@ -1,3 +1,4 @@
+/* CONTAINER */
 .products-filter-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
@@ -7,12 +8,13 @@
 .products-sort-div {
   display: grid;
   gap: 3rem;
-  grid-template-columns: 0.8fr 4fr 1.3fr;
+  grid-template-columns: 0.9fr 4fr 1.3fr;
   justify-content: center;
 
   margin-bottom: 3.4rem;
 }
 
+/* LINE */
 .products-line {
   border: none;
   border-top: 1px solid #5ec576;
@@ -20,10 +22,10 @@
   align-self: center;
 }
 
+/* FORM */
 .sort-products-label select,
 .sort-products-label {
   font-size: 1.4rem;
-  text-transform: capitalize;
   color: #444;
   font-weight: 500;
 }
@@ -41,6 +43,7 @@
   border-radius: 0.25rem;
 }
 
+/* IMAGE */
 .single-product-image {
   height: 17.5rem;
   cursor: pointer;

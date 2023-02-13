@@ -17,7 +17,7 @@ const Products = () => {
     <div className="products-filter-sort-div">
       <div className="products-sort-div">
         <p className="products-number">
-          {filteredProducts.length} products find
+          {filteredProducts.length} products found
         </p>
         <hr className="products-line"></hr>
         <SortByForm />

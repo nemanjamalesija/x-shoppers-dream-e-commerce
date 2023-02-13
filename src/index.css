@@ -122,11 +122,15 @@ a:visited {
 .products-number,
 .heading-fifth {
   font-size: 1.4rem;
-  text-transform: capitalize;
   line-height: 0.75rem;
   padding-top: 1rem;
   color: #444;
   font-weight: 500;
+}
+
+.single-product-name,
+.featured-product-name {
+  text-transform: capitalize;
 }
 
 .featured-product-price,
