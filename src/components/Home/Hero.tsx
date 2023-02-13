@@ -22,7 +22,7 @@ const Hero = () => {
   const navObserverOptionsObject = navObserverOptionsCallback();
 
   const navObserverFunctionCallback = React.useCallback(() => {
-    return function (entries: any, observer: any) {
+    return function (entries: any) {
       const [entry] = entries;
       setIsObserving(entry.isIntersecting);
 
