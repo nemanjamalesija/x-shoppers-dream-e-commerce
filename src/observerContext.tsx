@@ -2,7 +2,7 @@ import React, { useState, useContext, useRef } from 'react';
 
 const ObserverContext = React.createContext({} as any);
 
-const ObserverProvider = ({ children }: any) => {
+const ObserverProvider = ({ children }: { children: React.ReactNode }) => {
   const [isObserving, setisObserving] = useState(false);
   const navRef = useRef(null);
 
