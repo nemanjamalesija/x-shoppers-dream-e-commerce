@@ -4,7 +4,17 @@ export const productsInitialState: stateProducts = {
   loading: true,
   products: [],
   filteredProducts: [],
-
+  currentProduct: {
+    id: '',
+    category: '',
+    colors: ['', '', ''],
+    company: '',
+    description: '',
+    image: '',
+    name: '',
+    price: 0,
+    shipping: false,
+  },
   sort: 'price lowest',
   filters: {
     name: '',
@@ -15,6 +25,7 @@ export const productsInitialState: stateProducts = {
     maxPrice: 0,
     shipping: false,
   },
+
   storeProductsFilterValuesHandler: (e: any) => void {},
   removeFiltersHandler: () => void {},
   storeFiltersValuesHandler: (e: React.ChangeEvent<HTMLSelectElement>) =>

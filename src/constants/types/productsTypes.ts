@@ -37,6 +37,7 @@ export type stateProducts = {
   loading: boolean;
   products: product[];
   filteredProducts: product[];
+  currentProduct: product;
   sort: string;
   filters: filters;
   storeProductsFilterValuesHandler(e: any): void;
