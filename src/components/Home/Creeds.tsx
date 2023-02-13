@@ -22,8 +22,8 @@ const Creeds = () => {
     <section
       className={`${
         isHidden
-          ? 'section section-creeds section--hidden'
-          : 'section section-creeds'
+          ? 'section-creeds section--hidden section-tansform '
+          : 'section-creeds section-tansform'
       }`}
       ref={sectionRef}
     >

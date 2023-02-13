@@ -28,8 +28,8 @@ const FeaturedProducts = () => {
     <section
       className={`${
         isHidden
-          ? 'section section-featured-products section--hidden'
-          : 'section section-featured-products'
+          ? 'section-featured-products section--hidden section-tansform'
+          : 'section-featured-products section-tansform'
       }`}
       ref={sectionRef}
     >

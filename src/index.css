@@ -33,14 +33,13 @@ a:visited {
   text-decoration: none;
 }
 
-.section {
-  background-color: #f3f3f3;
-  transition: transform 1s, opacity 1s;
-}
-
 .section-featured-products,
 .section-creeds {
   padding: 9.6rem 0;
+}
+
+.section-tansform {
+  transition: transform 1s, opacity 1s;
 }
 
 .section--hidden {
