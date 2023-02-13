@@ -6,18 +6,14 @@ const ObserverProvider = ({ children }: any) => {
   const [isObserving, setisObserving] = useState(false);
   const navRef = useRef(null);
 
-  const sectionObserverCallback = React.useCallback(function (
-    entries: any,
-    observer: any
-  ) {
+  const sectionObserverCallback = React.useCallback(function (entries: any) {
     const [entry] = entries;
     setisObserving(true);
 
     if (!entry.isIntersecting) return;
 
     entry.target.classList.remove('section--hidden');
-  },
-  []);
+  }, []);
 
   const sectionObserver = React.useCallback(() => {
     return new IntersectionObserver(sectionObserverCallback, {

@@ -9,10 +9,10 @@ import { useObserverContext } from '../../observerContext';
 const FeaturedProducts = () => {
   const sectionRef = useRef(null);
   const [isHidden, setIsHidden] = useState(false);
-  const { products, loading } = useProductsContext();
   const { sectionObserver, isObserving } = useObserverContext();
-  const featuredProducts = products.slice(14, 17);
   const featuredProductsObserver = sectionObserver();
+  const { products, loading } = useProductsContext();
+  const featuredProducts = products.slice(14, 17);
 
   useEffect(() => {
     setIsHidden(true);
