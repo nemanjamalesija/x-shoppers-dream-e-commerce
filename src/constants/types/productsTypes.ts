@@ -1,4 +1,11 @@
 import React from 'react';
+import { actions, payloadActions } from './productsActions';
+
+export type productsContextValues = {
+  state: stateProducts;
+  dispatch: React.Dispatch<actions | payloadActions>;
+  navRef: React.RefObject<HTMLDivElement>;
+};
 
 export type product = {
   id: string;

@@ -3,18 +3,12 @@ import reducerProducts from './reducers/productsReducer';
 import { productsInitialState } from './constants/initialStates/productsInitialState';
 import { allProductsURL } from './utils/urls';
 import { actions, payloadActions } from './constants/types/productsActions';
-import { stateProducts } from './constants/types/productsTypes';
+import { productsContextValues } from './constants/types/productsTypes';
 
-export type ContextValue = {
-  state: stateProducts;
-  dispatch: React.Dispatch<actions | payloadActions>;
-  navRef: React.RefObject<HTMLDivElement>;
-};
-
-const ProductsContext = React.createContext<ContextValue>({
+const ProductsContext = React.createContext<productsContextValues>({
   state: productsInitialState,
   dispatch: (action: actions | payloadActions) => {},
-  navRef: React.createRef<any>(),
+  navRef: React.createRef<HTMLDivElement>(),
 });
 
 const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
@@ -22,7 +16,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     reducerProducts,
     productsInitialState
   );
-  const navRef = useRef<any>(null);
+  const navRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -46,7 +40,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
       value = e.target.getAttribute('data-value') as string;
     } else {
       key = e.target.name as string;
-      value = e.target.value as string;
+      value = e.target.value as string; // boolean for free shipping will also get transformed to string => handle in reducer
     }
 
     dispatch({
