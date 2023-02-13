@@ -4,6 +4,7 @@ import { productsInitialState } from './constants/initialStates/productsInitialS
 import { allProductsURL } from './utils/urls';
 import { actions, payloadActions } from './constants/types/productsActions';
 import { productsContextValues } from './constants/types/productsTypes';
+import axios from 'axios';
 
 const ProductsContext = React.createContext<productsContextValues>({
   state: productsInitialState,
@@ -20,15 +21,16 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     const fetchProducts = async () => {
-      const response = await fetch(allProductsURL);
-      const data = await response.json();
+      return await axios(allProductsURL);
+    };
+
+    fetchProducts().then((response) => {
+      const { data } = response;
       dispatch({
         type: 'SET_PRODUCTS',
         payload: data,
       });
-    };
-
-    fetchProducts();
+    });
   }, []);
 
   const storeProductsFilterValuesHandler = (e: any) => {
