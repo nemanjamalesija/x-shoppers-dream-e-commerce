@@ -18,7 +18,7 @@ const ObserverProvider = ({ children }: { children: React.ReactNode }) => {
   const sectionObserver = React.useCallback(() => {
     return new IntersectionObserver(sectionObserverCallback, {
       root: null,
-      threshold: 0.15,
+      threshold: 0.1,
     });
   }, [sectionObserverCallback]);
 
