@@ -2,6 +2,7 @@ import { useProductsContext } from '../../productsContext';
 import ButtonAddToCart from './ButtonAddToCart';
 import Colors from './Colors';
 import QuantityAddToCart from './QuantityAddToCart';
+import './singleProductPage.css';
 
 const AddToCart = () => {
   const {

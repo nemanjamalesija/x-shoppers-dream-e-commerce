@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import { currentProductImage } from '../../constants/types/productsTypes';
+import './singleProductPage.css';
 
 type propsImages = { images: currentProductImage[] };
 

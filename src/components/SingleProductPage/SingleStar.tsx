@@ -1,3 +1,4 @@
+import './singleProductPage.css';
 type singleStarProps = { item: JSX.Element };
 
 const SingleStar = ({ item }: singleStarProps) => {

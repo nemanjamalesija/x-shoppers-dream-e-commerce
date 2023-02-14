@@ -1,5 +1,6 @@
 import { ImStarFull, ImStarHalf, ImStarEmpty } from 'react-icons/im';
 import SingleStar from './SingleStar';
+import './singleProductPage.css';
 
 type starsProps = { stars: number; reviews: number };
 

@@ -1,5 +1,6 @@
 import { IoIosCheckmark } from 'react-icons/io';
 import { useProductsContext } from '../../productsContext';
+import './singleProductPage.css';
 
 const Colors = () => {
   const {

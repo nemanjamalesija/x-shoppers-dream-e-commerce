@@ -1,3 +1,4 @@
+import './singleProductPage.css';
 import { useProductsContext } from '../../productsContext';
 
 const QuantityToAddToCart = () => {

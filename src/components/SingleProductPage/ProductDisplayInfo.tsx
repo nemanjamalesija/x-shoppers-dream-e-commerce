@@ -1,3 +1,4 @@
+import './singleProductPage.css';
 type ProductDisplayInfoProps = { stock: number; company: string; SKU: string };
 
 const ProductDisplayInfo = ({

@@ -1,4 +1,4 @@
-import React from 'react';
+import './singleProductPage.css';
 import { Link } from 'react-router-dom';
 import { useProductsContext } from '../../productsContext';
 
