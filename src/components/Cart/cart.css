@@ -81,11 +81,6 @@
   color: #777;
 }
 
-.heading-cart-price {
-  color: #444;
-  font-weight: 500;
-}
-
 .cart-quantity {
   display: flex;
   align-items: center;
