@@ -1,36 +1,38 @@
 import { currentProduct, stateProducts } from '../types/productsTypes';
 
+export const currentProductInitialState = {
+  id: '',
+  images: [
+    {
+      filename: '',
+      height: 0,
+      id: '',
+      size: 0,
+      thumbnails: {
+        full: { url: '', width: 0, height: 0 },
+        large: { url: '', width: 0, height: 0 },
+        small: { url: '', width: 0, height: 0 },
+      },
+      type: '',
+      url: '',
+      width: 0,
+    },
+  ],
+  reviews: 0,
+  name: '',
+  stars: 0,
+  price: 0,
+  description: '',
+  stock: 0,
+  company: '',
+  quantity: 0,
+};
+
 export const productsInitialState: stateProducts = {
   loading: true,
   products: [],
   filteredProducts: [],
-  currentProduct: {
-    id: '',
-    images: [
-      {
-        filename: '',
-        height: 0,
-        id: '',
-        size: 0,
-        thumbnails: {
-          full: { url: '', width: 0, height: 0 },
-          large: { url: '', width: 0, height: 0 },
-          small: { url: '', width: 0, height: 0 },
-        },
-        type: '',
-        url: '',
-        width: 0,
-      },
-    ],
-    reviews: 0,
-    name: '',
-    stars: 0,
-    price: 0,
-    description: '',
-    stock: 0,
-    company: '',
-    quantity: 0,
-  },
+  currentProduct: currentProductInitialState,
   sort: 'price lowest',
   filters: {
     name: '',
@@ -50,5 +52,4 @@ export const productsInitialState: stateProducts = {
   selectColorHandler: (color: string) => void {},
   incrementQuantityHandler: (quantity: number) => void {},
   decrementQuantityHandler: (quantity: number) => void {},
-
 };
