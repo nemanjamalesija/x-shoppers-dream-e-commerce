@@ -4,14 +4,9 @@ const BackToProducts = () => {
 
   return (
     <div className="back-to-products-div">
-      <a href="#">
-        <button
-          className="btn btn-back-to-products"
-          onClick={() => navigate(-1)}
-        >
-          Back to products &#129059;
-        </button>
-      </a>
+      <button className="btn btn-back-to-products" onClick={() => navigate(-1)}>
+        Back to products &#129059;
+      </button>
     </div>
   );
 };

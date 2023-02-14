@@ -29,9 +29,24 @@ export type filters = {
   shipping: boolean;
 };
 
+export type currentProductImage = {
+  filename: string;
+  height: number;
+  id: string;
+  size: number;
+  thumbnails: {
+    full: { url: string; width: number; height: number };
+    large: { url: string; width: number; height: number };
+    small: { url: string; width: number; height: number };
+  };
+  type: string;
+  url: string;
+  width: number;
+};
+
 export type currentProduct = {
   id: string;
-  images: string[];
+  images: currentProductImage[];
   reviews: number;
   name: string;
   stars: number;

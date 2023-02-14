@@ -6,7 +6,22 @@ export const productsInitialState: stateProducts = {
   filteredProducts: [],
   currentProduct: {
     id: '',
-    images: ['', '', '', ''],
+    images: [
+      {
+        filename: '',
+        height: 0,
+        id: '',
+        size: 0,
+        thumbnails: {
+          full: { url: '', width: 0, height: 0 },
+          large: { url: '', width: 0, height: 0 },
+          small: { url: '', width: 0, height: 0 },
+        },
+        type: '',
+        url: '',
+        width: 0,
+      },
+    ],
     reviews: 0,
     name: '',
     stars: 0,
