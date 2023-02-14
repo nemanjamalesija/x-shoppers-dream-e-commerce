@@ -1,4 +1,4 @@
-import { stateProducts } from '../types/productsTypes';
+import { currentProduct, stateProducts } from '../types/productsTypes';
 
 export const productsInitialState: stateProducts = {
   loading: true,
@@ -50,4 +50,5 @@ export const productsInitialState: stateProducts = {
   selectColorHandler: (color: string) => void {},
   incrementQuantityHandler: (quantity: number) => void {},
   decrementQuantityHandler: (quantity: number) => void {},
+
 };
