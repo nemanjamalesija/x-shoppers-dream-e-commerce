@@ -6,13 +6,10 @@ const Colors = () => {
   const {
     state: {
       currentProduct: { colors, currentColor },
+      selectColorHandler,
     },
     dispatch,
   } = useProductsContext();
-
-  const selectColorHandler = (color: string) => {
-    dispatch({ type: 'SET_CURRENT_PRODUCT_COLOR', payload: color });
-  };
 
   return (
     <div className="single-product-article-colors-div">

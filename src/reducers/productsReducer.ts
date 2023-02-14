@@ -128,7 +128,10 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
       return { ...state, filteredProducts: sortedProducts };
 
     case 'SET_CURRENT_PRODUCT':
-      return { ...state, currentProduct: payload as currentProduct };
+      return {
+        ...state,
+        currentProduct: { ...(payload as currentProduct), quantity: 1 },
+      };
 
     case 'SET_CURRENT_PRODUCT_COLOR':
       return {
@@ -138,6 +141,49 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
           currentColor: payload as string,
         },
       };
+
+    case 'INCREMENT_PRODUCT_QUANTITY':
+      const { quantity: quantityIncrement } = payload;
+
+      if (quantityIncrement >= state.currentProduct.stock)
+        return {
+          ...state,
+          currentProduct: { ...state.currentProduct },
+        };
+      else if (
+        state.currentProduct.quantity &&
+        state.currentProduct.stock > state.currentProduct.quantity
+      )
+        return {
+          ...state,
+          currentProduct: {
+            ...state.currentProduct,
+            quantity: state.currentProduct.quantity + 1,
+          },
+        };
+      else return { ...state };
+
+    case 'DECREMENT_PRODUCT_QUANTITY':
+      const { quantity: quantityDecrement } = payload;
+
+      if (quantityDecrement <= 1)
+        return {
+          ...state,
+          currentProduct: { ...state.currentProduct, quantity: 1 },
+        };
+      else if (
+        state.currentProduct.quantity &&
+        state.currentProduct.quantity > 1
+      )
+        return {
+          ...state,
+          currentProduct: {
+            ...state.currentProduct,
+            quantity: state.currentProduct.quantity - 1,
+          },
+        };
+      else return { ...state };
+
     default:
       return { ...state };
   }

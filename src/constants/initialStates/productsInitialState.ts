@@ -29,6 +29,7 @@ export const productsInitialState: stateProducts = {
     description: '',
     stock: 0,
     company: '',
+    quantity: 0,
   },
   sort: 'price lowest',
   filters: {
@@ -45,4 +46,8 @@ export const productsInitialState: stateProducts = {
   removeFiltersHandler: () => void {},
   storeFiltersValuesHandler: (e: React.ChangeEvent<HTMLSelectElement>) =>
     void {},
+  // current product
+  selectColorHandler: (color: string) => void {},
+  incrementQuantityHandler: (quantity: number) => void {},
+  decrementQuantityHandler: (quantity: number) => void {},
 };

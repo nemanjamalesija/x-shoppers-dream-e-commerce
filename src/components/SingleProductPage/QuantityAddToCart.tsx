@@ -1,7 +1,33 @@
-import React from 'react';
+import { useProductsContext } from '../../productsContext';
 
-const QuantityAddToCart = () => {
-  return <div>QuantityAddToCart</div>;
+const QuantityToAddToCart = () => {
+  const {
+    state: {
+      currentProduct: { quantity },
+      incrementQuantityHandler,
+      decrementQuantityHandler,
+    },
+  } = useProductsContext();
+
+  console.log(quantity);
+
+  return (
+    <div className="add-to-cart-logic-div">
+      <button
+        className="btn btn-decrement-products"
+        onClick={() => decrementQuantityHandler(quantity as number)}
+      >
+        -
+      </button>
+      <p className="purchased-products">{quantity}</p>
+      <button
+        className="btn btn-increment-products"
+        onClick={() => incrementQuantityHandler(quantity as number)}
+      >
+        +
+      </button>
+    </div>
+  );
 };
 
-export default QuantityAddToCart;
+export default QuantityToAddToCart;

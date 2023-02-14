@@ -68,6 +68,24 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     dispatch({ type: 'SORT_PRODUCTS' });
   }, [stateProducts.filters, stateProducts.sort]);
 
+  const selectColorHandler = (color: string) => {
+    dispatch({ type: 'SET_CURRENT_PRODUCT_COLOR', payload: color });
+  };
+
+  const incrementQuantityHandler = (quantity: number) => {
+    dispatch({
+      type: 'INCREMENT_PRODUCT_QUANTITY',
+      payload: quantity as number,
+    });
+  };
+
+  const decrementQuantityHandler = (quantity: number) => {
+    dispatch({
+      type: 'DECREMENT_PRODUCT_QUANTITY',
+      payload: quantity as number,
+    });
+  };
+
   return (
     <ProductsContext.Provider
       value={{
@@ -76,6 +94,9 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
           storeProductsFilterValuesHandler,
           removeFiltersHandler,
           storeFiltersValuesHandler,
+          selectColorHandler,
+          incrementQuantityHandler,
+          decrementQuantityHandler,
         },
         dispatch,
         navRef,

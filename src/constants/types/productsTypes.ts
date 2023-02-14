@@ -56,6 +56,7 @@ export type currentProduct = {
   company: string;
   colors?: string[];
   currentColor?: string;
+  quantity: number;
 };
 
 export type filtersPayload = {
@@ -72,4 +73,7 @@ export type stateProducts = {
   storeProductsFilterValuesHandler(e: any): void;
   removeFiltersHandler(): void;
   storeFiltersValuesHandler(e: React.ChangeEvent<HTMLSelectElement>): void;
+  selectColorHandler(color: string): void;
+  incrementQuantityHandler(quantity: number): void;
+  decrementQuantityHandler(quantity: number): void;
 };

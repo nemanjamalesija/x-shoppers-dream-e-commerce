@@ -12,7 +12,9 @@ export type payloadActions = {
     | 'STORE_FILTERS_VALUES'
     | 'STORE_SORT_VALUES'
     | 'SET_CURRENT_PRODUCT'
-    | 'SET_CURRENT_PRODUCT_COLOR';
+    | 'SET_CURRENT_PRODUCT_COLOR'
+    | 'INCREMENT_PRODUCT_QUANTITY'
+    | 'DECREMENT_PRODUCT_QUANTITY';
 
-  payload: currentProduct | product[] | filtersPayload | string;
+  payload: any;
 };
