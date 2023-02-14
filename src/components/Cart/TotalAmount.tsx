@@ -1,4 +1,4 @@
-import React from 'react';
+import { Link } from 'react-router-dom';
 import { useCartContext } from '../../cartContext';
 import formatPrice from '../../helpers/formatPrice';
 
@@ -12,7 +12,9 @@ const TotalAmount = () => {
     <section className="section section-total">
       <div className="container">
         <div className="total-buttons-top">
-          <button className="btn btn-continue-shopping">Keep Shopping</button>
+          <Link to="/products">
+            <button className="btn btn-cart-empty">Keep Shopping</button>
+          </Link>
           <button className="btn clear-cart" onClick={clearCartHandler}>
             Clear the Cart
           </button>

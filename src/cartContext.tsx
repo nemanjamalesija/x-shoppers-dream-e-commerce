@@ -35,6 +35,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
         state: {
           ...stateCart,
           addToCartHandler,
+          clearCartHandler,
         },
         dispatch,
       }}
