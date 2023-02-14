@@ -1,5 +1,9 @@
-const Loading = (props: any) => {
-  const { sectionRef, isHidden } = props;
+type LoadingProps = {
+  isHidden?: boolean;
+  sectionRef?: React.RefObject<HTMLDivElement>;
+};
+
+const Loading = ({ isHidden, sectionRef }: LoadingProps) => {
   return (
     <section
       className={`${

@@ -1,13 +1,12 @@
 import heroImg from '../../utils/images/heroImg.png';
-import React, { useState, useEffect, useRef } from 'react';
+import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavSticky from './NavSticky';
 import { useProductsContext } from '../../productsContext';
 import './hero.css';
 
 const Hero = () => {
-  const { navRef } = useProductsContext();
-  const heroRef = useRef(null);
+  const { navRef, heroRef } = useProductsContext();
   const [navHeight, setNavRefHeight] = useState(0);
   const [isObserving, setIsObserving] = useState(false);
   const [navSticky, setnavSticky] = useState(false);
@@ -49,7 +48,7 @@ const Hero = () => {
     heroObserver.observe(heroRef.current);
 
     return () => heroObserver.disconnect();
-  }, [isObserving, navRef, heroObserver]);
+  }, [heroRef, navRef, isObserving, heroObserver]);
 
   return (
     <>

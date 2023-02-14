@@ -7,24 +7,26 @@ import useObserver from '../../helpers/useObserver';
 import './featuredProducts.css';
 
 const FeaturedProducts = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
   const [isHidden, setIsHidden] = useState(false);
-  const { sectionObserver, isObserving } = useObserver();
-  const featuredProductsObserver = sectionObserver();
   const {
     state: { products, loading },
+    featuredProductsRef,
   } = useProductsContext();
+
+  const { sectionObserver, isObserving } = useObserver();
+  const featuredProductsObserver = sectionObserver();
   const featuredProducts = products.slice(14, 17);
 
   useEffect(() => {
-    if (!sectionRef.current) return;
+    if (!featuredProductsRef.current) return;
     setIsHidden(true);
-    featuredProductsObserver.observe(sectionRef.current);
+    featuredProductsObserver.observe(featuredProductsRef.current);
 
     return () => featuredProductsObserver.disconnect();
-  }, [isObserving, featuredProductsObserver]);
+  }, [featuredProductsRef, isObserving, featuredProductsObserver]);
 
-  if (loading) return <Loading sectionRef={sectionRef} isHidden={isHidden} />;
+  if (loading)
+    return <Loading sectionRef={featuredProductsRef} isHidden={isHidden} />;
 
   return (
     <section
@@ -33,7 +35,7 @@ const FeaturedProducts = () => {
           ? 'section-featured-products section--hidden section-tansform'
           : 'section-featured-products section-tansform'
       }`}
-      ref={sectionRef}
+      ref={featuredProductsRef}
     >
       <div className="container">
         <h3 className="heading-tertiary heading-featured-products">

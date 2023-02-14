@@ -1,4 +1,10 @@
-import React, { useContext, useEffect, useReducer, useRef } from 'react';
+import React, {
+  createRef,
+  useContext,
+  useEffect,
+  useReducer,
+  useRef,
+} from 'react';
 import reducerProducts from './reducers/productsReducer';
 import { productsInitialState } from './constants/initialStates/productsInitialState';
 import { allProductsURL } from './utils/urls';
@@ -10,6 +16,8 @@ const ProductsContext = React.createContext<productsContextValues>({
   state: productsInitialState,
   dispatch: (action: actions | payloadActions) => {},
   navRef: React.createRef<HTMLDivElement>(),
+  heroRef: createRef<HTMLDivElement>(),
+  featuredProductsRef: createRef<HTMLDivElement>(),
 });
 
 const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
@@ -18,6 +26,8 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     productsInitialState
   );
   const navRef = useRef<HTMLDivElement>(null);
+  const heroRef = useRef<HTMLDivElement>(null);
+  const featuredProductsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -100,6 +110,8 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
         },
         dispatch,
         navRef,
+        heroRef,
+        featuredProductsRef,
       }}
     >
       {children}
