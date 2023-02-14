@@ -146,17 +146,6 @@
   background-color: #e81616;
 }
 
-.total-price-calculation-container {
-  display: flex;
-  justify-content: flex-end;
-}
-
-.total-price-calculation {
-  min-width: 30rem;
-  padding: 2.5rem 5rem;
-  border: 1px solid #dee2e6;
-}
-
 .heading-subtotal,
 .shipping-fee-p,
 .heading-total {
@@ -180,15 +169,4 @@
 .shipping-fee-p {
   font-size: 1.4rem;
   color: #777;
-}
-
-.total-price-calculation hr {
-  margin-top: 0.5rem;
-  margin-bottom: 2rem;
-  border: none;
-  border-top: 1px solid #dee2e6;
-}
-
-.heading-total {
-  font-size: 1.8rem;
 }
