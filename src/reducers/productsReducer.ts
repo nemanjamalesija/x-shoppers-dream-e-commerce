@@ -130,7 +130,11 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
     case 'SET_CURRENT_PRODUCT':
       return {
         ...state,
-        currentProduct: { ...(payload as currentProduct), quantity: 1 },
+        currentProduct: {
+          ...(payload as currentProduct),
+          quantity: 1,
+          currentColor: payload.colors[0],
+        },
       };
 
     case 'SET_CURRENT_PRODUCT_COLOR':

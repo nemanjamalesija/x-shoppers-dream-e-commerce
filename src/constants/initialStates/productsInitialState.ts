@@ -1,4 +1,4 @@
-import { currentProduct, stateProducts } from '../types/productsTypes';
+import { stateProducts } from '../types/productsTypes';
 
 export const currentProductInitialState = {
   id: '',
@@ -26,6 +26,7 @@ export const currentProductInitialState = {
   stock: 0,
   company: '',
   quantity: 0,
+  currentColor: '#fff',
 };
 
 export const productsInitialState: stateProducts = {

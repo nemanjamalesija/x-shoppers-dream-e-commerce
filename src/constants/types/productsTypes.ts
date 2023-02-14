@@ -55,7 +55,7 @@ export type currentProduct = {
   stock: number;
   company: string;
   colors?: string[];
-  currentColor?: string;
+  currentColor: string;
   quantity: number;
 };
 

@@ -49,8 +49,6 @@ const SingleProductPage = () => {
     id,
   } = currentProduct;
 
-  console.log(images);
-
   return (
     <section className="section section-products">
       <div className="container container-single-product">
