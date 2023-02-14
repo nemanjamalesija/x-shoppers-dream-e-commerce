@@ -1,18 +1,7 @@
 import { currentProduct } from '../types/productsTypes';
-import { currentProductInitialState } from './productsInitialState';
-
-const cartProduct = {
-  id: '',
-  name: '',
-  quantity: 0,
-  currentColor: '',
-  image: '',
-  price: 0,
-  stock: 0,
-};
 
 export const cartInitialState = {
-  cart: [cartProduct],
+  cart: [],
   totalQuantity: 0,
   totalPrice: 0,
   currentColor: '#fff',

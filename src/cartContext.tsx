@@ -1,4 +1,4 @@
-import React, { useContext, useEffect, useReducer } from 'react';
+import React, { useContext, useReducer } from 'react';
 import { cartInitialState } from './constants/initialStates/cartInitialState';
 import { cartActions, cartPayloadActions } from './constants/types/cartActions';
 import { cartContextValues } from './constants/types/cartTypes';
