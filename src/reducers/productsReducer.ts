@@ -1,5 +1,6 @@
 import { actions, payloadActions } from '../constants/types/productsActions';
 import {
+  currentProduct,
   filtersPayload,
   product,
   stateProducts,
@@ -125,6 +126,9 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
         sortedProducts.sort((a, b) => b.name.localeCompare(a.name));
 
       return { ...state, filteredProducts: sortedProducts };
+
+    case 'SET_CURRENT_PRODUCT':
+      return { ...state, currentProduct: payload as currentProduct };
     default:
       return { ...state };
   }

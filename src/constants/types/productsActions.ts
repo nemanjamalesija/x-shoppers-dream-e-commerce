@@ -1,4 +1,4 @@
-import { filtersPayload, product } from './productsTypes';
+import { currentProduct, filtersPayload, product } from './productsTypes';
 
 export type actions = {
   type: 'FILTER_PRODUCTS' | 'SORT_PRODUCTS' | 'REMOVE_FILTERS';
@@ -7,7 +7,11 @@ export type actions = {
 };
 
 export type payloadActions = {
-  type: 'SET_PRODUCTS' | 'STORE_FILTERS_VALUES' | 'STORE_SORT_VALUES';
+  type:
+    | 'SET_PRODUCTS'
+    | 'STORE_FILTERS_VALUES'
+    | 'STORE_SORT_VALUES'
+    | 'SET_CURRENT_PRODUCT';
 
-  payload: product[] | filtersPayload | string;
+  payload: currentProduct | product[] | filtersPayload | string;
 };

@@ -29,6 +29,18 @@ export type filters = {
   shipping: boolean;
 };
 
+export type currentProduct = {
+  id: string;
+  images: string[];
+  reviews: number;
+  name: string;
+  stars: number;
+  price: number;
+  description: string;
+  stock: number;
+  company: string;
+};
+
 export type filtersPayload = {
   [key: string]: string | number;
 };
@@ -37,7 +49,7 @@ export type stateProducts = {
   loading: boolean;
   products: product[];
   filteredProducts: product[];
-  currentProduct: product;
+  currentProduct: currentProduct;
   sort: string;
   filters: filters;
   storeProductsFilterValuesHandler(e: any): void;
