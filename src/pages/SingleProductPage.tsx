@@ -3,12 +3,14 @@ import { useParams } from 'react-router-dom';
 import { useProductsContext } from '../productsContext';
 import { currentProduct } from '../constants/types/productsTypes';
 import { singleProductsURL } from '../utils/urls';
-import AddToCart from '../components/SingleProductPage/AddToCart';
-import Heading from '../components/SingleProductPage/Heading';
-import Stars from '../components/SingleProductPage/Stars';
-import Images from '../components/SingleProductPage/Images';
-import ProductDisplayInfo from '../components/SingleProductPage/ProductDisplayInfo';
-import BackToProducts from '../components/SingleProductPage/BackToProducts';
+import {
+  AddToCart,
+  Heading,
+  Stars,
+  ProductDisplayInfo,
+  Images,
+  BackToProducts,
+} from '../components/SingleProductPage';
 import axios from 'axios';
 import formatPrice from '../helpers/formatPrice';
 
@@ -46,8 +48,6 @@ const SingleProductPage = () => {
     company,
     id,
   } = currentProduct;
-
-  console.log(currentProduct);
 
   return (
     <section className="section section-products">
