@@ -25,6 +25,10 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
     });
   };
 
+  const clearCartHandler = () => {
+    dispatch({ type: 'CLEAR_CART' });
+  };
+
   return (
     <CartContext.Provider
       value={{

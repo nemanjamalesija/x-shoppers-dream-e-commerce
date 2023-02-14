@@ -43,6 +43,10 @@ const cartReducer = (
         return { ...state, cart: [...state.cart, newProduct] };
       }
 
+    case 'CLEAR_CART': {
+      return { ...state, cart: [] };
+    }
+
     default:
       return { ...state };
   }

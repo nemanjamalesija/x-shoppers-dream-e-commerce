@@ -24,6 +24,7 @@ export type stateCart = {
     quantity: number,
     currentProduct: currentProduct
   ): void;
+  clearCartHandler(): void;
 };
 
 export type cartContextValues = {

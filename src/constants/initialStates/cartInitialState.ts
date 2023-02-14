@@ -13,4 +13,5 @@ export const cartInitialState = {
     quantity: number,
     currentProduct: currentProduct
   ) => void {},
+  clearCartHandler: () => void {},
 };
