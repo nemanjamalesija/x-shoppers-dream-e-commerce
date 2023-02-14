@@ -1,22 +1,23 @@
-import { useState, useEffect, useRef } from 'react';
+import { useState, useEffect } from 'react';
 import CreedArticle from './CreedArticle';
 import { creeds } from '../../utils/creedCards';
 import useObserver from '../../helpers/useObserver';
 import './creeds.css';
+import { useProductsContext } from '../../productsContext';
 
 const Creeds = () => {
-  const sectionRef = useRef<HTMLDivElement>(null);
   const [isHidden, setIsHidden] = useState(false);
+  const { creedsRef } = useProductsContext();
   const { sectionObserver, isObserving } = useObserver();
   const creedsObserver = sectionObserver();
 
   useEffect(() => {
-    if (!sectionRef.current) return;
+    if (!creedsRef.current) return;
     setIsHidden(true);
-    creedsObserver.observe(sectionRef.current);
+    creedsObserver.observe(creedsRef.current);
 
     return () => creedsObserver.disconnect();
-  }, [isObserving, creedsObserver]);
+  }, [creedsRef, isObserving, creedsObserver]);
 
   return (
     <section
@@ -25,7 +26,7 @@ const Creeds = () => {
           ? 'section-creeds section--hidden section-tansform '
           : 'section-creeds section-tansform'
       }`}
-      ref={sectionRef}
+      ref={creedsRef}
     >
       <div className="container container-creeds">
         <header className="creeds-header">

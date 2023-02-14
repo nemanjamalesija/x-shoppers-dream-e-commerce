@@ -7,6 +7,7 @@ export type productsContextValues = {
   navRef: React.RefObject<HTMLDivElement>;
   heroRef: React.RefObject<HTMLDivElement>;
   featuredProductsRef: React.RefObject<HTMLDivElement>;
+  creedsRef: React.RefObject<HTMLDivElement>;
 };
 
 export type product = {

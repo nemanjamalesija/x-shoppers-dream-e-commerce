@@ -18,6 +18,7 @@ const ProductsContext = React.createContext<productsContextValues>({
   navRef: React.createRef<HTMLDivElement>(),
   heroRef: createRef<HTMLDivElement>(),
   featuredProductsRef: createRef<HTMLDivElement>(),
+  creedsRef: createRef<HTMLDivElement>(),
 });
 
 const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
@@ -28,6 +29,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
   const navRef = useRef<HTMLDivElement>(null);
   const heroRef = useRef<HTMLDivElement>(null);
   const featuredProductsRef = useRef<HTMLDivElement>(null);
+  const creedsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -112,6 +114,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
         navRef,
         heroRef,
         featuredProductsRef,
+        creedsRef,
       }}
     >
       {children}
