@@ -129,6 +129,15 @@ const reducer = (state: stateProducts, action: actions | payloadActions) => {
 
     case 'SET_CURRENT_PRODUCT':
       return { ...state, currentProduct: payload as currentProduct };
+
+    case 'SET_CURRENT_PRODUCT_COLOR':
+      return {
+        ...state,
+        currentProduct: {
+          ...state.currentProduct,
+          currentColor: payload as string,
+        },
+      };
     default:
       return { ...state };
   }

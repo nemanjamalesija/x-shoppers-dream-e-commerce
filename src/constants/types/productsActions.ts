@@ -11,7 +11,8 @@ export type payloadActions = {
     | 'SET_PRODUCTS'
     | 'STORE_FILTERS_VALUES'
     | 'STORE_SORT_VALUES'
-    | 'SET_CURRENT_PRODUCT';
+    | 'SET_CURRENT_PRODUCT'
+    | 'SET_CURRENT_PRODUCT_COLOR';
 
   payload: currentProduct | product[] | filtersPayload | string;
 };

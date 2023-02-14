@@ -54,6 +54,8 @@ export type currentProduct = {
   description: string;
   stock: number;
   company: string;
+  colors?: string[];
+  currentColor?: string;
 };
 
 export type filtersPayload = {
