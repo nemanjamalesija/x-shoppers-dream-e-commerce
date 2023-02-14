@@ -1,23 +1,28 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 
 const useObserver = () => {
   const [isObserving, setisObserving] = useState(false);
 
-  const sectionObserverCallback = React.useCallback(function (entries: any) {
+  const sectionObserverOptionsObject = {
+    root: null,
+    threshold: 0.2,
+  };
+
+  const sectionObserverCallback = function (entries: any) {
     const [entry] = entries;
     setisObserving(true);
 
     if (!entry.isIntersecting) return;
 
     entry.target.classList.remove('section--hidden');
-  }, []);
+  };
 
-  const sectionObserver = React.useCallback(() => {
-    return new IntersectionObserver(sectionObserverCallback, {
-      root: null,
-      threshold: 0.2,
-    });
-  }, [sectionObserverCallback]);
+  const sectionObserver = () => {
+    return new IntersectionObserver(
+      sectionObserverCallback,
+      sectionObserverOptionsObject
+    );
+  };
 
   return { sectionObserver, isObserving };
 };

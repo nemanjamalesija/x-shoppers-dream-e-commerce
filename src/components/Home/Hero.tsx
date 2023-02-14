@@ -12,40 +12,32 @@ const Hero = () => {
   const [isObserving, setIsObserving] = useState(false);
   const [navSticky, setnavSticky] = useState(false);
 
-  const navObserverOptionsCallback = React.useCallback(() => {
-    return {
-      root: null,
-      rootMargin: `${-navHeight + 130}px`,
-    };
-  }, [navHeight]);
+  const navObserverOptionsObject = {
+    root: null,
+    rootMargin: `${-navHeight + 130}px`,
+  };
 
-  const navObserverOptionsObject = navObserverOptionsCallback();
+  const navObserverFunctionCallback = (entries: any) => {
+    const [entry] = entries;
+    setIsObserving(entry.isIntersecting);
 
-  const navObserverFunctionCallback = React.useCallback(() => {
-    return function (entries: any) {
-      const [entry] = entries;
-      setIsObserving(entry.isIntersecting);
+    if (!navRef.current) return;
 
-      if (!navRef.current) return;
+    if (!entry.isIntersecting) {
+      setnavSticky(true);
+      navRef.current.classList.add('sticky');
+    } else {
+      setnavSticky(false);
+      navRef.current.classList.remove('sticky');
+    }
+  };
 
-      if (!entry.isIntersecting) {
-        setnavSticky(true);
-        navRef.current.classList.add('sticky');
-      } else {
-        setnavSticky(false);
-        navRef.current.classList.remove('sticky');
-      }
-    };
-  }, [navRef]);
-
-  const navObserverOptionsFunction = navObserverFunctionCallback();
-
-  const observer = React.useCallback(() => {
+  const observer = () => {
     return new IntersectionObserver(
-      navObserverOptionsFunction,
+      navObserverFunctionCallback,
       navObserverOptionsObject
     );
-  }, [navObserverOptionsFunction, navObserverOptionsObject]);
+  };
 
   const heroObserver = observer();
 
