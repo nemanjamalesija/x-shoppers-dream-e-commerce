@@ -25,13 +25,15 @@
   justify-items: center;
   column-gap: 1rem;
   border-bottom: 1px solid #dee2e6;
-  margin-top: 3.6rem;
+  margin-top: 5.2rem;
   margin-bottom: 3.6rem;
 }
 
-.cat {
-  font-weight: 400;
-  color: #777;
+.heading-cat {
+  font-size: 1.6rem;
+  color: #444;
+  font-weight: 500;
+  margin-bottom: 0.5rem;
 }
 
 .cart-item {
@@ -125,6 +127,7 @@
   justify-content: space-between;
   font-size: 1.8rem;
   margin-bottom: 4.8rem;
+  margin-top: 2.2rem;
 }
 
 .clear-cart,
@@ -139,6 +142,17 @@
 
 .clear-cart {
   background-color: #e81616;
+}
+
+.total-price-calculation-container {
+  display: flex;
+  justify-content: flex-end;
+}
+
+.total-price-calculation {
+  min-width: 30rem;
+  padding: 2.5rem 5rem;
+  border: 1px solid #dee2e6;
 }
 
 .heading-subtotal,
@@ -164,4 +178,15 @@
 .shipping-fee-p {
   font-size: 1.4rem;
   color: #777;
+}
+
+.total-price-calculation hr {
+  margin-top: 0.5rem;
+  margin-bottom: 2rem;
+  border: none;
+  border-top: 1px solid #dee2e6;
+}
+
+.heading-total {
+  font-size: 1.8rem;
 }
