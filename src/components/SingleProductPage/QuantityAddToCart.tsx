@@ -9,8 +9,6 @@ const QuantityToAddToCart = () => {
     },
   } = useProductsContext();
 
-  console.log(quantity);
-
   return (
     <div className="add-to-cart-logic-div">
       <button

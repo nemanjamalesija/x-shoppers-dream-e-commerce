@@ -1,4 +1,3 @@
-import React from 'react';
 import { useProductsContext } from '../../productsContext';
 import ButtonAddToCart from './ButtonAddToCart';
 import Colors from './Colors';

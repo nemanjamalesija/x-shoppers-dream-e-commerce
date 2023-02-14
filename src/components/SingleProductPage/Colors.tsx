@@ -1,4 +1,3 @@
-import React from 'react';
 import { IoIosCheckmark } from 'react-icons/io';
 import { useProductsContext } from '../../productsContext';
 
@@ -8,7 +7,6 @@ const Colors = () => {
       currentProduct: { colors, currentColor },
       selectColorHandler,
     },
-    dispatch,
   } = useProductsContext();
 
   return (
