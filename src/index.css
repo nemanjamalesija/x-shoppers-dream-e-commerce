@@ -105,18 +105,18 @@ a:visited {
   margin-bottom: 1rem;
   letter-spacing: 0.75px;
   text-align: center;
-}
-
-.heading-tertiary-align-start {
   text-align: start;
-}
-
-.heading-featured-products {
-  margin-bottom: 2rem;
 }
 
 .heading-cart-price {
   color: #5ec576;
+}
+
+.heading-tertiary-paragraph {
+  line-height: 1.4;
+  color: #444;
+  font-size: 3.8rem;
+  font-weight: 500;
 }
 
 .btn {
@@ -202,8 +202,6 @@ a:visited {
   line-height: 1.9;
   color: #666;
 }
-
-
 
 .hidden {
   visibility: hidden;

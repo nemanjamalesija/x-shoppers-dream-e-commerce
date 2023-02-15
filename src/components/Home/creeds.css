@@ -8,13 +8,6 @@
   margin: 0 auto;
 }
 
-.creeds-paragraph {
-  line-height: 1.4;
-  color: #444;
-  font-size: 3.8rem;
-  font-weight: 500;
-}
-
 .creeds-cards-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);

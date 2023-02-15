@@ -34,7 +34,7 @@ const Creeds = () => {
             Creeds we live by
           </h3>
 
-          <p className="creeds-paragraph">
+          <p className="heading-tertiary-paragraph">
             Elevate your home with our attitude of excellence and timeless
             style.
           </p>

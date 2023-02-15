@@ -45,8 +45,8 @@ const Tabs = () => {
           <h3 className="heading-tertiary heading-tertiary-align-start">
             Operations
           </h3>
-          <p className="creeds-paragraph">
-            Find your perfect piece: where simplicity meets efficiency.
+          <p className="heading-tertiary-paragraph">
+            Find your perfect piece where simplicity meets efficiency.
           </p>
         </header>
         <div className="tabs-component">

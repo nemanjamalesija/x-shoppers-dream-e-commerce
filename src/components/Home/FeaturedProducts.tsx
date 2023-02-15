@@ -41,6 +41,9 @@ const FeaturedProducts = () => {
         <h3 className="heading-tertiary heading-featured-products">
           Featured Products
         </h3>
+        <p className="heading-tertiary-paragraph">
+          The art of modern living unlocked.
+        </p>
         <div className="container-featured-products container-featured-products">
           {featuredProducts.map((el) => {
             return <SingleFeaturedProduct key={el.id} {...el} />;
