@@ -37,6 +37,10 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
     dispatch({ type: 'INCREMENT_PRODUCT_QUNATITY', payload: id });
   };
 
+  useEffect(() => {
+    dispatch({ type: 'CALCULATE_TOTAL_SUBTOTAL' });
+  }, [stateCart.cart]);
+
   return (
     <CartContext.Provider
       value={{

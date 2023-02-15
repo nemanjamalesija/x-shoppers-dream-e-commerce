@@ -65,6 +65,13 @@ const cartReducer = (
       return { ...state, cart: newCartIncrement };
     }
 
+    case 'CALCULATE_TOTAL_SUBTOTAL':
+      const newtotalPrice = state.cart
+        .map((prod) => prod.price * prod.quantity)
+        .reduce((acc, item) => acc + item, 0);
+
+      return { ...state, totalPrice: newtotalPrice };
+
     case 'CLEAR_CART': {
       return { ...state, cart: [] };
     }
