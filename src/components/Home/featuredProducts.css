@@ -9,6 +9,14 @@
   margin-top: 9.6rem;
 }
 
+.featured-product-card {
+  transition: all 1s;
+}
+
+.featured-product-card:hover {
+  transform: translateY(-2rem);
+}
+
 .featured-products-image {
   height: 22.5rem;
 }

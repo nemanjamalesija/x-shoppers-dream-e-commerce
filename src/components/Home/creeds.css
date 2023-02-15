@@ -23,12 +23,7 @@
   flex-direction: column;
   gap: 1.2rem;
   border-radius: 0.5rem;
-  cursor: pointer;
   transition: all 1s;
-}
-
-.creed-article:hover {
-  transform: translateY(-2rem);
 }
 
 .creed-article-heading {
