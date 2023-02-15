@@ -72,6 +72,11 @@ const cartReducer = (
 
       return { ...state, totalPrice: newtotalPrice };
 
+    case 'REMOVE_PRODUCT_FROM_CART':
+      const newCartRemove = state.cart.filter((prod) => prod.id !== payload);
+
+      return { ...state, cart: newCartRemove };
+
     case 'CLEAR_CART': {
       return { ...state, cart: [] };
     }

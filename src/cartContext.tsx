@@ -37,6 +37,10 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
     dispatch({ type: 'INCREMENT_PRODUCT_QUNATITY', payload: id });
   };
 
+  const cartRemoveProductHandler = (id: string) => {
+    dispatch({ type: 'REMOVE_PRODUCT_FROM_CART', payload: id });
+  };
+
   useEffect(() => {
     dispatch({ type: 'CALCULATE_TOTAL_SUBTOTAL' });
   }, [stateCart.cart]);
@@ -50,6 +54,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
           clearCartHandler,
           cartDecrementProductQuantityHandler,
           cartIncrementProductQuantityHandler,
+          cartRemoveProductHandler,
         },
         dispatch,
       }}

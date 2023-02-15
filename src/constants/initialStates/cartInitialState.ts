@@ -16,4 +16,5 @@ export const cartInitialState = {
   clearCartHandler: () => void {},
   cartDecrementProductQuantityHandler: (id: string) => void {},
   cartIncrementProductQuantityHandler: (id: string) => void {},
+  cartRemoveProductHandler: (id: string) => void {},
 };

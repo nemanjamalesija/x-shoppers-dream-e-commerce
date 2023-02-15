@@ -27,6 +27,7 @@ const CartItem = ({
     state: {
       cartDecrementProductQuantityHandler,
       cartIncrementProductQuantityHandler,
+      cartRemoveProductHandler,
     },
   } = useCartContext();
 
@@ -64,7 +65,10 @@ const CartItem = ({
       <p className="heading-fifth heading-cart-price">
         {formatPrice(subTotal)}
       </p>
-      <button className="remove-btn">
+      <button
+        className="remove-btn"
+        onClick={() => cartRemoveProductHandler(id)}
+      >
         <AiFillDelete className="icon-remove" />
       </button>
     </article>

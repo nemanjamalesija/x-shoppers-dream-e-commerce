@@ -27,6 +27,7 @@ export type stateCart = {
   clearCartHandler(): void;
   cartDecrementProductQuantityHandler(id: string): void;
   cartIncrementProductQuantityHandler(id: string): void;
+  cartRemoveProductHandler(id: string): void;
 };
 
 export type cartContextValues = {
