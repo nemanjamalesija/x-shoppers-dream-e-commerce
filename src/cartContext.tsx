@@ -45,6 +45,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
           addToCartHandler,
           clearCartHandler,
           cartDecrementProductQuantityHandler,
+          cartIncrementProductQuantityHandler,
         },
         dispatch,
       }}

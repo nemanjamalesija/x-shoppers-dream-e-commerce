@@ -44,14 +44,25 @@ const cartReducer = (
       }
     case 'DECREMENT_PRODUCT_QUANTITY': {
       const newCartDecrement = state.cart.map((prod) => {
-        if (prod.id === payload) {
+        if (prod.id === payload)
           if (prod.quantity && prod.quantity > 1)
             return { ...prod, quantity: prod.quantity - 1 };
-        }
+
         return prod;
-      }) as cartProduct[];
+      });
 
       return { ...state, cart: newCartDecrement };
+    }
+
+    case 'INCREMENT_PRODUCT_QUNATITY': {
+      const newCartIncrement = state.cart.map((prod) => {
+        if (prod.quantity && prod.quantity < prod.stock)
+          return { ...prod, quantity: prod.quantity + 1 };
+
+        return prod;
+      });
+
+      return { ...state, cart: newCartIncrement };
     }
 
     case 'CLEAR_CART': {

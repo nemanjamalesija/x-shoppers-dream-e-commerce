@@ -24,7 +24,10 @@ const CartItem = ({
   const subTotal = price * quantity;
 
   const {
-    state: { cartDecrementProductQuantityHandler },
+    state: {
+      cartDecrementProductQuantityHandler,
+      cartIncrementProductQuantityHandler,
+    },
   } = useCartContext();
 
   return (
@@ -51,7 +54,10 @@ const CartItem = ({
           <BiMinus />
         </button>
         <p className="quantity-display">{quantity}</p>
-        <button className="btn btn-increment-products">
+        <button
+          className="btn btn-increment-products"
+          onClick={() => cartIncrementProductQuantityHandler(id)}
+        >
           <BiPlus />
         </button>
       </div>
