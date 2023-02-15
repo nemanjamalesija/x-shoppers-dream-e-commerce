@@ -43,6 +43,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
 
   useEffect(() => {
     dispatch({ type: 'CALCULATE_TOTAL_SUBTOTAL' });
+    dispatch({ type: 'CALCULATE_TOTAL_PRODUCTS_QUANTITY' });
   }, [stateCart.cart]);
 
   return (

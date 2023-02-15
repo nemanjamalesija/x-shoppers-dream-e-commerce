@@ -4,8 +4,12 @@ import { navLinks } from '../utils/navLinks';
 import { BsBag } from 'react-icons/bs';
 import './nav.css';
 import { useProductsContext } from '../productsContext';
+import { useCartContext } from '../cartContext';
 const Nav = () => {
   const { navRef } = useProductsContext();
+  const {
+    state: { totalQuantity },
+  } = useCartContext();
   const [activeLink, setActiveLink] = useState(0);
 
   return (
@@ -48,7 +52,7 @@ const Nav = () => {
             </Link>
           </div>
           <span className="badge" id="lblCartCount">
-            5
+            {totalQuantity}
           </span>
         </div>
       </nav>

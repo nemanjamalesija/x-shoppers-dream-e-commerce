@@ -1,7 +1,7 @@
 import heroImg from '../../utils/images/heroImg.png';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
-import NavSticky from './NavSticky';
+import NavDummy from './NavDummy';
 import { useProductsContext } from '../../productsContext';
 import './hero.css';
 
@@ -52,7 +52,7 @@ const Hero = () => {
 
   return (
     <>
-      {navSticky && <NavSticky />}
+      {navSticky && <NavDummy />}
       <section className="section section-home" ref={heroRef}>
         <div className="container home-container">
           <div className="home-left">

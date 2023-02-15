@@ -1,5 +1,9 @@
 export type cartActions = {
-  type: 'COUNT_TOTAL_PRICE' | 'CLEAR_CART' | 'CALCULATE_TOTAL_SUBTOTAL';
+  type:
+    | 'COUNT_TOTAL_PRICE'
+    | 'CLEAR_CART'
+    | 'CALCULATE_TOTAL_SUBTOTAL'
+    | 'CALCULATE_TOTAL_PRODUCTS_QUANTITY';
   payload?: null;
 };
 

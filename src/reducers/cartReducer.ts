@@ -77,6 +77,13 @@ const cartReducer = (
 
       return { ...state, cart: newCartRemove };
 
+    case 'CALCULATE_TOTAL_PRODUCTS_QUANTITY':
+      const newTotalQuantity = state.cart
+        .map((prod) => prod.quantity)
+        .reduce((acc, item) => acc + item, 0);
+
+      return { ...state, totalQuantity: newTotalQuantity };
+
     case 'CLEAR_CART': {
       return { ...state, cart: [] };
     }
