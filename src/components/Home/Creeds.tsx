@@ -28,7 +28,7 @@ const Creeds = () => {
       }`}
       ref={creedsRef}
     >
-      <div className="container container-creeds">
+      <div className="container-creeds">
         <header className="creeds-header">
           <h3 className="heading-tertiary heading-tertiary-creeds">
             Creeds we live by

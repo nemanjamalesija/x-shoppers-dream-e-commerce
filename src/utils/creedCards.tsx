@@ -15,7 +15,7 @@ export const creeds = [
     icon: <FiEye />,
     name: 'Clarity',
     description:
-      'With clear vision and keen insight, we guide customers down the path to lasting success with exceptional service and anticipation of their needs.',
+      'With clear vision and keen insight, we guide customers down the path to lasting success with exceptional service and anticipation.',
   },
   {
     id: '3',

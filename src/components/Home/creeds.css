@@ -3,6 +3,11 @@
   border-top: 1px solid #dee2e6;
 }
 
+.container-creeds {
+  max-width: 100rem;
+  margin: 0 auto;
+}
+
 .creeds-paragraph {
   line-height: 1.4;
   color: #444;
@@ -13,7 +18,7 @@
 .creeds-cards-div {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  justify-content: space-between;
+  column-gap: 3rem;
 }
 
 .creeds-cards-div {
@@ -21,7 +26,6 @@
 }
 
 .creed-article {
-  padding: 2rem;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
@@ -56,8 +60,4 @@
 .creed-article-heading {
   font-size: 1.8rem;
   color: #444;
-}
-
-.creed-article-paragraph {
-  font-size: 1.6rem !important;
 }
