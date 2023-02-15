@@ -1,12 +1,35 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
+import useObserver from '../../helpers/useObserver';
+import { useProductsContext } from '../../productsContext';
 import { tabsContent } from '../../utils/tabsContent';
 import './tabs.css';
 
 const Tabs = () => {
+  const [isHidden, setIsHidden] = useState(false);
   const [activeTabIndex, setActiveTabIndex] = useState(0);
+  const { tabsRef } = useProductsContext();
+  const { sectionObserver, isObserving } = useObserver();
+
+  const tabsObserver = sectionObserver();
+
+  useEffect(() => {
+    if (!tabsRef.current) return;
+
+    setIsHidden(true);
+    tabsObserver.observe(tabsRef.current);
+
+    return () => tabsObserver.disconnect();
+  }, [tabsRef, isObserving, tabsObserver]);
 
   return (
-    <section className="section-tabs">
+    <section
+      className={`${
+        isHidden
+          ? 'section-tabs section--hidden section-tansform '
+          : 'section-tabs'
+      }`}
+      ref={tabsRef}
+    >
       <div className="container-tabs">
         <header>
           <h3 className="heading-tertiary heading-tertiary-align-start">
@@ -21,6 +44,7 @@ const Tabs = () => {
             {tabsContent.map((tab, i) => {
               return (
                 <button
+                  key={i}
                   className={`${
                     activeTabIndex === i
                       ? `btn-tabs btn-tab-${i} btn-tabs-active`

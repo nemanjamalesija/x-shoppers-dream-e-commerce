@@ -15,10 +15,11 @@ import axios from 'axios';
 const ProductsContext = React.createContext<productsContextValues>({
   state: productsInitialState,
   dispatch: (action: actions | payloadActions) => {},
-  navRef: React.createRef<HTMLDivElement>(),
+  navRef: createRef<HTMLDivElement>(),
   heroRef: createRef<HTMLDivElement>(),
   featuredProductsRef: createRef<HTMLDivElement>(),
   creedsRef: createRef<HTMLDivElement>(),
+  tabsRef: createRef<HTMLDivElement>(),
 });
 
 const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
@@ -30,6 +31,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
   const heroRef = useRef<HTMLDivElement>(null);
   const featuredProductsRef = useRef<HTMLDivElement>(null);
   const creedsRef = useRef<HTMLDivElement>(null);
+  const tabsRef = useRef<HTMLDivElement>(null);
 
   useEffect(() => {
     const fetchProducts = async () => {
@@ -98,6 +100,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     });
   };
 
+  console.log(navRef);
   return (
     <ProductsContext.Provider
       value={{
@@ -115,6 +118,7 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
         heroRef,
         featuredProductsRef,
         creedsRef,
+        tabsRef,
       }}
     >
       {children}
