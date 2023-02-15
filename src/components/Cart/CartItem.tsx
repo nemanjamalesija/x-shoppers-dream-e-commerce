@@ -35,7 +35,7 @@ const CartItem = ({
       <div className="cart-img-h-color">
         <img className="cart-img" src={image} alt={name} />
         <div className="h-color">
-          <h5 className="heading-fifth">{name}</h5>
+          <h5 className="heading-fifth heading-cart-item">{name}</h5>
           <div className="cart-color-description">
             <p>Color:</p>
             <button

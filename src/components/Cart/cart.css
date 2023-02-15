@@ -22,6 +22,10 @@
   margin-bottom: 1.6rem;
 }
 
+.heading-cart-item {
+  text-transform: capitalize;
+}
+
 .btn-empty-c-div {
   display: flex;
   justify-content: center;
@@ -158,6 +162,7 @@
   min-width: 30rem;
   padding: 2.5rem 5rem;
   border: 1px solid #dee2e6;
+  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.02);
 }
 
 .heading-subtotal,
