@@ -2,6 +2,7 @@ import { BiMinus, BiPlus } from 'react-icons/bi';
 import { AiFillDelete } from 'react-icons/ai';
 import formatPrice from '../../helpers/formatPrice';
 import './cart.css';
+import { useCartContext } from '../../cartContext';
 
 type cartItemProps = {
   id: string;
@@ -22,6 +23,10 @@ const CartItem = ({
 }: cartItemProps) => {
   const subTotal = price * quantity;
 
+  const {
+    state: { cartDecrementProductQuantityHandler },
+  } = useCartContext();
+
   return (
     <article className="cart-item">
       <div className="cart-img-h-color">
@@ -39,7 +44,10 @@ const CartItem = ({
       </div>
       <h5 className="heading-fifth heading-cart-price">{formatPrice(price)}</h5>
       <div className="cart-quantity">
-        <button className="btn btn-increment-products">
+        <button
+          className="btn btn-decrement-products"
+          onClick={() => cartDecrementProductQuantityHandler(id)}
+        >
           <BiMinus />
         </button>
         <p className="quantity-display">{quantity}</p>

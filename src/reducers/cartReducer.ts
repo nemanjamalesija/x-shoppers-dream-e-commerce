@@ -42,6 +42,17 @@ const cartReducer = (
 
         return { ...state, cart: [...state.cart, newProduct] };
       }
+    case 'DECREMENT_PRODUCT_QUANTITY': {
+      const newCartDecrement = state.cart.map((prod) => {
+        if (prod.id === payload) {
+          if (prod.quantity && prod.quantity > 1)
+            return { ...prod, quantity: prod.quantity - 1 };
+        }
+        return prod;
+      }) as cartProduct[];
+
+      return { ...state, cart: newCartDecrement };
+    }
 
     case 'CLEAR_CART': {
       return { ...state, cart: [] };

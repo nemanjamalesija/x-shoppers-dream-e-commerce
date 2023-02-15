@@ -3,4 +3,10 @@ export type cartActions = {
   payload?: null;
 };
 
-export type cartPayloadActions = { type: 'ADD_TO_CART'; payload: any };
+export type cartPayloadActions = {
+  type:
+    | 'ADD_TO_CART'
+    | 'INCREMENT_PRODUCT_QUNATITY'
+    | 'DECREMENT_PRODUCT_QUANTITY';
+  payload: any;
+};

@@ -29,6 +29,14 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
     dispatch({ type: 'CLEAR_CART' });
   };
 
+  const cartDecrementProductQuantityHandler = (id: string) => {
+    dispatch({ type: 'DECREMENT_PRODUCT_QUANTITY', payload: id });
+  };
+
+  const cartIncrementProductQuantityHandler = (id: string) => {
+    dispatch({ type: 'INCREMENT_PRODUCT_QUNATITY', payload: id });
+  };
+
   return (
     <CartContext.Provider
       value={{
@@ -36,6 +44,7 @@ const CartProvider = ({ children }: { children: React.ReactNode }) => {
           ...stateCart,
           addToCartHandler,
           clearCartHandler,
+          cartDecrementProductQuantityHandler,
         },
         dispatch,
       }}
