@@ -124,6 +124,10 @@ ADD TO CART */
   padding-bottom: 2px;
 }
 
+.btn-back-to-products:hover {
+  color: #55b16a;
+}
+
 .btn-add-to-cart {
   width: 23%;
   margin-top: 3.8rem;

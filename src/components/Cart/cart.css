@@ -31,12 +31,6 @@
   justify-content: center;
 }
 
-.btn-cart-empty {
-  display: inline-block;
-  color: #fff;
-  background-color: #5ec576;
-}
-
 .categories {
   display: grid;
   grid-template-columns: 30rem 1fr 1fr 1fr auto;

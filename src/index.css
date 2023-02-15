@@ -161,6 +161,8 @@ a:visited {
 
 .btn-home-explore,
 .btn-all-products,
+.btn-add-to-cartn,
+.btn-cart-empty,
 .btn-add-to-cart {
   background-color: #5ec576;
   color: #fff;
@@ -168,7 +170,8 @@ a:visited {
 
 .btn-home-explore:hover,
 .btn-all-products:hover,
-.btn-add-to-cart:hover {
+.btn-add-to-cart:hover,
+.btn-cart-empty:hover {
   background-color: #55b16a;
   color: #fff;
 }
