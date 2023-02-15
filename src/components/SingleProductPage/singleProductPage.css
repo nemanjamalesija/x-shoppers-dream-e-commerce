@@ -15,6 +15,7 @@
 .single-product-main-img {
   height: 50rem;
   width: 100%;
+  cursor: pointer;
 }
 
 .single-product-article-single-imgs-div {
@@ -25,6 +26,7 @@
 .single-product-article-single-img {
   height: 6.67rem;
   width: 10rem;
+  cursor: pointer;
 }
 
 .image-active {
