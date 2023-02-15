@@ -61,7 +61,7 @@ const Hero = () => {
                 Furniture design to<br></br>make you feel at home
               </h1>
               <p className="home-paragraph">
-                Lorem ipsum dolor, sit amet consectetur.
+                Create your perfect space with our designs.
               </p>
             </div>
             <div className="home-buttons-div">
