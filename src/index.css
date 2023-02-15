@@ -148,6 +148,11 @@ a:visited {
   padding: 0.8rem 1.6rem;
 }
 
+.btn-increment-products:hover,
+.btn-decrement-products:hover {
+  background-color: #cdcdcd;
+}
+
 .btn-back-to-products {
   background: none;
   font-weight: 500;
