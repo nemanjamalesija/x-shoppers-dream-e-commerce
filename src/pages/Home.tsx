@@ -3,6 +3,7 @@ import Creeds from '../components/Home/Creeds';
 import Featuredin from '../components/Home/FeaturedIn';
 import FeaturedProducts from '../components/Home/FeaturedProducts';
 import Hero from '../components/Home/Hero';
+import Slider from '../components/Home/Slider';
 
 const Home = () => {
   return (
@@ -11,6 +12,7 @@ const Home = () => {
       <Featuredin />
       <FeaturedProducts />
       <Creeds />
+      <Slider />
     </>
   );
 };

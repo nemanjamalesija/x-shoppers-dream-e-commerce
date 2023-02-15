@@ -34,7 +34,8 @@ a:visited {
 }
 
 .section-featured-products,
-.section-creeds {
+.section-creeds,
+.section-sidebar {
   padding: 9.6rem 0;
 }
 
@@ -197,7 +198,7 @@ a:visited {
 .single-product-article-description,
 .single-product-article-review,
 .about-us-parapgraph {
-  font-size: 1.4rem;
+  font-size: 1.5rem;
   line-height: 1.9;
   color: #666;
 }

@@ -6,14 +6,14 @@
 .creeds-paragraph {
   line-height: 1.4;
   color: #444;
-  font-size: 3.2rem;
+  font-size: 3.6rem;
   font-weight: 500;
 }
 
 .creeds-cards-div {
-  display: flex;
-  justify-content: center;
-  gap: 2rem;
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  justify-content: space-between;
 }
 
 .creeds-cards-div {
@@ -21,15 +21,12 @@
 }
 
 .creed-article {
-  background-color: #dee2e6;
   padding: 2rem;
-  text-align: center;
   display: flex;
   flex-direction: column;
   gap: 1.2rem;
   border-radius: 0.5rem;
   cursor: pointer;
-  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.02);
   transition: all 1s;
 }
 
@@ -41,24 +38,26 @@
   font-size: 2.2rem;
   width: 4.8rem;
   height: 4.8rem;
-  display: grid;
-  margin: 0px auto 1rem;
-  place-items: center;
   border-radius: 50%;
   background-color: #5ec5763a;
   color: #fff;
+  margin-bottom: 1.6rem;
 }
 
 .creed-icon-div span {
   display: flex;
   align-items: center;
   justify-content: center;
-  height: 4.8rem;
-  width: 4.8rem;
+  height: 100%;
+  width: 100%;
   color: #5ec576;
 }
 
 .creed-article-heading {
-  font-size: 1.6rem;
+  font-size: 1.8rem;
   color: #444;
+}
+
+.creed-article-paragraph {
+  font-size: 1.6rem !important;
 }

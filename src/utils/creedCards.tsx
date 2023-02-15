@@ -6,22 +6,22 @@ export const creeds = [
   {
     id: '1',
     icon: <HiOutlineSparkles />,
-    name: 'Mission',
+    name: 'Radiance',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate, recusandae possimus ullam, neque sed eius ipsa culpa consequuntur alias enim totam tenetur.',
+      'Our commitment to providing sparkling solutions ensures every customer enjoys a shining, glowing experience with unmatched quality.',
   },
   {
     id: '2',
     icon: <FiEye />,
-    name: 'Vision',
+    name: 'Clarity',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate, recusandae possimus ullam, neque sed eius ipsa culpa consequuntur alias enim totam tenetur.',
+      'With clear vision and keen insight, we guide customers down the path to lasting success with exceptional service and anticipation of their needs.',
   },
   {
     id: '3',
     icon: <FiBook />,
-    name: 'History',
+    name: 'Heritage',
     description:
-      ' Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic cupiditate, recusandae possimus ullam, neque sed eius ipsa culpa consequuntur alias enim totam tenetur.',
+      'As a trusted partner, we offer expert guidance, drawing on our deep wisdom and wealth of experience to ensure satisfaction and success.',
   },
 ];
