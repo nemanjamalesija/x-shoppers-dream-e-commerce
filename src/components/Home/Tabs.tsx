@@ -6,29 +6,29 @@ import './tabs.css';
 
 const tabsContent = [
   {
-    button: 'Instant transfers',
-    heading: 'Lorem Ipsum Glovorkem opsum sunarem olsun klokenberg',
+    button: 'Swift Delivery',
+    heading: 'Get your home furnishings in a flash with rapid delivery',
     icon: <HiOutlineSparkles />,
     paragraph:
       'Lorem ipsum dolor sit amet consectetur adipisicing elit. Error accusamus architecto minus sint, perspiciatis blanditiis iusto dolor, temporibus aperiam explicabo est ex harum eligendi quia ipsa fugit. Explicabo, voluptatibus officia',
   },
   {
-    button: 'Strohhhhhhs Stobenhajmr',
-    heading: 'Lorem Ipsum Glovorkem opsum sunarem olsun klokenberg',
+    button: 'Stellar Support',
+    heading: 'Always here to help: stellar support around the clock',
     icon: <FiEye />,
     paragraph:
       ' ipsum dolor sit amet consectetur adipisicing elit. Error accusamus architecto minus sint, pLorem blanditiis iusto dolor, temporibus aperiam explicabo est ex harum eligendi quia ipsa fugit. Explicabo, voluptatibus officia',
   },
   {
-    button: 'Kloklblaster transfers',
-    heading: 'Lorem klokenberg Ipsum Glovorkem  opsum olsun klokenberg',
+    button: 'Easy Returns',
+    heading: 'No stress or worries for your home goods',
     icon: <FiBook />,
     paragraph:
       'Explicabo ipsum Error sit ametperspiciati  consectetur voluptatibus elit. Error accusamus arcExplicaboExplictecto minus sint, s blanditiis iusto dolor, temporibus aperiam explicabo est ex harum eligendi quia ipsa fugit. Exp',
   },
   {
-    button: 'Strohhhhhhs Stobenhajmr',
-    heading: 'Lorem Ipsum Glovorkem opsum sunarem olsun klokenberg',
+    button: 'Fresh Finds',
+    heading: 'Stay ahead of the trends with our latest  discoveries',
     icon: <FiEye />,
     paragraph:
       ' ipsum dolor sit amet consectetur adipisicing elit. Error accusamus architecto minus sint, pLorem blanditiis iusto dolor, temporibus aperiam explicabo est ex harum eligendi quia ipsa fugit. Explicabo, voluptatibus officia',
@@ -54,7 +54,11 @@ const Tabs = () => {
             {tabsContent.map((tab, i) => {
               return (
                 <button
-                  className={`btn-tabs btn-tab-${i}`}
+                  className={`${
+                    activeTabIndex === i
+                      ? `btn-tabs btn-tab-${i} btn-tabs-active`
+                      : `btn-tabs btn-tab-${i}`
+                  }`}
                   onClick={() => setActiveTabIndex(i)}
                 >
                   <span>{tab.button}</span>
@@ -63,7 +67,7 @@ const Tabs = () => {
             })}
           </div>
           <div className="container-tab-content">
-            <div className="tab-content-icon-div">
+            <div className="tabs-icon-div">
               <span>{tabsContent[activeTabIndex].icon}</span>
             </div>
             <h3 className="tab-content-heading">
