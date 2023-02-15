@@ -30,9 +30,10 @@ const Creeds = () => {
     >
       <div className="container-creeds">
         <header className="creeds-header">
-          <h3 className="heading-tertiary heading-tertiary-creeds">
+          <h3 className="heading-tertiary heading-tertiary-align-start">
             Creeds we live by
           </h3>
+
           <p className="creeds-paragraph">
             Elevate your home with our attitude of excellence and timeless
             style.
