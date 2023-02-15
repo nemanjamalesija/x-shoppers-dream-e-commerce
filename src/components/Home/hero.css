@@ -32,6 +32,10 @@
   color: #444;
 }
 
+.home-button-about:hover {
+  background-color: #e6e6e6;
+}
+
 .home-right {
   display: flex;
   justify-content: flex-end;

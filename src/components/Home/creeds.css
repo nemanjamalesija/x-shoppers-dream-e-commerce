@@ -3,10 +3,6 @@
   border-top: 1px solid #dee2e6;
 }
 
-.heading-tertiary-creeds {
-  text-align: start !important;
-}
-
 .creeds-paragraph {
   line-height: 1.4;
   color: #444;
@@ -32,6 +28,13 @@
   flex-direction: column;
   gap: 1.2rem;
   border-radius: 0.5rem;
+  cursor: pointer;
+  box-shadow: 1px 2px 3px 4px rgba(20, 20, 20, 0.02);
+  transition: all 1s;
+}
+
+.creed-article:hover {
+  transform: translateY(-2rem);
 }
 
 .creed-icon-div {

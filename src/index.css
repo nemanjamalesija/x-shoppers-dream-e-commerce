@@ -106,6 +106,10 @@ a:visited {
   text-align: center;
 }
 
+.heading-tertiary-creeds {
+  text-align: start;
+}
+
 .heading-featured-products {
   margin-bottom: 2rem;
 }
@@ -134,6 +138,10 @@ a:visited {
   width: 50%;
 }
 
+.btn-clear-filters:hover {
+  background-color: #d11414;
+}
+
 .btn-increment-products,
 .btn-decrement-products {
   background-color: #e4e4e4;
@@ -155,6 +163,13 @@ a:visited {
 .btn-all-products,
 .btn-add-to-cart {
   background-color: #5ec576;
+  color: #fff;
+}
+
+.btn-home-explore:hover,
+.btn-all-products:hover,
+.btn-add-to-cart:hover {
+  background-color: #55b16a;
   color: #fff;
 }
 
