@@ -1,3 +1,17 @@
+.section-cart {
+  border-top: none;
+}
+
+.container-cart {
+  border-bottom: 1px solid #dee2e6;
+  margin-bottom: 2rem;
+}
+
+.cart-container-width {
+  max-width: 123rem;
+  margin: 0 auto;
+}
+
 .heading-empty-cart {
   text-align: center;
   margin-top: 9.6rem;
@@ -42,15 +56,6 @@
   align-items: center;
   justify-items: center;
   margin-bottom: 3.6rem;
-}
-
-.section-cart {
-  border-top: none;
-}
-
-.container-cart {
-  border-bottom: 1px solid #dee2e6;
-  margin-bottom: 2rem;
 }
 
 .cart-img-h-color {

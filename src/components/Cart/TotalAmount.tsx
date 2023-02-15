@@ -10,7 +10,7 @@ const TotalAmount = () => {
 
   return (
     <section className="section section-total">
-      <div className="container">
+      <div className="cart-container-width">
         <div className="total-buttons-top">
           <Link to="/products">
             <button className="btn btn-cart-empty">Keep Shopping</button>

@@ -14,7 +14,7 @@ const Cart = () => {
   return (
     <>
       <section className="section section-cart">
-        <div className="container container-cart">
+        <div className="container-cart cart-container-width">
           <CartCategories />
           {cart.map((item, i) => {
             return <CartItem key={i} {...item} />;
