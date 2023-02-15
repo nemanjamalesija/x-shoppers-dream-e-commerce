@@ -36,7 +36,7 @@ const Tabs = () => {
             Operations
           </h3>
           <p className="heading-tertiary-paragraph">
-            Find your perfect piece where simplicity meets efficiency.
+            Where simplicity meets efficiency to bring your home to life.
           </p>
         </header>
         <div className="tabs-component">

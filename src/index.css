@@ -83,6 +83,11 @@ a:visited {
   font-weight: 500;
 }
 
+.featured-product-name,
+.featured-product-price {
+  font-size: 1.6rem;
+}
+
 .heading-primary {
   font-size: 4.8rem;
   margin-bottom: 2rem;

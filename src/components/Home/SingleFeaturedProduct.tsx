@@ -1,5 +1,6 @@
 import { Link } from 'react-router-dom';
 import { product } from '../../constants/types/productsTypes';
+import formatPrice from '../../helpers/formatPrice';
 import './featuredProducts.css';
 
 const SingleFeaturedProduct = ({ id, name, image, price }: product) => {
@@ -12,7 +13,7 @@ const SingleFeaturedProduct = ({ id, name, image, price }: product) => {
       </div>
       <div className="featured-product-description-div">
         <span className="featured-product-name">{name}</span>
-        <span className="featured-product-price">{price}</span>
+        <span className="featured-product-price">{formatPrice(price)}</span>
       </div>
     </article>
   );
