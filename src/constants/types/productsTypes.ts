@@ -9,6 +9,7 @@ export type productsContextValues = {
   featuredProductsRef: React.RefObject<HTMLDivElement>;
   creedsRef: React.RefObject<HTMLDivElement>;
   tabsRef: React.RefObject<HTMLDivElement>;
+  sliderRef: React.RefObject<HTMLDivElement>;
 };
 
 export type product = {

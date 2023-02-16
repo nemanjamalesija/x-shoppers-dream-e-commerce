@@ -1,37 +1,55 @@
 import { useEffect, useState } from 'react';
+import useObserver from '../../helpers/useObserver';
+import { useProductsContext } from '../../productsContext';
 import { slides } from '../../utils/Slides';
 import './slider.css';
 
 const Slider = () => {
-  const [activeSlideIndex, setactiveSlideIndex] = useState(0);
+  const [index, setIndex] = useState(0);
   const [isUnderlineFilled, setIsUnderlineFilled] = useState(false);
+  const [isSliderHidden, setIsSliderHidden] = useState(false);
+  const { sliderRef } = useProductsContext();
+  const { sectionObserver, isObserving } = useObserver();
+  const sliderObserver = sectionObserver();
+
   const nextSlideHandler = () => {
     setIsUnderlineFilled(false);
-    if (activeSlideIndex === -3) setactiveSlideIndex(0);
-    else setactiveSlideIndex((prev) => prev - 1);
+    if (index === -3) setIndex(0);
+    else setIndex((prev) => prev - 1);
   };
 
   const prevSlideHandler = () => {
     setIsUnderlineFilled(false);
-    if (activeSlideIndex === 0) setactiveSlideIndex(-3);
-    else setactiveSlideIndex((prev) => prev + 1);
+    if (index === 0) setIndex(-3);
+    else setIndex((prev) => prev + 1);
   };
 
   useEffect(() => {
+    if (!sliderRef.current) return;
     setIsUnderlineFilled(true);
+    setIsSliderHidden(true);
+    sliderObserver.observe(sliderRef.current);
 
     let slider = setInterval(() => {
       setIsUnderlineFilled(false);
       nextSlideHandler();
     }, 5000);
     return () => {
+      sliderObserver.disconnect();
       clearInterval(slider);
     };
     // eslint-disable-next-line
-  }, [activeSlideIndex, isUnderlineFilled]);
+  }, [index, isUnderlineFilled, isObserving]);
 
   return (
-    <section className="section-slider">
+    <section
+      className={`${
+        isSliderHidden
+          ? 'section-slider section--hidden section-tansform'
+          : 'section-slider'
+      }`}
+      ref={sliderRef}
+    >
       <div className="container-slider">
         <h3 className="heading-tertiary">Testimonials</h3>
         <p className="heading-tertiary-paragraph">
@@ -46,7 +64,7 @@ const Slider = () => {
                 key={i}
                 className={`slide slide-${i}`}
                 style={{
-                  transform: `translateX(${(activeSlideIndex + i) * 100}%)`,
+                  transform: `translateX(${(index + i) * 100}%)`,
                 }}
               >
                 <div className="testimonial">
