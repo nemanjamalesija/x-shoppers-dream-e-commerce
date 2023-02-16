@@ -1,10 +1,15 @@
+import human1 from './images/human1.webp';
+import human2 from './images/human2.jpg';
+import human3 from './images/human2.jpg';
+import human4 from './images/human4.webp';
+
 export const slides = [
   {
     heading: 'Best financial decision ever!',
     quote:
       'Lorem ipsum dolor sit, amet conse Accusantium quas quisquam non? Quas voluptate nulla minima dolor sit, amet conse Accusantium quas q dolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas q',
 
-    img: '',
+    img: human1,
     author: 'Aarav Lyn',
     location: 'San Francisco USA',
   },
@@ -13,7 +18,7 @@ export const slides = [
     quote:
       'Lorem ipsum dolor sit, amet conse Accusantium quas quisquam non? Quas voluptate nulla minima dolor sit, amet conse Accusantium quas q dolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas q',
 
-    img: '',
+    img: human2,
     author: 'Aarav Lyn',
     location: 'San Francisco USA',
   },
@@ -22,7 +27,7 @@ export const slides = [
     quote:
       'Lorem ipsum dolor sit, amet conse Accusantium quas quisquam non? Quas voluptate nulla minima dolor sit, amet conse Accusantium quas q dolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas q',
 
-    img: '',
+    img: human3,
     author: 'Aarav Lyn',
     location: 'San Francisco USA',
   },
@@ -31,7 +36,7 @@ export const slides = [
     quote:
       'Lorem ipsum dolor sit, amet conse Accusantium quas quisquam non? Quas voluptate nulla minima dolor sit, amet conse Accusantium quas q dolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas qdolor sit, amet conse Accusantium quas q',
 
-    img: '',
+    img: human4,
     author: 'Aarav Lyn',
     location: 'San Francisco USA',
   },

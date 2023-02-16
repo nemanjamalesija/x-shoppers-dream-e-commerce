@@ -100,7 +100,6 @@ const ProductsProvider = ({ children }: { children: React.ReactNode }) => {
     });
   };
 
-  console.log(navRef);
   return (
     <ProductsContext.Provider
       value={{
