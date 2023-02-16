@@ -16,7 +16,7 @@
 
 /* LINE */
 .products-line {
-  border-top: 1px solid #5ec576;
+  border-top: 1px solid var(--primary-color);
   display: inline-block;
   align-self: center;
 }

@@ -83,7 +83,11 @@
   left: 0;
   height: 100%;
   width: 0%;
-  background: linear-gradient(to right, #5ec576, #5ec576);
+  background: linear-gradient(
+    to right,
+    var(--primary-color),
+    var(--primary-color)
+  );
   animation: fillUnderline 5s linear forwards infinite;
 }
 

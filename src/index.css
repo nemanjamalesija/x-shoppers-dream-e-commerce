@@ -5,6 +5,13 @@ COLORS:
 - links color: #333;
 */
 
+:root {
+  --primary-color: #5ec576;
+  --secondary-color: #55b16a;
+  --color-background-icon: #5ec5763a;
+  --color-icon: #5ec576;
+}
+
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
 
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&family=Rubik:wght@400;500;600;700&display=swap');
@@ -114,7 +121,7 @@ a:visited {
 }
 
 .heading-cart-price {
-  color: #5ec576;
+  color: var(--primary-color);
 }
 
 .heading-fourth {
@@ -179,7 +186,7 @@ a:visited {
 .btn-add-to-cartn,
 .btn-cart-empty,
 .btn-add-to-cart {
-  background-color: #5ec576;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -187,7 +194,7 @@ a:visited {
 .btn-all-products:hover,
 .btn-add-to-cart:hover,
 .btn-cart-empty:hover {
-  background-color: #55b16a;
+  background-color: var(--secondary-color);
   color: #fff;
 }
 
@@ -200,7 +207,7 @@ a:visited {
 .single-product-price,
 .single-product-article-price {
   /* color: #222; */
-  color: #5ec576;
+  color: var(--primary-color);
 }
 
 .creed-article-paragraph,
