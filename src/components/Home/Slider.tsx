@@ -25,7 +25,12 @@ const Slider = () => {
 
   return (
     <section className="section-slider">
-      <div className="container container-slider">
+      <div className="container-slider">
+        <h3 className="heading-tertiary">Testimonials</h3>
+        <p className="heading-tertiary-paragraph">
+          Discover the stories of our delighted customers - thousands and
+          counting!"
+        </p>
         <div className="slider">
           {slides.map((slide, i) => {
             const { heading, quote, img, location, author } = slide;
