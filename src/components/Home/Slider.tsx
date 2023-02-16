@@ -14,6 +14,15 @@ const Slider = () => {
     else setactiveSlideIndex((prev) => prev + 1);
   };
 
+  useEffect(() => {
+    let slider = setInterval(() => {
+      nextSlideHandler();
+    }, 2000);
+    return () => {
+      clearInterval(slider);
+    };
+  }, [activeSlideIndex]);
+
   return (
     <section className="section-slider">
       <div className="container container-slider">
