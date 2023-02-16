@@ -62,7 +62,7 @@
 
 #lblCartCount {
   font-size: 1.2rem;
-  background: #5ec576;
+  background: var(--primary-color);
   color: #fff;
   padding: 0 5px;
   vertical-align: top;
@@ -84,5 +84,5 @@
 }
 
 .active-link {
-  border-bottom: 1px solid #5ec576;
+  border-bottom: 1px solid var(--primary-color);
 }

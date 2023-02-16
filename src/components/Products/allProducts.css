@@ -36,8 +36,8 @@
 .sort-products-form select {
   padding: 0.25rem 0.5rem;
   text-align: start;
-  border: 1px solid #bfe8c8;
-  background-color: #eff9f1;
+  border: 1px solid var(--primary-color);
+  background-color: #f7eff9;
   color: var(--color-paragraph-primary);
   border-radius: 0.25rem;
 }
