@@ -21,6 +21,7 @@ const Slider = () => {
     return () => {
       clearInterval(slider);
     };
+    // eslint-disable-next-line
   }, [activeSlideIndex]);
 
   return (
