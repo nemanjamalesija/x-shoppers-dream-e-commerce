@@ -137,3 +137,7 @@
     width: 100%; /* Ending width */
   }
 }
+
+.underline-none {
+  display: none;
+}

@@ -4,25 +4,31 @@ import './slider.css';
 
 const Slider = () => {
   const [activeSlideIndex, setactiveSlideIndex] = useState(0);
+  const [isUnderlineFilled, setIsUnderlineFilled] = useState(false);
   const nextSlideHandler = () => {
+    setIsUnderlineFilled(false);
     if (activeSlideIndex === -3) setactiveSlideIndex(0);
     else setactiveSlideIndex((prev) => prev - 1);
   };
 
   const prevSlideHandler = () => {
+    setIsUnderlineFilled(false);
     if (activeSlideIndex === 0) setactiveSlideIndex(-3);
     else setactiveSlideIndex((prev) => prev + 1);
   };
 
   useEffect(() => {
+    setIsUnderlineFilled(true);
+
     let slider = setInterval(() => {
+      setIsUnderlineFilled(false);
       nextSlideHandler();
     }, 5000);
     return () => {
       clearInterval(slider);
     };
     // eslint-disable-next-line
-  }, [activeSlideIndex]);
+  }, [activeSlideIndex, isUnderlineFilled]);
 
   return (
     <section className="section-slider">
@@ -45,7 +51,13 @@ const Slider = () => {
               >
                 <div className="testimonial">
                   <h5 className="heading-testimonial">{heading}</h5>
-                  <div className="underline-slider"></div>
+                  <div
+                    className={`${
+                      isUnderlineFilled
+                        ? 'underline-slider'
+                        : 'underline-slider underline-none'
+                    }`}
+                  ></div>
                   <blockquote className="quote-testimonial">{quote}</blockquote>
                   <div className="author-testimonial-div">
                     <img
