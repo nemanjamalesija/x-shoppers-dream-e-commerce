@@ -57,22 +57,21 @@ const Slider = () => {
                     <p className="location-testimonial">{location}</p>
                   </div>
                 </div>
-                <button
-                  className="slider__btn slider__btn--left"
-                  onClick={prevSlideHandler}
-                >
-                  &larr;
-                </button>
-                <button
-                  className="slider__btn slider__btn--right"
-                  onClick={nextSlideHandler}
-                >
-                  &rarr;
-                </button>
-                <div className="dots"></div>
               </div>
             );
           })}
+          <button
+            className="slider__btn slider__btn--left"
+            onClick={prevSlideHandler}
+          >
+            &larr;
+          </button>
+          <button
+            className="slider__btn slider__btn--right"
+            onClick={nextSlideHandler}
+          >
+            &rarr;
+          </button>
         </div>
       </div>
     </section>

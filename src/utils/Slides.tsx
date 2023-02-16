@@ -16,7 +16,7 @@ export const slides = [
   {
     heading: 'These pieces transformed my home!',
     quote:
-      "The modern designs and top-quality materials of these products exceeded my expectations, and I couldn't be happier with my purchase. The level of hospitality and professionalism shown by the company made my shopping experience a breeze, and the speedy delivery was the cherry on top.",
+      " The level of hospitality and professionalism shown by the company made my shopping experience a breeze. The modern designs and top-quality materials of these products exceeded my expectations, and I couldn't be happier with my purchase!",
 
     img: human1,
     author: 'Anastasiya Petrova',
@@ -25,7 +25,7 @@ export const slides = [
   {
     heading: 'You guys brought vision back to my life.',
     quote:
-      'I cannot speak highly enough of the quality of the products I received from this company. The attention to detail and craftsmanship is unparalleled.',
+      'I cannot speak highly enough of the quality of the products I received from this company. The attention to detail and craftsmanship is unparalleled. I am so grateful to have found such a reliable and professional source for my furniture needs.',
 
     img: human3,
     author: 'Tyron Mayers',
