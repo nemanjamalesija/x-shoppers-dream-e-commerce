@@ -115,10 +115,12 @@
   font-weight: 500;
   align-self: end;
   margin: 0;
+  color: #444;
 }
 
 .location-testimonial {
   font-size: 1.5rem;
+  color: #666;
 }
 
 .section__title--testimonials {
@@ -126,7 +128,7 @@
 }
 
 .underline {
-  width: 20rem;
+  width: 17rem;
   height: 0.25rem;
   background: #5ec576;
   margin-bottom: 1.5rem;
