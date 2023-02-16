@@ -34,10 +34,10 @@ const Creeds = () => {
             Creeds we live by
           </h3>
 
-          <p className="heading-tertiary-paragraph">
+          <h4 className="heading-fourth">
             Elevate your home with our attitude of excellence and timeless
             style.
-          </p>
+          </h4>
         </header>
         <div className="creeds-cards-div">
           {creeds.map((el) => {

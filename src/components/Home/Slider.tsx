@@ -51,11 +51,13 @@ const Slider = () => {
       ref={sliderRef}
     >
       <div className="container-slider">
-        <h3 className="heading-tertiary">Testimonials</h3>
-        <p className="heading-tertiary-paragraph">
-          Discover the stories of our delighted customers - thousands and
-          counting!"
-        </p>
+        <header>
+          <h3 className="heading-tertiary">Testimonials</h3>
+          <h4 className="heading-fourth">
+            Discover the stories of our delighted customers - thousands and
+            counting!
+          </h4>
+        </header>
         <div className="slider">
           {slides.map((slide, i) => {
             const { heading, quote, img, location, author } = slide;

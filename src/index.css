@@ -117,11 +117,15 @@ a:visited {
   color: #5ec576;
 }
 
-.heading-tertiary-paragraph {
+.heading-fourth {
   line-height: 1.4;
   color: #444;
   font-size: 3.7rem;
   font-weight: 500;
+}
+
+.heading-total {
+  font-size: 1.8rem;
 }
 
 .btn {

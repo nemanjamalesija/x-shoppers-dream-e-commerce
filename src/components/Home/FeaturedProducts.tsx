@@ -38,12 +38,12 @@ const FeaturedProducts = () => {
       ref={featuredProductsRef}
     >
       <div className="container">
-        <h3 className="heading-tertiary heading-featured-products">
-          Featured Products
-        </h3>
-        <p className="heading-tertiary-paragraph">
-          The art of modern living unlocked.
-        </p>
+        <header>
+          <h3 className="heading-tertiary heading-featured-products">
+            Featured Products
+          </h3>
+          <h4 className="heading-fourth">The art of modern living unlocked.</h4>
+        </header>
         <div className="container-featured-products container-featured-products">
           {featuredProducts.map((el) => {
             return <SingleFeaturedProduct key={el.id} {...el} />;

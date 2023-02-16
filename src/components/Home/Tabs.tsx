@@ -35,9 +35,9 @@ const Tabs = () => {
           <h3 className="heading-tertiary heading-tertiary-align-start">
             Operations
           </h3>
-          <p className="heading-tertiary-paragraph">
+          <h4 className="heading-fourth">
             Where simplicity meets efficiency to bring your home to life.
-          </p>
+          </h4>
         </header>
         <div className="tabs-component">
           <div className="tabs-btns-container">
