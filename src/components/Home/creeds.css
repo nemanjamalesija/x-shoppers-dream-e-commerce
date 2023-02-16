@@ -28,7 +28,7 @@
 
 .creed-article-heading {
   font-size: 1.8rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .creed-icon-div {

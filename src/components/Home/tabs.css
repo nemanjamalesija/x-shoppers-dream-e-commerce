@@ -33,7 +33,7 @@
   background-color: #fff;
   font-size: 1.8rem;
   font-weight: 600;
-  color: #444;
+  color: var(--color-paragraph-primary);
   cursor: pointer;
 }
 
@@ -42,7 +42,7 @@
 }
 
 .btn-tabs-active {
-  background-color: #5ec576;
+  background-color: var(--primary-color);
   color: #fff;
 }
 
@@ -57,7 +57,7 @@
 .tab-content-heading {
   align-self: center;
   font-size: 2rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .tab-content-paragraph {

@@ -1,5 +1,5 @@
 .section-home {
-  background-color: #f1f3f5;
+  background-color: var(--color-gray-background);
   height: 100vh;
   padding: 3.6rem 0;
 }
@@ -19,7 +19,7 @@
   font-weight: 500;
   line-height: 1.9;
   margin-bottom: 2.2rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .home-buttons-div {
@@ -29,7 +29,7 @@
 
 .home-button-about {
   background-color: #fff;
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .home-button-about:hover {

@@ -25,7 +25,7 @@
 .sort-products-label select,
 .sort-products-label {
   font-size: 1.4rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
   font-weight: 500;
 }
 
@@ -38,7 +38,7 @@
   text-align: start;
   border: 1px solid #bfe8c8;
   background-color: #eff9f1;
-  color: #444;
+  color: var(--color-paragraph-primary);
   border-radius: 0.25rem;
 }
 

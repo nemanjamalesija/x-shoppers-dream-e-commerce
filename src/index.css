@@ -3,6 +3,13 @@
 COLORS:
 - primary background: #f1f3f5;
 - links color: #333;
+
+:root {
+  --primary-color: #5ec576;
+  --secondary-color: #55b16a;
+  --color-background-icon: #5ec5763a;
+  --color-icon: #5ec576;
+}
 */
 
 :root {
@@ -10,6 +17,9 @@ COLORS:
   --secondary-color: #55b16a;
   --color-background-icon: #5ec5763a;
   --color-icon: #5ec576;
+
+  --color-paragraph-primary: #444;
+  --color-gray-background: #f3f3f3;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@400;500;600;700&display=swap');
@@ -30,13 +40,13 @@ html {
 
 body {
   font-family: 'Poppins', sans-serif;
-  background-color: #f3f3f3;
+  background-color: var(--color-gray-background);
 }
 
 a,
 a:active,
 a:visited {
-  color: #444;
+  color: var(--color-paragraph-primary);
   text-decoration: none;
 }
 
@@ -86,7 +96,7 @@ a:visited {
   font-size: 1.4rem;
   line-height: 0.75rem;
   padding-top: 1rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
   font-weight: 500;
 }
 
@@ -98,21 +108,21 @@ a:visited {
 .heading-primary {
   font-size: 4.8rem;
   margin-bottom: 2rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
   line-height: 1.4;
 }
 
 .heading-secondary {
   text-transform: capitalize;
   font-size: 3.6rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
   line-height: 1.4;
 }
 
 .heading-tertiary {
   font-size: 1.6rem;
   font-weight: 500;
-  color: #5ec576;
+  color: var(--primary-color);
   text-transform: uppercase;
   margin-bottom: 1rem;
   letter-spacing: 0.75px;
@@ -126,7 +136,7 @@ a:visited {
 
 .heading-fourth {
   line-height: 1.4;
-  color: #444;
+  color: var(--color-paragraph-primary);
   font-size: 3.7rem;
   font-weight: 500;
 }
@@ -173,7 +183,7 @@ a:visited {
 .btn-back-to-products {
   background: none;
   font-weight: 500;
-  color: #5ec576;
+  color: var(--primary-color);
   border-bottom: 1px solid currentColor;
   cursor: pointer;
   margin-bottom: 3.2rem;

@@ -1,5 +1,5 @@
 .section-nav {
-  background-color: #f1f3f5;
+  background-color: var(--color-gray-background);
   padding: 3rem 0;
 }
 
@@ -27,12 +27,12 @@
 
 .shopping-icon {
   font-size: 2rem;
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .logo-text {
   font-weight: 500;
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .nav-list {
@@ -75,11 +75,11 @@
 }
 
 .icon-text-cart {
-  color: #444;
+  color: var(--color-paragraph-primary);
 }
 
 .cart-icon {
-  color: #444;
+  color: var(--color-paragraph-primary);
   font-weight: 500;
 }
 
