@@ -108,9 +108,32 @@
   margin-bottom: 4rem;
 }
 
-.underline {
-  width: 17rem;
-  height: 0.25rem;
-  background: #5ec576;
+.underline-slider {
+  position: relative;
+  height: 0.3rem;
   margin-bottom: 1.5rem;
+}
+
+.underline-slider::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 0%;
+  background: linear-gradient(to right, #5ec576, #5ec576);
+  animation: fillUnderline 5s linear forwards infinite;
+}
+
+.underline-slider:hover::before {
+  width: 100%;
+}
+
+@keyframes fillUnderline {
+  0% {
+    width: 0%;
+  }
+  100% {
+    width: 100%; /* Ending width */
+  }
 }

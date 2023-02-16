@@ -45,7 +45,7 @@ const Slider = () => {
               >
                 <div className="testimonial">
                   <h5 className="heading-testimonial">{heading}</h5>
-                  <div className="underline"></div>
+                  <div className="underline-slider"></div>
                   <blockquote className="quote-testimonial">{quote}</blockquote>
                   <div className="author-testimonial-div">
                     <img
