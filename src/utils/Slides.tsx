@@ -20,7 +20,7 @@ export const slides = [
 
     img: human1,
     author: 'Anastasiya Petrova',
-    location: 'Kyiv, Ukraine.',
+    location: 'Kyiv, Ukraine',
   },
   {
     heading: 'You guys brought vision back to my life.',
