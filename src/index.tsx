@@ -3,6 +3,7 @@ import ReactDOM from 'react-dom/client';
 import App from './App';
 import { ProductsProvider } from './productsContext';
 import { CartProvider } from './cartContext';
+import { RefsProvider } from './refsContext';
 import './index.css';
 
 const root = ReactDOM.createRoot(
@@ -10,10 +11,12 @@ const root = ReactDOM.createRoot(
 );
 root.render(
   <React.StrictMode>
-    <ProductsProvider>
-      <CartProvider>
-        <App />
-      </CartProvider>
-    </ProductsProvider>
+    <RefsProvider>
+      <ProductsProvider>
+        <CartProvider>
+          <App />
+        </CartProvider>
+      </ProductsProvider>
+    </RefsProvider>
   </React.StrictMode>
 );

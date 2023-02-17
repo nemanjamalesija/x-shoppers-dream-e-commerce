@@ -1,40 +1,39 @@
-import { useEffect, useState } from 'react';
+import { useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import { useProductsContext } from '../../productsContext';
 import SingleFeaturedProduct from './SingleFeaturedProduct';
 import Loading from '../Loading';
 import useObserver from '../../helpers/useObserver';
+import { useRefsContext } from '../../refsContext';
 import './featuredProducts.css';
 
 const FeaturedProducts = () => {
-  const [isHidden, setIsHidden] = useState(false);
   const {
     state: { products, loading },
-    featuredProductsRef,
   } = useProductsContext();
+  const { featuredProductsRef } = useRefsContext();
+  const { isObserving, sectionObserver } = useObserver();
 
-  const { sectionObserver, isObserving } = useObserver();
   const featuredProductsObserver = sectionObserver();
   const featuredProducts = products.slice(14, 17);
 
   useEffect(() => {
     if (!featuredProductsRef.current) return;
-    setIsHidden(true);
+
     featuredProductsObserver.observe(featuredProductsRef.current);
 
     return () => featuredProductsObserver.disconnect();
   }, [featuredProductsRef, isObserving, featuredProductsObserver]);
 
-  if (loading)
-    return <Loading sectionRef={featuredProductsRef} isHidden={isHidden} />;
+  if (loading) return <Loading sectionRef={featuredProductsRef} />;
 
   return (
     <section
       id="featured-products"
       className={`${
-        isHidden
-          ? 'section-featured-products section--hidden section-tansform'
-          : 'section-featured-products section-tansform'
+        isObserving
+          ? 'section-featured-products section-tansform'
+          : 'section-featured-products section-tansform section--hidden '
       }`}
       ref={featuredProductsRef}
     >

@@ -8,11 +8,11 @@ const useObserver = () => {
     threshold: 0.2,
   };
 
-  const sectionObserverCallback = function (entries: any) {
+  const sectionObserverCallback = (entries: any) => {
     const [entry] = entries;
-    setisObserving(true);
 
     if (!entry.isIntersecting) return;
+    setisObserving(true);
 
     entry.target.classList.remove('section--hidden');
   };

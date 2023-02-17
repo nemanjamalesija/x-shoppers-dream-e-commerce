@@ -2,11 +2,11 @@ import heroImg from '../../utils/images/heroImg.png';
 import React, { useState, useEffect } from 'react';
 import { Link } from 'react-router-dom';
 import NavDummy from './NavDummy';
-import { useProductsContext } from '../../productsContext';
+import { useRefsContext } from '../../refsContext';
 import './hero.css';
 
 const Hero = () => {
-  const { navRef, heroRef, featuredProductsRef } = useProductsContext();
+  const { navRef, heroRef, featuredProductsRef } = useRefsContext();
   const [navHeight, setNavRefHeight] = useState(0);
   const [isObserving, setIsObserving] = useState(false);
   const [navSticky, setnavSticky] = useState(false);

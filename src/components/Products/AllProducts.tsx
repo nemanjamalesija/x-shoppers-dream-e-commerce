@@ -3,12 +3,13 @@ import { useProductsContext } from '../../productsContext';
 import SortByForm from './SortByForm';
 import ProductsFromApi from './ProductsFromApi';
 import './allProducts.css';
+import { useRefsContext } from '../../refsContext';
 
 const Products = () => {
   const {
-    navRef,
     state: { filteredProducts },
   } = useProductsContext();
+  const { navRef } = useRefsContext();
 
   useEffect(() => {
     if (!navRef.current) return;

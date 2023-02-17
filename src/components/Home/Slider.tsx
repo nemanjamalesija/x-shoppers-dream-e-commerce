@@ -1,15 +1,15 @@
 import { useEffect, useState } from 'react';
 import useObserver from '../../helpers/useObserver';
-import { useProductsContext } from '../../productsContext';
+import { useRefsContext } from '../../refsContext';
 import { slides } from '../../utils/Slides';
 import './slider.css';
 
 const Slider = () => {
   const [index, setIndex] = useState(0);
   const [isUnderlineFilled, setIsUnderlineFilled] = useState(false);
-  const [isSliderHidden, setIsSliderHidden] = useState(false);
-  const { sliderRef } = useProductsContext();
+  const { sliderRef } = useRefsContext();
   const { sectionObserver, isObserving } = useObserver();
+
   const sliderObserver = sectionObserver();
 
   const nextSlideHandler = () => {
@@ -27,7 +27,6 @@ const Slider = () => {
   useEffect(() => {
     if (!sliderRef.current) return;
     setIsUnderlineFilled(true);
-    setIsSliderHidden(true);
     sliderObserver.observe(sliderRef.current);
 
     let slider = setInterval(() => {
@@ -44,9 +43,9 @@ const Slider = () => {
   return (
     <section
       className={`${
-        isSliderHidden
-          ? 'section-slider section--hidden section-tansform'
-          : 'section-slider'
+        isObserving
+          ? 'section-featured-products section-tansform'
+          : 'section-featured-products section-tansform section--hidden '
       }`}
       ref={sliderRef}
     >

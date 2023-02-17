@@ -4,12 +4,13 @@ import AllProducts from '../components/Products/AllProducts';
 import Loading from '../components/Loading';
 import Sidebar from '../components/Sidebar/Sidebar';
 import './products.css';
+import { useRefsContext } from '../refsContext';
 
 const Products = () => {
   const {
     state: { loading },
   } = useProductsContext();
-  const { navRef } = useProductsContext();
+  const { navRef } = useRefsContext();
 
   useEffect(() => {
     if (!navRef.current) return;

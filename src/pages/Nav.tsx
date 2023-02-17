@@ -2,11 +2,11 @@ import { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
 import { navLinks } from '../utils/navLinks';
 import { BsBag } from 'react-icons/bs';
-import './nav.css';
-import { useProductsContext } from '../productsContext';
 import { useCartContext } from '../cartContext';
+import { useRefsContext } from '../refsContext';
+import './nav.css';
 const Nav = () => {
-  const { navRef } = useProductsContext();
+  const { navRef } = useRefsContext();
   const {
     state: { totalQuantity },
   } = useCartContext();

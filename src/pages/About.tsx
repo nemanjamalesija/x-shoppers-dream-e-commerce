@@ -1,10 +1,10 @@
 import { useEffect } from 'react';
 import aboutGroup from '../utils/images/aboutGroup.jpg';
-import { useProductsContext } from '../productsContext';
+import { useRefsContext } from '../refsContext';
 import './about.css';
 
 const About = () => {
-  const { navRef } = useProductsContext();
+  const { navRef } = useRefsContext();
 
   useEffect(() => {
     if (!navRef.current) return;

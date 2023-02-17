@@ -1,19 +1,18 @@
-import { useState, useEffect } from 'react';
+import { useEffect } from 'react';
 import CreedArticle from './CreedArticle';
 import { creeds } from '../../utils/creedCards';
 import useObserver from '../../helpers/useObserver';
+import { useRefsContext } from '../../refsContext';
 import './creeds.css';
-import { useProductsContext } from '../../productsContext';
 
 const Creeds = () => {
-  const [isHidden, setIsHidden] = useState(false);
-  const { creedsRef } = useProductsContext();
+  const { creedsRef } = useRefsContext();
   const { sectionObserver, isObserving } = useObserver();
+
   const creedsObserver = sectionObserver();
 
   useEffect(() => {
     if (!creedsRef.current) return;
-    setIsHidden(true);
     creedsObserver.observe(creedsRef.current);
 
     return () => creedsObserver.disconnect();
@@ -22,9 +21,9 @@ const Creeds = () => {
   return (
     <section
       className={`${
-        isHidden
-          ? 'section-creeds section--hidden section-tansform'
-          : 'section-creeds section-tansform'
+        isObserving
+          ? 'section-featured-products section-tansform'
+          : 'section-featured-products section-tansform section--hidden '
       }`}
       ref={creedsRef}
     >

@@ -1,13 +1,12 @@
 import { useState, useEffect } from 'react';
 import useObserver from '../../helpers/useObserver';
-import { useProductsContext } from '../../productsContext';
+import { useRefsContext } from '../../refsContext';
 import { tabsContent } from '../../utils/tabsContent';
 import './tabs.css';
 
 const Tabs = () => {
-  const [isHidden, setIsHidden] = useState(false);
   const [activeTabIndex, setActiveTabIndex] = useState(0);
-  const { tabsRef } = useProductsContext();
+  const { tabsRef } = useRefsContext();
   const { sectionObserver, isObserving } = useObserver();
 
   const tabsObserver = sectionObserver();
@@ -15,7 +14,6 @@ const Tabs = () => {
   useEffect(() => {
     if (!tabsRef.current) return;
 
-    setIsHidden(true);
     tabsObserver.observe(tabsRef.current);
 
     return () => tabsObserver.disconnect();
@@ -24,9 +22,9 @@ const Tabs = () => {
   return (
     <section
       className={`${
-        isHidden
-          ? 'section-tabs section--hidden section-tansform '
-          : 'section-tabs'
+        isObserving
+          ? 'section-featured-products section-tansform'
+          : 'section-featured-products section-tansform section--hidden '
       }`}
       ref={tabsRef}
     >
