@@ -86,7 +86,7 @@ const Hero = () => {
                 className="btn home-button-about"
                 onClick={scrollIntoViewHandler}
               >
-                Learn more
+                Learn more &#129059;
               </button>
             </div>
           </div>
