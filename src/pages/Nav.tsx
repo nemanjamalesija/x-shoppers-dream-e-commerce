@@ -35,7 +35,7 @@ const Nav = () => {
         </Link>
         <ul className="nav-list">
           {navLinks.map((item, i) => {
-            const { id, name, classNameItem, link } = item;
+            const { id, name, link } = item;
             return (
               <Link
                 key={id}
@@ -47,7 +47,7 @@ const Nav = () => {
                 to={link}
                 onClick={() => setActiveLink(i)}
               >
-                <li className={classNameItem}>{name}</li>
+                <li className="nav-list-item">{name}</li>
               </Link>
             );
           })}
