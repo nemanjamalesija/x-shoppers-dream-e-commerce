@@ -15,11 +15,8 @@ const Hero = () => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     if (!featuredProductsRef.current) return;
-
-    window.scrollTo({
-      top: 990,
-      behavior: 'smooth',
-    });
+    const scrollDistance = featuredProductsRef.current.offsetTop;
+    window.scrollTo({ top: scrollDistance, behavior: 'smooth' });
   };
 
   // Intersection Observer
