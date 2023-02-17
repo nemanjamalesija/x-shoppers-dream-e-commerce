@@ -43,6 +43,7 @@
 
 .image {
   width: 82%;
+  border-radius: 0.25rem;
 }
 
 .hero-nav-patch {

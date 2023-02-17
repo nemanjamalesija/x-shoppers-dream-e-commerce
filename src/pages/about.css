@@ -21,6 +21,7 @@
 .about-photo {
   max-width: 50rem;
   object-fit: cover;
+  border-radius: 0.25rem;
 }
 
 .about-text-div {
