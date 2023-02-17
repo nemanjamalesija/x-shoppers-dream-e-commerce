@@ -21,23 +21,23 @@ const About = () => {
         <div className="about-text-div">
           <blockquote className="paragraph-about">
             Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
-            quae optio sapiente ducimus, adipisci nostrum molestiae non vitae,
-            repellat facere temporibus amet modi fugit expedita ut hic.
+            quel optio sapiente ducimus, adipisci nostrum molestiae non vitae,
+            repelli facere temporibus amet modi fugit expedita ut hic.
           </blockquote>
           <blockquote className="paragraph-about">
-            Dolores distinctio consequuntur totam atque nulla, dolor quasi
-            numquam explicabo? Perferendis at dolorum sequi reiciendis enim ex
-            laborum temporibus dolor.
+            Dolores distinctio consequuntur totam atque nulla, dolor quasi mon
+            explicabo? Perferendis at dolorum sequi reiciendis enim ex laborum
+            temporibus dolor.
           </blockquote>
           <blockquote className="paragraph-about">
             Totam atque nulla, dolor quasi numquam explicabo? Perferendis at
-            soluta quidem dolorum sequi reiciendis enim ex laborum temporibus
+            soluta quidem dolorum sequi reiciendis enim ex laborum temporibs
             dolor soluta quidem dolorum sequi enim ex laborum temporibus.
           </blockquote>
           <blockquote className="paragraph-about">
             Repellendus, facere deleniti quo optio nihil beatae dolorum
-            explicabo quas quasi, nam debitis distinctio voluptate officiis et,
-            tempore velit.
+            explicailt quas quasi, nam debitis distinctio voluptate officiis et,
+            tempore.
           </blockquote>
         </div>
       </div>
