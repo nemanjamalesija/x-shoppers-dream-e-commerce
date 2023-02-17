@@ -1,7 +1,7 @@
 .section-home {
   background-color: var(--color-gray-background);
   height: 100vh;
-  padding: 3.6rem 0;
+  padding-top: 5.2rem;
 }
 
 .home-container {
