@@ -91,3 +91,17 @@
 .active-link {
   border-bottom: 1px solid var(--primary-color);
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1199px) {
+  .nav {
+    max-width: 100rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .nav {
+    max-width: 90rem;
+  }
+}

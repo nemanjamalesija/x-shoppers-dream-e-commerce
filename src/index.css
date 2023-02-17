@@ -219,3 +219,20 @@ a:visited {
 .hidden {
   visibility: hidden;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100rem;
+  }
+}
+
+@media (max-width: 1050px) {
+  .container {
+    max-width: 85rem;
+  }
+  .heading-fourth: {
+    font-size: 3.4rem;
+  }
+}

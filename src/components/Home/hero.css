@@ -49,3 +49,12 @@
 .hero-nav-patch {
   padding: 6.2rem 0;
 }
+
+@media (max-width: 1050px) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .home-paragraph {
+    font-size: 1.9rem;
+  }
+}

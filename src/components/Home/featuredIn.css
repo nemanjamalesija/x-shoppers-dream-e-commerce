@@ -30,3 +30,11 @@
   margin-bottom: 1.4rem;
   color: #888;
 }
+
+/* RESPONSIVE */
+
+@media (max-width: 1050px) {
+  .logos img {
+    height: 2.6rem;
+  }
+}

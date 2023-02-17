@@ -49,3 +49,9 @@
   width: 100%;
   color: var(--color-icon);
 }
+
+@media (max-width: 1050px) {
+  .container-creeds {
+    max-width: 85rem;
+  }
+}
