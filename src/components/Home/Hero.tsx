@@ -15,14 +15,14 @@ const Hero = () => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     if (!featuredProductsRef.current) return;
-    const scrollDistance = featuredProductsRef.current.offsetTop;
+    const scrollDistance = featuredProductsRef.current.offsetTop + 50;
     window.scrollTo({ top: scrollDistance, behavior: 'smooth' });
   };
 
   // Intersection Observer
   const navObserverOptionsObject = {
     root: null,
-    rootMargin: `${-navHeight + 130}px`,
+    rootMargin: `${-navHeight + 180}px`,
   };
 
   const navObserverFunctionCallback = (entries: any) => {
