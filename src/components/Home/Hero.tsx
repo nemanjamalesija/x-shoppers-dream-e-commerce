@@ -6,11 +6,23 @@ import { useProductsContext } from '../../productsContext';
 import './hero.css';
 
 const Hero = () => {
-  const { navRef, heroRef } = useProductsContext();
+  const { navRef, heroRef, featuredProductsRef } = useProductsContext();
   const [navHeight, setNavRefHeight] = useState(0);
   const [isObserving, setIsObserving] = useState(false);
   const [navSticky, setnavSticky] = useState(false);
 
+  const scrollIntoViewHandler = (
+    e: React.MouseEvent<HTMLButtonElement, MouseEvent>
+  ) => {
+    if (!featuredProductsRef.current) return;
+
+    window.scrollTo({
+      top: 1000,
+      behavior: 'smooth',
+    });
+  };
+
+  // Intersection Observer
   const navObserverOptionsObject = {
     root: null,
     rootMargin: `${-navHeight + 130}px`,
@@ -70,9 +82,12 @@ const Hero = () => {
                   Explore products
                 </button>
               </Link>
-              <Link to="about">
-                <button className="btn home-button-about">Learn more</button>
-              </Link>
+              <button
+                className="btn home-button-about"
+                onClick={scrollIntoViewHandler}
+              >
+                Learn more
+              </button>
             </div>
           </div>
 

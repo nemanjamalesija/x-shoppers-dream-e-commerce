@@ -30,6 +30,7 @@ const FeaturedProducts = () => {
 
   return (
     <section
+      id="featured-products"
       className={`${
         isHidden
           ? 'section-featured-products section--hidden section-tansform'

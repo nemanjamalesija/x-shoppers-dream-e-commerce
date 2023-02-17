@@ -116,7 +116,7 @@ ADD TO CART */
   background: none;
   font-size: 1.8rem;
   font-weight: 500;
-  color: #5ec576;
+  color: var(--primary-color);
   border: none;
   border-bottom: 1px solid currentColor;
   cursor: pointer;
@@ -127,7 +127,7 @@ ADD TO CART */
 }
 
 .btn-back-to-products:hover {
-  color: #55b16a;
+  color: var(--secondary-color);
 }
 
 .btn-add-to-cart {
