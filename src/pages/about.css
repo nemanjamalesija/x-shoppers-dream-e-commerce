@@ -19,13 +19,13 @@
 }
 
 .about-photo {
-  max-width: 50rem;
+  max-width: 55rem;
   object-fit: cover;
   border-radius: 0.25rem;
 }
 
 .about-text-div {
-  max-width: 50rem;
+  max-width: 55rem;
   margin: 0 auto;
   display: flex;
   flex-direction: column;
