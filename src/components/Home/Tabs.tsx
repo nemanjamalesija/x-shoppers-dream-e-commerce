@@ -29,7 +29,7 @@ const Tabs = () => {
       ref={tabsRef}
     >
       <div className="container-tabs">
-        <header>
+        <header className="tabs-header">
           <h3 className="heading-tertiary heading-tertiary-align-start">
             Operations
           </h3>
