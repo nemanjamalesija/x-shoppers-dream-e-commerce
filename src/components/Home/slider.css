@@ -141,8 +141,10 @@
 
 .image-testimonial {
   grid-row: 1 / span 2;
-  width: 6.5rem;
+  width: 5.2rem;
+  height: 5.2rem;
   border-radius: 50%;
+  box-shadow: 0 0 0 4px rgba(255, 255, 255, 0.7);
 }
 
 .name-testimonial {
