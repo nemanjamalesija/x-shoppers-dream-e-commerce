@@ -17,7 +17,7 @@ const Hero = () => {
     if (!featuredProductsRef.current) return;
 
     window.scrollTo({
-      top: 1000,
+      top: 990,
       behavior: 'smooth',
     });
   };
