@@ -1,5 +1,5 @@
-import React, { useState } from 'react';
-import { Link } from 'react-router-dom';
+import { useState } from 'react';
+import { Link, useLocation } from 'react-router-dom';
 import { navLinks } from '../utils/navLinks';
 import { BsBag } from 'react-icons/bs';
 import './nav.css';
@@ -11,10 +11,18 @@ const Nav = () => {
     state: { totalQuantity },
   } = useCartContext();
   const [activeLink, setActiveLink] = useState(0);
+  const location = useLocation();
+  const isAboutPage = location.pathname === '/about';
 
   return (
-    <section className="section-nav" ref={navRef}>
-      <nav className="container nav nav">
+    <section
+      className="section-nav"
+      ref={navRef}
+      style={{
+        backgroundColor: isAboutPage ? '#e7cfed' : '#f3f3f3',
+      }}
+    >
+      <nav className="nav">
         <Link
           className="nav-list-item-link"
           to="/"

@@ -1,5 +1,5 @@
 import { useEffect } from 'react';
-import storyImg from '../utils/images/storyImg.jpg';
+import aboutGroup from '../utils/images/aboutGroup.jpg';
 import { useProductsContext } from '../productsContext';
 import './about.css';
 
@@ -12,30 +12,33 @@ const About = () => {
   }, [navRef]);
 
   return (
-    <section className="section section-products">
-      <div className="container container-about-us">
-        <div className="about-us-img-text-container">
-          <div className="about-image-container">
-            <img className="about-us-image" src={storyImg} alt="sofa" />
-          </div>
-          <div className="text-about-us-div">
-            <h2 className="heading-secondary heading-secondary-about-us ">
-              Our story
-            </h2>
-            <div className="underline"></div>
-            <p className="about-us-parapgraph ">
-              Lorem ipsum, dolor sit amet consectetur adipisicing elit. Fugiat
-              accusantium sapiente tempora sed dolore esse deserunt eaque
-              excepturi, delectus error accusamus vel eligendi, omnis beatae.
-              Quisquam, dicta. Eos quod quisquam esse recusandae vitae neque
-              dolore, obcaecati incidunt sequi blanditiis est exercitationem
-              molestiae delectus saepe odio eligendi modi porro eaque in libero
-              minus unde sapiente consectetur architecto. Ullam rerum, nemo iste
-              ex, eaque perspiciatis nisi, eum totam velit saepe sed quos
-              similique amet. Ex, voluptate accusamus nesciunt totam vitae esse
-              iste.
-            </p>
-          </div>
+    <section className="section-about-us">
+      <div className="container-about-us">
+        <h4 className="heading-about">About us</h4>
+        <div className="photo-container">
+          <img src={aboutGroup} alt="About" className="about-photo" />
+        </div>
+        <div className="about-text-div">
+          <blockquote className="paragraph-about">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Impedit
+            quae optio sapiente ducimus, adipisci nostrum molestiae non vitae,
+            repellat facere temporibus amet modi fugit expedita ut hic.
+          </blockquote>
+          <blockquote className="paragraph-about">
+            Dolores distinctio consequuntur totam atque nulla, dolor quasi
+            numquam explicabo? Perferendis at dolorum sequi reiciendis enim ex
+            laborum temporibus dolor.
+          </blockquote>
+          <blockquote className="paragraph-about">
+            Totam atque nulla, dolor quasi numquam explicabo? Perferendis at
+            soluta quidem dolorum sequi reiciendis enim ex laborum temporibus
+            dolor soluta quidem dolorum sequi enim ex laborum temporibus.
+          </blockquote>
+          <blockquote className="paragraph-about">
+            Repellendus, facere deleniti quo optio nihil beatae dolorum
+            explicabo quas quasi, nam debitis distinctio voluptate officiis et,
+            tempore velit.
+          </blockquote>
         </div>
       </div>
     </section>
