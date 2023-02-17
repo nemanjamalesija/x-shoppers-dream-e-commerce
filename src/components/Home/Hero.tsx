@@ -71,7 +71,7 @@ const Hero = () => {
                 </button>
               </Link>
               <Link to="about">
-                <button className="btn home-button-about">About us</button>
+                <button className="btn home-button-about">Learn more</button>
               </Link>
             </div>
           </div>

@@ -2,6 +2,10 @@
   background-color: var(--color-gray-background);
 }
 
+.section-nav-about {
+  background-color: var(--color-background-icon);
+}
+
 .nav {
   display: flex;
   justify-content: space-between;

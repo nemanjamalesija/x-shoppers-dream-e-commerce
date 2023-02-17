@@ -16,11 +16,8 @@ const Nav = () => {
 
   return (
     <section
-      className="section-nav"
+      className={!isAboutPage ? 'section-nav' : 'section-nav-about'}
       ref={navRef}
-      style={{
-        backgroundColor: isAboutPage ? '#e7cfed' : '#f3f3f3',
-      }}
     >
       <nav className="nav">
         <Link
