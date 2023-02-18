@@ -154,7 +154,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 481px) {
   .nav {
     max-width: 40rem;
     font-size: 1rem;

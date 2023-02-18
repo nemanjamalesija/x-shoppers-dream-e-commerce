@@ -61,7 +61,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 481px) {
   .section-home {
     background-color: var(--color-gray-background);
     padding-top: 0;

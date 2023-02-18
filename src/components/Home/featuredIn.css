@@ -73,7 +73,7 @@
   }
 }
 
-@media (max-width: 479px) {
+@media (max-width: 481px) {
   .logos {
     display: flex;
     align-items: center;
