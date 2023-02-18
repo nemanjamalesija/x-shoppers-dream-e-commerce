@@ -50,8 +50,24 @@
   color: var(--color-icon);
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1049px) {
   .container-creeds {
     max-width: 85rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .container-creeds {
+    max-width: 65rem;
+  }
+
+  .creed-icon-div {
+    font-size: 2rem;
+    width: 4rem;
+    height: 4rem;
+    margin-bottom: 1.4rem;
+  }
+  .creed-article-heading {
+    font-size: 1.6rem;
   }
 }

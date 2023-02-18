@@ -51,10 +51,13 @@
 }
 
 @media (max-width: 1050px) {
-  .heading-primary {
-    font-size: 3.6rem;
-  }
   .home-paragraph {
     font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 799px) {
+  .home-paragraph {
+    font-size: 1.5rem;
   }
 }

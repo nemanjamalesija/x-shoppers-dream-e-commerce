@@ -23,8 +23,8 @@ const Tabs = () => {
     <section
       className={`${
         isObserving
-          ? 'section-featured-products section-tansform'
-          : 'section-featured-products section-tansform section--hidden '
+          ? 'section-tabs section-tansform'
+          : 'section-tabs section-tansform section--hidden '
       }`}
       ref={tabsRef}
     >

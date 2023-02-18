@@ -38,7 +38,7 @@ a:visited {
 
 .section-featured-products,
 .section-creeds,
-.section-sidebar,
+.section-slider,
 .section-tabs {
   padding: 15rem 0;
 }
@@ -226,13 +226,112 @@ a:visited {
   .container {
     width: 100rem;
   }
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+  .home-paragraph {
+    font-size: 2.2rem;
+  }
 }
 
 @media (max-width: 1050px) {
   .container {
     max-width: 85rem;
   }
-  .heading-fourth: {
+
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+  .heading-fourth {
     font-size: 3.4rem;
+  }
+  .home-paragraph {
+    font-size: 1.7rem;
+  }
+
+  .creed-article-paragraph,
+  .single-product-article-description,
+  .single-product-article-review,
+  .about-us-parapgraph {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 1199px) {
+  .container {
+    width: 100rem;
+  }
+  .heading-primary {
+    font-size: 4.2rem;
+  }
+  .home-paragraph {
+    font-size: 2.2rem;
+  }
+}
+
+@media (max-width: 1049px) {
+  .heading-primary {
+    font-size: 3.6rem;
+  }
+
+  .home-paragraph {
+    font-size: 1.9rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .container {
+    max-width: 75rem;
+  }
+
+  .heading-primary {
+    font-size: 3.1rem;
+  }
+
+  .home-paragraph {
+    font-size: 1.7rem;
+  }
+
+  .heading-tertiary {
+    font-size: 1.4rem;
+  }
+
+  .heading-fourth {
+    font-size: 3rem;
+  }
+
+  .creed-article-paragraph,
+  .single-product-article-description,
+  .single-product-article-review,
+  .about-us-parapgraph {
+    font-size: 1.2rem;
+    line-height: 1.9;
+    color: #666;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+}
+
+@media (max-width: 779px) {
+  .container {
+    width: 65rem;
+  }
+
+  .heading-primary {
+    font-size: 2.7rem;
+    margin-bottom: 1.8rem;
+  }
+
+  .home-paragraph {
+    font-size: 1.4rem;
+    margin-bottom: 2rem;
+  }
+
+  .btn {
+    font-size: 1.4rem;
+    padding: 0.9rem 1.8rem;
   }
 }

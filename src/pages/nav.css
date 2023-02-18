@@ -100,8 +100,20 @@
   }
 }
 
-@media (max-width: 1050px) {
+@media (max-width: 1049px) {
   .nav {
     max-width: 90rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .nav {
+    max-width: 75rem;
+  }
+}
+
+@media (max-width: 779px) {
+  .nav {
+    max-width: 70rem;
   }
 }

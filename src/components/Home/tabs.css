@@ -89,3 +89,38 @@
   align-items: center;
   justify-content: center;
 }
+
+@media (max-width: 899px) {
+  .container-tabs {
+    max-width: 65rem;
+  }
+  .btn-tabs {
+    font-size: 1.4rem;
+    padding: 1rem 2rem;
+  }
+
+  .tab-content-heading {
+    font-size: 1.5rem;
+  }
+
+  .tabs-icon-div span {
+    height: 4rem;
+    width: 4rem;
+    font-size: 2rem;
+  }
+
+  .tab-content-paragraph {
+    font-size: 1.4rem;
+  }
+
+  .container-tab-content {
+    row-gap: 0.2rem;
+  }
+}
+
+@media (max-width: 779px) {
+  .btn-tabs {
+    font-size: 1.4rem;
+    padding: 0.9rem 1.8rem;
+  }
+}

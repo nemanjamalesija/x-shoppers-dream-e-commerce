@@ -33,8 +33,18 @@
 
 /* RESPONSIVE */
 
-@media (max-width: 1050px) {
+@media (max-width: 1049px) {
   .logos img {
     height: 2.6rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .heading-featured-in {
+    font-size: 1.2rem;
+    margin-bottom: 1rem;
+  }
+  .logos img {
+    height: 2.1rem;
   }
 }

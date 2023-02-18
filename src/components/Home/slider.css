@@ -125,7 +125,7 @@
 
 .quote-testimonial {
   font-size: 1.7rem;
-  margin-bottom: 3.5rem;
+  margin-bottom: 3rem;
   color: #666;
 }
 
@@ -161,4 +161,43 @@
 
 .section__title--testimonials {
   margin-bottom: 4rem;
+}
+
+/* RESPONSIVE */
+@media (max-width: 1049px) {
+  .quote-testimonial {
+    font-size: 1.6rem;
+  }
+}
+
+@media (max-width: 899px) {
+  .container-slider {
+    max-width: 65rem;
+  }
+
+  .heading-testimonial {
+    font-size: 2rem;
+  }
+
+  .quote-testimonial {
+    font-size: 1.4rem;
+  }
+
+  .slider__btn {
+    height: 5rem;
+    width: 5rem;
+  }
+
+  .name-testimonial {
+    font-size: 1.5rem;
+  }
+
+  .location-testimonial {
+    font-size: 1.3rem;
+  }
+
+  .image-testimonial {
+    height: 4.6rem;
+    width: 4.6rem;
+  }
 }

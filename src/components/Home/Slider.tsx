@@ -44,8 +44,8 @@ const Slider = () => {
     <section
       className={`${
         isObserving
-          ? 'section-featured-products section-tansform'
-          : 'section-featured-products section-tansform section--hidden '
+          ? 'section-slider section-tansform'
+          : 'section-slider section-tansform section--hidden '
       }`}
       ref={sliderRef}
     >
