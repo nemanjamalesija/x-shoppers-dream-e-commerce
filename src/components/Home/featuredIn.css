@@ -1,7 +1,11 @@
 .section-featured-in {
   background-color: #f1f3f5;
-  margin-top: -4.2rem;
-  padding: 0 9.6rem 15rem;
+  padding: 15rem 0 15rem;
+}
+
+.container-featured-in {
+  width: 90%;
+  margin: 0 auto;
 }
 
 .about-image-container {
@@ -36,10 +40,6 @@
 @media (max-width: 1049px) {
   .logos img {
     height: 2.6rem;
-  }
-
-  .section-featured-in {
-    margin-top: 0;
   }
 }
 
@@ -80,10 +80,10 @@
   }
 
   .logos img {
-    height: 1.2rem;
+    height: 1.3rem;
   }
 
   .section-featured-in {
-    padding: 0 0 15rem 0;
+    padding: 15rem 0;
   }
 }
