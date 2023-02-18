@@ -25,3 +25,9 @@
   display: flex;
   justify-content: center;
 }
+
+@media (max-width: 479px) {
+  .container-featured-products {
+    margin-bottom: 3.2rem;
+  }
+}

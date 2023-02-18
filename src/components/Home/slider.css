@@ -201,3 +201,71 @@
     width: 4.6rem;
   }
 }
+
+@media (max-width: 679px) {
+  .container-slider {
+    max-width: 55rem;
+  }
+
+  .heading-testimonial {
+    font-size: 1.7rem;
+  }
+
+  .quote-testimonial {
+    font-size: 1.2rem;
+  }
+}
+
+@media (max-width: 579px) {
+  .container-slider {
+    max-width: 45rem;
+  }
+
+  .heading-testimonial {
+    font-size: 1.5rem;
+  }
+
+  .quote-testimonial {
+    font-size: 1.1rem;
+  }
+
+  .name-testimonial {
+    font-size: 1.3rem;
+  }
+
+  .location-testimonial {
+    font-size: 1.1rem;
+  }
+
+  .image-testimonial {
+    height: 4.2rem;
+    width: 4.2rem;
+  }
+}
+
+@media (max-width: 579px) {
+  .container-slider {
+    max-width: 40rem;
+  }
+
+  .heading-testimonial {
+    font-size: 1.4rem;
+  }
+
+  .quote-testimonial {
+    font-size: 1rem;
+  }
+
+  .name-testimonial {
+    font-size: 1.2rem;
+  }
+
+  .location-testimonial {
+    font-size: 1rem;
+  }
+
+  .image-testimonial {
+    height: 4rem;
+    width: 4rem;
+  }
+}

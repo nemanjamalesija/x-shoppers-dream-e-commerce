@@ -37,6 +37,10 @@
   .logos img {
     height: 2.6rem;
   }
+
+  .section-featured-in {
+    margin-top: 0;
+  }
 }
 
 @media (max-width: 899px) {
@@ -46,5 +50,40 @@
   }
   .logos img {
     height: 2.1rem;
+  }
+}
+
+@media (max-width: 679px) {
+  .heading-featured-in {
+    font-size: 1.2rem;
+    margin-bottom: 0.5rem;
+  }
+  .logos img {
+    height: 1.6rem;
+  }
+}
+
+@media (max-width: 579px) {
+  .heading-featured-in {
+    font-size: 1.1rem;
+    margin-bottom: 0.4rem;
+  }
+  .logos img {
+    height: 1.4rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .heading-featured-in {
+    font-size: 0.9rem;
+    margin-bottom: 0.2rem;
+  }
+
+  .logos img {
+    height: 1.2rem;
+  }
+
+  .section-featured-in {
+    padding: 0 0 15rem 0;
   }
 }

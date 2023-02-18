@@ -71,3 +71,62 @@
     font-size: 1.6rem;
   }
 }
+
+@media (max-width: 679px) {
+  .container-creeds {
+    max-width: 55rem;
+  }
+
+  .creed-icon-div {
+    font-size: 1.8rem;
+    width: 3.8rem;
+    height: 3.8rem;
+    margin-bottom: 1.2rem;
+  }
+  .creed-article-heading {
+    font-size: 1.4rem;
+  }
+}
+
+@media (max-width: 579px) {
+  .container-creeds {
+    max-width: 45rem;
+  }
+
+  .creed-icon-div {
+    font-size: 1.7rem;
+    width: 3.6rem;
+    height: 3.6rem;
+    margin-bottom: 1.2rem;
+  }
+  .creed-article-heading {
+    font-size: 1.3rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .container-creeds {
+    max-width: 40rem;
+  }
+
+  .creeds-cards-div {
+    display: flex;
+    flex-direction: column;
+    gap: 3.2rem;
+  }
+
+  .creed-icon-div {
+    font-size: 1.8rem;
+    width: 3.9rem;
+    height: 3.8rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .creed-article-heading {
+    font-size: 1.4rem;
+  }
+
+  .creed-article-paragraph {
+    font-size: 1.1rem !important;
+  }
+}
