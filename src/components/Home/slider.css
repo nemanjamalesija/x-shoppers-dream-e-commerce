@@ -268,4 +268,10 @@
     height: 4rem;
     width: 4rem;
   }
+
+  .slider__btn {
+    height: 4.2rem;
+    width: 4.2rem;
+    font-size: 2.8rem;
+  }
 }
