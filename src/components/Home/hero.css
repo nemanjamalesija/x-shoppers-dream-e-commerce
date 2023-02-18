@@ -1,6 +1,5 @@
 .section-home {
   background-color: var(--color-gray-background);
-
   padding-top: 5.2rem;
 }
 
@@ -59,5 +58,29 @@
 @media (max-width: 799px) {
   .home-paragraph {
     font-size: 1.5rem;
+  }
+}
+
+@media (max-width: 479px) {
+  .section-home {
+    background-color: var(--color-gray-background);
+    padding-top: 0;
+  }
+
+  .home-container {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+    align-items: center;
+    gap: 3rem;
+  }
+
+  .home-right {
+    justify-content: center;
+  }
+
+  .image {
+    width: 73%;
+    border-radius: 0.25rem;
   }
 }

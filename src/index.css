@@ -431,17 +431,24 @@ a:visited {
 }
 
 @media (max-width: 479px) {
+  .section-featured-products,
+  .section-creeds,
+  .section-slider,
+  .section-tabs {
+    padding: 7rem 0;
+  }
+
   .container {
     max-width: 40rem;
   }
 
   .heading-primary {
-    font-size: 1.7rem;
+    font-size: 2.5rem;
     margin-bottom: 1.2rem;
   }
 
   .home-paragraph {
-    font-size: 1rem;
+    font-size: 1.3rem;
     margin-bottom: 1.7rem;
   }
 

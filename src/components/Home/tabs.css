@@ -160,6 +160,7 @@
 
   .tabs-header {
     max-width: 36.6rem;
+    margin: 0 auto 6rem auto;
   }
 
   .btn-tabs {
@@ -178,8 +179,8 @@
 
   .tabs-icon-div span {
     font-size: 1.8rem;
-    width: 3.9rem;
-    height: 3.8rem;
+    width: 4rem;
+    height: 4rem;
   }
 
   .tab-content-heading {

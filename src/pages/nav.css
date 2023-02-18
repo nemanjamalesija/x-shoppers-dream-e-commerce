@@ -158,6 +158,7 @@
   .nav {
     max-width: 40rem;
     font-size: 1rem;
+    padding-bottom: 0;
   }
 
   .shopping-icon {
