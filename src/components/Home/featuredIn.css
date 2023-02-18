@@ -4,7 +4,7 @@
 }
 
 .container-featured-in {
-  width: 90%;
+  width: 75%;
   margin: 0 auto;
 }
 
@@ -74,13 +74,17 @@
 }
 
 @media (max-width: 479px) {
+  .logos {
+    display: flex;
+    align-items: center;
+  }
   .heading-featured-in {
-    font-size: 0.9rem;
-    margin-bottom: 0.2rem;
+    font-size: 0.8rem;
+    margin-bottom: 0;
   }
 
   .logos img {
-    height: 1.3rem;
+    height: 1rem;
   }
 
   .section-featured-in {
