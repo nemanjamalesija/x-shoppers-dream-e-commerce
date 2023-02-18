@@ -91,3 +91,22 @@
     padding: 7rem 0;
   }
 }
+
+@media (max-width: 415px) {
+  .heading-featured-in {
+    font-size: 0.7rem;
+    margin-bottom: -0.5rem;
+  }
+
+  .logos {
+    width: 100%;
+  }
+
+  .logos img {
+    height: 0.9rem;
+  }
+
+  .section-featured-in {
+    padding: 7rem 0;
+  }
+}

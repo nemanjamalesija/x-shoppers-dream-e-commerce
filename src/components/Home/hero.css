@@ -84,3 +84,18 @@
     border-radius: 0.25rem;
   }
 }
+
+@media (max-width: 415px) {
+  .section-home {
+    margin-top: -1rem;
+  }
+
+  .home-right {
+    justify-content: center;
+  }
+
+  .image {
+    width: 82%;
+    border-radius: 0.25rem;
+  }
+}

@@ -131,3 +131,9 @@
     font-size: 1.2rem !important;
   }
 }
+
+@media (max-width: 415px) {
+  .container-creeds {
+    max-width: 32rem;
+  }
+}

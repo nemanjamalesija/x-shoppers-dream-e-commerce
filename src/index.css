@@ -484,3 +484,63 @@ a:visited {
     font-size: 2.1rem;
   }
 }
+
+@media (max-width: 415px) {
+  .section-featured-products,
+  .section-creeds,
+  .section-slider,
+  .section-tabs {
+    padding: 7rem 0;
+  }
+
+  .container {
+    max-width: 34rem;
+  }
+
+  .heading-primary {
+    font-size: 2.4rem;
+    margin-bottom: 1.2rem;
+  }
+
+  .home-paragraph {
+    font-size: 1.3rem;
+    margin-bottom: 1.7rem;
+  }
+
+  .btn {
+    font-size: 0.8rem;
+    padding: 0.5rem 1rem;
+  }
+
+  .single-product-name,
+  .single-product-price,
+  .single-product-article-price,
+  .products-number,
+  .heading-fifth {
+    font-size: 0.8rem;
+  }
+
+  .featured-product-name,
+  .featured-product-price {
+    font-size: 1rem;
+  }
+
+  .creed-article-paragraph,
+  .single-product-article-description,
+  .single-product-article-review,
+  .about-us-parapgraph {
+    font-size: 0.8rem;
+    line-height: 1.9;
+    color: #666;
+  }
+
+  .heading-tertiary {
+    font-size: 0.75rem;
+    margin-bottom: 0.6rem;
+    font-weight: 600;
+  }
+
+  .heading-fourth {
+    font-size: 1.8rem;
+  }
+}

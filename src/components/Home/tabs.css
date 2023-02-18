@@ -191,3 +191,42 @@
     font-size: 1.1rem;
   }
 }
+
+@media (max-width: 415px) {
+  .container-tabs {
+    max-width: 32rem;
+  }
+
+  .tabs-header {
+    max-width: 36.6rem;
+    margin: 0 auto 6rem auto;
+  }
+
+  .btn-tabs {
+    font-size: 0.9rem;
+    padding: 0.4rem 0.8rem;
+  }
+
+  .container-tab-content {
+    padding: 2.5rem 0 0 0rem;
+    grid-template-columns: 4rem 1fr;
+  }
+
+  .tabs-btns-container {
+    padding: 0;
+  }
+
+  .tabs-icon-div span {
+    font-size: 1.8rem;
+    width: 4rem;
+    height: 4rem;
+  }
+
+  .tab-content-heading {
+    font-size: 1.4rem;
+  }
+
+  .tab-content-paragraph {
+    font-size: 1rem;
+  }
+}

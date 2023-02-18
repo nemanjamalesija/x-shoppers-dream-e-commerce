@@ -183,3 +183,34 @@
     margin-left: -1rem;
   }
 }
+
+@media (max-width: 415px) {
+  .nav {
+    max-width: 35rem;
+    font-size: 0.85rem;
+    padding-bottom: 0;
+  }
+
+  .shopping-icon {
+    font-size: 1.05rem;
+  }
+
+  .badge {
+    padding-left: 0.4rem;
+    padding-right: 0.4rem;
+    -webkit-border-radius: 0.4rem;
+    -moz-border-radius: 0.4rem;
+    border-radius: 0.4rem;
+  }
+
+  #lblCartCount {
+    font-size: 0.7rem;
+    background: var(--primary-color);
+    color: #fff;
+    padding: 0 3px;
+    padding-top: 2px;
+    vertical-align: top;
+    margin-left: -1rem;
+    border-radius: 50%;
+  }
+}
