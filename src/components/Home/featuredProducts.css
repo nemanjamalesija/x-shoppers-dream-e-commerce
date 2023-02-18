@@ -44,6 +44,13 @@
   .featured-product-card {
     width: 85%;
   }
+
+  .btn-all-products {
+    padding: 0.8rem 1.6rem !important;
+    font-size: 0.9rem !important;
+    margin-top: -3rem;
+    margin-right: 3rem;
+  }
 }
 
 @media (max-width: 415px) {
