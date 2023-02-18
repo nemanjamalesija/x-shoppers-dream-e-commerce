@@ -15,7 +15,10 @@ const Hero = () => {
     e: React.MouseEvent<HTMLButtonElement, MouseEvent>
   ) => {
     if (!featuredProductsRef.current) return;
-    const scrollDistance = featuredProductsRef.current.offsetTop + 50;
+    let scrollDistance: number;
+    if (window.innerWidth <= 480) {
+      scrollDistance = featuredProductsRef.current.offsetTop + 20;
+    } else scrollDistance = featuredProductsRef.current.offsetTop + 50;
     window.scrollTo({ top: scrollDistance, behavior: 'smooth' });
   };
 
