@@ -45,7 +45,7 @@
   display: none;
 }
 
-/* CONTINER */
+/* CONTAINER */
 .container-products {
   display: grid;
   grid-template-columns: 1fr 4fr;
