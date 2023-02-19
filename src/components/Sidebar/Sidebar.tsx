@@ -8,7 +8,11 @@ import ButtonClearFilters from './ButtonClearFilters';
 import { useProductsContext } from '../../productsContext';
 import './sidebar.css';
 
-const Sidebar = () => {
+type sidebarProps = {
+  isSidebarHidden: boolean;
+};
+
+const Sidebar = ({ isSidebarHidden }: sidebarProps) => {
   const {
     state: {
       loading,
@@ -46,7 +50,7 @@ const Sidebar = () => {
     );
 
   return (
-    <aside className="products-sidebar">
+    <aside className={isSidebarHidden ? 'sidebar-hidden' : 'products-sidebar'}>
       <TextInput name={name as string} />
       <Categories currentCategory={currentCategory} categories={categories} />
       <Companies currentCompany={currentCompany} companies={companies} />

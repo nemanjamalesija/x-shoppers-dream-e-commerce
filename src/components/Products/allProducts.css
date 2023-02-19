@@ -3,17 +3,64 @@
   padding-bottom: 9.6rem;
 }
 
+.products-sidebar {
+  display: flex;
+  flex-direction: column;
+  gap: 1.4rem;
+}
+
+.btn-sidebar {
+  cursor: pointer;
+  border: none;
+  position: absolute;
+  top: 10%;
+  right: 92%;
+  font-size: 2.4rem;
+  color: var(--color-icon);
+  box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  display: none;
+  z-index: 100;
+  background-color: var(--color-background-icon);
+}
+
+.sidebar-hidden {
+  display: none;
+}
+
+.sidebar-fixed {
+  position: fixed;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 5px;
+  z-index: 100;
+  width: 50%;
+}
+
+.overlay {
+  display: none;
+}
+
+.overlay-hidden {
+  display: none;
+}
+
 /* CONTAINER */
 
 .container-products {
   display: grid;
   grid-template-columns: 1fr 4fr;
+  position: relative;
 }
 
 .products-filter-div {
   display: grid;
   grid-template-columns: 1fr 1fr 1fr;
   gap: 3rem 1.8rem;
+  z-index: 10;
+}
+
+.products-sidebar {
+  transition: all 1s;
 }
 
 .products-sort-div {
@@ -130,25 +177,12 @@
 
   .products-sort-div {
     margin-top: 1rem;
-    display: grid;
-    grid-template-rows: repeat(2, 1fr);
-    grid-template-columns: repeat(2, auto);
-    row-gap: 2rem;
-  }
-
-  .products-number {
-    grid-row: 1;
-    grid-column: 1;
+    grid-template-columns: 30% 23% 42%;
+    gap: 1rem;
   }
 
   .sort-products-form {
-    grid-row: 1;
-    grid-column: 2;
-  }
-
-  .products-line {
-    grid-row: 2;
-    grid-column: 1 / span 2;
+    margin-left: 0;
   }
 
   .sort-products-form select {
@@ -158,5 +192,46 @@
     align-items: center;
     justify-content: center;
     text-align: center;
+  }
+}
+
+@media (max-width: 581px) {
+  .btn-sidebar {
+    display: block;
+  }
+
+  .container-products {
+    display: block;
+  }
+
+  .products-filter-div {
+    grid-column: 1 / -1;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+  }
+
+  .products-sort-div {
+    margin-top: 1rem;
+    grid-template-columns: 0.6fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .products-number,
+  .single-product-price,
+  .single-product-name {
+    font-size: 1rem !important;
+  }
+
+  .overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
   }
 }
