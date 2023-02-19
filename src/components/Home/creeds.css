@@ -50,13 +50,13 @@
   color: var(--color-icon);
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1051px) {
   .container-creeds {
     max-width: 85rem;
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 913px) {
   .container-creeds {
     max-width: 65rem;
   }
@@ -72,7 +72,7 @@
   }
 }
 
-@media (max-width: 679px) {
+@media (max-width: 681px) {
   .container-creeds {
     max-width: 55rem;
   }
@@ -88,7 +88,7 @@
   }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 581px) {
   .container-creeds {
     max-width: 45rem;
   }
@@ -132,7 +132,7 @@
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 417px) {
   .container-creeds {
     max-width: 32rem;
   }

@@ -269,7 +269,7 @@ a:visited {
   }
 }
 
-@media (max-width: 1049px) {
+@media (max-width: 1051px) {
   .heading-primary {
     font-size: 3.6rem;
   }
@@ -279,7 +279,7 @@ a:visited {
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 913px) {
   .container {
     max-width: 75rem;
   }
@@ -336,7 +336,7 @@ a:visited {
   }
 }
 
-@media (max-width: 679px) {
+@media (max-width: 681px) {
   .container {
     width: 55rem;
   }
@@ -369,8 +369,6 @@ a:visited {
   .single-product-article-review,
   .about-us-parapgraph {
     font-size: 1rem;
-    line-height: 1.9;
-    color: #666;
   }
 
   .heading-tertiary {
@@ -382,7 +380,7 @@ a:visited {
   }
 }
 
-@media (max-width: 579px) {
+@media (max-width: 581px) {
   .container {
     max-width: 45rem;
   }
@@ -417,8 +415,6 @@ a:visited {
   .single-product-article-review,
   .about-us-parapgraph {
     font-size: 0.8rem;
-    line-height: 1.9;
-    color: #666;
   }
 
   .heading-tertiary {
@@ -457,27 +453,10 @@ a:visited {
     padding: 0.5rem 1rem;
   }
 
-  .single-product-name,
-  .single-product-price,
-  .single-product-article-price,
-  .products-number,
-  .heading-fifth {
-    font-size: 0.8rem;
-  }
-
   .featured-product-name,
   .featured-product-price {
     font-size: 1.1rem;
     margin-bottom: 1rem;
-  }
-
-  .creed-article-paragraph,
-  .single-product-article-description,
-  .single-product-article-review,
-  .about-us-parapgraph {
-    font-size: 0.8rem;
-    line-height: 1.9;
-    color: #666;
   }
 
   .heading-tertiary {
@@ -489,7 +468,7 @@ a:visited {
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 417px) {
   .section-featured-products,
   .section-creeds,
   .section-slider,
@@ -516,27 +495,10 @@ a:visited {
     padding: 0.5rem 1rem;
   }
 
-  .single-product-name,
-  .single-product-price,
-  .single-product-article-price,
-  .products-number,
-  .heading-fifth {
-    font-size: 0.8rem;
-  }
-
   .featured-product-name,
   .featured-product-price {
     font-size: 1rem;
     margin-bottom: 0.9rem;
-  }
-
-  .creed-article-paragraph,
-  .single-product-article-description,
-  .single-product-article-review,
-  .about-us-parapgraph {
-    font-size: 0.8rem;
-    line-height: 1.9;
-    color: #666;
   }
 
   .heading-tertiary {

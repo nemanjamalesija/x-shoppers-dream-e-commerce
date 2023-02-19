@@ -90,7 +90,7 @@
   justify-content: center;
 }
 
-@media (max-width: 899px) {
+@media (max-width: 913px) {
   .container-tabs {
     max-width: 65rem;
   }
@@ -118,7 +118,7 @@
   }
 }
 
-@media (max-width: 779px) {
+@media (max-width: 781px) {
   .btn-tabs {
     font-size: 1.4rem;
     padding: 0.9rem 1.8rem;
@@ -192,7 +192,7 @@
   }
 }
 
-@media (max-width: 415px) {
+@media (max-width: 417px) {
   .container-tabs {
     max-width: 32rem;
   }

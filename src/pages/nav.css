@@ -106,7 +106,7 @@
   }
 }
 
-@media (max-width: 899px) {
+@media (max-width: 913px) {
   .nav {
     max-width: 75rem;
   }
@@ -151,6 +151,7 @@
     padding-top: 2px;
     vertical-align: top;
     margin-left: -1rem;
+    border-radius: 50%;
   }
 }
 
@@ -168,31 +169,12 @@
   .shopping-icon {
     font-size: 1.2rem;
   }
-
-  .badge {
-    padding-left: 0.6rem;
-    padding-right: 0.6rem;
-    -webkit-border-radius: 0.6rem;
-    -moz-border-radius: 0.6rem;
-    border-radius: 0.6rem;
-  }
-
-  #lblCartCount {
-    font-size: 0.8rem;
-    background: var(--primary-color);
-    color: #fff;
-    padding: 0 3px;
-    padding-top: 2px;
-    vertical-align: top;
-    margin-left: -1rem;
-  }
 }
 
 @media (max-width: 415px) {
   .nav {
     max-width: 34rem;
     font-size: 0.85rem;
-    padding-bottom: 0;
   }
 
   .nav-list {
@@ -213,12 +195,11 @@
 
   #lblCartCount {
     font-size: 0.7rem;
-    background: var(--primary-color);
-    color: #fff;
-    padding: 0 3px;
-    padding-top: 2px;
-    vertical-align: top;
-    margin-left: -1rem;
-    border-radius: 50%;
+  }
+}
+
+@media (max-width: 379px) {
+  .nav {
+    max-width: 32rem;
   }
 }
