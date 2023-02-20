@@ -9,7 +9,7 @@ const Shipping = ({ shipping }: shippingProps) => {
   } = useProductsContext();
   return (
     <div className="product-shipping-container">
-      <h5 className="heading-fifth">Free Shipping</h5>
+      <h5 className="heading-fifth sidebar-filter-title">Free Shipping</h5>
       <input
         type="checkbox"
         name="shipping"

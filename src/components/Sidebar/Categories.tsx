@@ -12,7 +12,7 @@ const Categories = ({ currentCategory, categories }: categoriesProps) => {
   } = useProductsContext();
   return (
     <div className="products-categories">
-      <h5 className="heading-fifth">Category</h5>
+      <h5 className="heading-fifth sidebar-filter-title">Category</h5>
       {categories.map((item, i) => (
         <button
           key={i}

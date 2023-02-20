@@ -11,7 +11,9 @@ const Price = ({ price, maxPrice }: priceProps) => {
   } = useProductsContext();
   return (
     <div className="product-price-container">
-      <h5 className="heading-fifth heading-price">Price</h5>
+      <h5 className="heading-fifth heading-price sidebar-filter-title">
+        Price
+      </h5>
       <span className="single-product-price">{formatPrice(price)}</span>
       <input
         type="range"

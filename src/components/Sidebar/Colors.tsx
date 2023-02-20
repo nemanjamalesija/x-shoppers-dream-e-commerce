@@ -11,7 +11,7 @@ const Colors = ({ currentColor, colors }: colorsProps) => {
 
   return (
     <div className="product-colors">
-      <h5 className="heading-fifth">Color</h5>
+      <h5 className="heading-fifth sidebar-filter-title">Color</h5>
       <div className="product-colors-container">
         <button
           className={`${

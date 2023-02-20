@@ -9,7 +9,7 @@ const Companies = ({ currentCompany, companies }: companiesProps) => {
   } = useProductsContext();
   return (
     <div className="products-companies">
-      <h5 className="heading-fifth">Company</h5>
+      <h5 className="heading-fifth sidebar-filter-title">Company</h5>
       <select
         name="currentCompany"
         value={currentCompany}
