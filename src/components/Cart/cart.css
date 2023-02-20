@@ -201,11 +201,11 @@
   }
 
   .categories {
-    grid-template-columns: 7rem 8rem 10rem 7rem 0rem;
+    grid-template-columns: 7rem 8rem 10rem 7rem;
   }
 
   .cart-item {
-    grid-template-columns: 5rem 15rem 5rem 13rem 0rem;
+    grid-template-columns: 5rem 15rem 5rem 13rem;
   }
 
   .heading-cart-item {
@@ -249,11 +249,15 @@
   }
 
   .categories {
-    grid-template-columns: 4.7rem 9rem 5rem 10rem 0rem;
+    grid-template-columns: 5.7rem 8.5rem 6rem 12.5rem;
   }
 
   .cart-item {
-    grid-template-columns: 3.9rem 13.5rem 3.5rem 11.2rem 0rem;
+    grid-template-columns: 4.9rem 13.5rem 4rem 14rem 0em;
+  }
+
+  .remove-btn {
+    margin-left: -1rem;
   }
 
   .heading-cart-price {
@@ -261,6 +265,6 @@
   }
 
   .total-buttons-top {
-    max-width: 85%;
+    max-width: 95%;
   }
 }
