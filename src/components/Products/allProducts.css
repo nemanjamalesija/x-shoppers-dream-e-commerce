@@ -130,38 +130,7 @@
   }
 }
 
-@media (max-width: 779px) {
-  .products-sort-div {
-    grid-template-columns: auto 17% 42%;
-    gap: auto;
-  }
-}
-
-@media (max-width: 681px) {
-  .single-product-image {
-    height: 14rem;
-  }
-
-  .products-sort-div {
-    grid-template-columns: 30% 23% 42%;
-    gap: 1rem;
-  }
-
-  .sort-products-form {
-    margin-left: 0;
-  }
-
-  .sort-products-form select {
-    font-size: 1rem;
-    max-width: 55%;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-align: center;
-  }
-}
-
-@media (max-width: 581px) {
+@media (max-width: 768px) {
   .container-products {
     display: block;
   }

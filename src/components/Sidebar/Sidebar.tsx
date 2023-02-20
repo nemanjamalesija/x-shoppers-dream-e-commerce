@@ -54,8 +54,8 @@ const Sidebar = ({ isSidebarHidden }: sidebarProps) => {
     };
   }, []);
 
-  const baseClass = width <= 581 ? 'sidebar-fixed' : 'products-sidebar';
-  const modeClass = isSidebarHidden && width <= 581 ? 'sidebar-hidden' : '';
+  const baseClass = width <= 769 ? 'sidebar-fixed' : 'products-sidebar';
+  const modeClass = isSidebarHidden && width <= 769 ? 'sidebar-hidden' : '';
 
   if (loading)
     return (

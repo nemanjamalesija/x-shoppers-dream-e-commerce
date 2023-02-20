@@ -146,9 +146,10 @@
   }
 }
 
-@media (max-width: 581px) {
+@media (max-width: 768px) {
   .btn-sidebar {
     display: block;
+    font-size: 3.2rem;
   }
 
   .container-products {
@@ -163,6 +164,8 @@
 
   .btn-sidebar {
     top: 9%;
+    right: 90%;
+    font-size: 2.6rem;
   }
 }
 
