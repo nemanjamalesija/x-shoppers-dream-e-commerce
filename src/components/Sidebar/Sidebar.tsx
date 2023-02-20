@@ -1,3 +1,4 @@
+import { useState, useEffect } from 'react';
 import TextInput from './TextInput';
 import Categories from './Categories';
 import Companies from './Companies';
@@ -13,6 +14,7 @@ type sidebarProps = {
 };
 
 const Sidebar = ({ isSidebarHidden }: sidebarProps) => {
+  const [width, setWidth] = useState(window.innerWidth);
   const {
     state: {
       loading,
@@ -40,6 +42,21 @@ const Sidebar = ({ isSidebarHidden }: sidebarProps) => {
     new Set([...products.flatMap((prod) => prod.colors)])
   );
 
+  useEffect(() => {
+    function handleResize() {
+      setWidth(window.innerWidth);
+    }
+
+    window.addEventListener('resize', handleResize);
+
+    return () => {
+      window.removeEventListener('resize', handleResize);
+    };
+  }, []);
+
+  const baseClass = width <= 581 ? 'sidebar-fixed' : 'products-sidebar';
+  const modeClass = isSidebarHidden && width <= 581 ? 'sidebar-hidden' : '';
+
   if (loading)
     return (
       <section className="section section-products">
@@ -50,7 +67,7 @@ const Sidebar = ({ isSidebarHidden }: sidebarProps) => {
     );
 
   return (
-    <aside className={isSidebarHidden ? 'sidebar-hidden' : 'products-sidebar'}>
+    <aside className={`${baseClass} ${modeClass}`}>
       <TextInput name={name as string} />
       <Categories currentCategory={currentCategory} categories={categories} />
       <Companies currentCompany={currentCompany} companies={companies} />
