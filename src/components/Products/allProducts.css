@@ -249,3 +249,19 @@
     align-items: center;
   }
 }
+
+@media (max-width: 482px) {
+  .sidebar-fixed {
+    top: 19%;
+  }
+
+  .products-sort-div {
+    margin-top: 1rem;
+    grid-template-columns: 0.7fr 1fr 1fr;
+    gap: 1rem;
+  }
+
+  .btn-sidebar {
+    top: 8%;
+  }
+}
