@@ -182,49 +182,36 @@ ADD TO CART */
     width: 13rem;
   }
 
-  .btn-add-to-cart {
-    margin-top: 0;
-    padding: 1rem !important;
-    font-size: 1.6rem !important;
-    margin-top: 2rem;
-    width: 18.5%;
-  }
-
   .single-product-article-info-div {
     margin-top: 0.4rem;
   }
 
   .display-info-heading {
     font-size: 1.6rem !important;
-  }
+  } /*heading fifth in single article */
 
-  .single-product-article-info {
-    font-size: 1.6rem;
-  }
-
-  .rating {
-    font-size: 1.7rem;
-  }
-
-  .stars {
-    font-size: 1.7rem;
-  }
-
+  .rating,
+  .stars,
   .single-product-article-review,
   .single-product-article-price {
+    font-size: 1.7rem !important;
+  }
+
+  .single-product-article-description,
+  .single-product-article,
+  .btn-back-to-products,
+  .btn-add-to-cart {
     font-size: 1.6rem !important;
   }
 
   .single-product-article-description {
-    font-size: 1.6rem !important;
+    margin-bottom: 2.2rem;
   }
 
-  .single-product-article-info-div {
-    margin-top: 1.6rem;
-  }
-
-  .btn-back-to-products {
-    font-size: 1.6rem !important;
+  .btn-add-to-cart {
+    padding: 1rem !important;
+    margin-top: 2rem;
+    width: 18.5%;
   }
 }
 
@@ -237,14 +224,14 @@ ADD TO CART */
     width: 8rem;
   }
 
+  .single-product-article-info-div {
+    margin-top: 0.4rem;
+  }
+
   .btn-add-to-cart {
     font-size: 1.4rem !important;
     margin-top: 2rem;
     width: 21%;
-  }
-
-  .single-product-article-info-div {
-    margin-top: 0.4rem;
   }
 }
 
@@ -257,41 +244,30 @@ ADD TO CART */
     width: 7rem;
   }
 
-  .btn-add-to-cart {
-    padding: 0.8rem !important;
-    width: 24%;
-  }
-
   .single-product-article-info-div {
     margin-top: 0.4rem;
   }
 
-  .single-product-article-info {
-    font-size: 1.2rem;
-  }
+  .display-info-heading {
+    font-size: 1.5rem !important;
+  } /*heading fifth in single article */
 
-  .rating {
-    font-size: 1.5rem;
-  }
-
-  .stars {
-    font-size: 1.5rem;
-  }
-
+  .rating,
+  .stars,
   .single-product-article-review,
   .single-product-article-price {
-    font-size: 1.3rem !important;
+    font-size: 1.5rem !important;
   }
 
-  .single-product-article-description {
-    font-size: 1.3rem !important;
+  .single-product-article-description,
+  .single-product-article,
+  .btn-back-to-products,
+  .btn-add-to-cart {
+    font-size: 1.4rem !important;
   }
 
-  .single-product-article-info-div {
-    margin-top: 1.3rem;
-  }
-
-  .btn-back-to-products {
-    font-size: 1.3rem !important;
+  .btn-add-to-cart {
+    padding: 0.8rem !important;
+    width: 24%;
   }
 }
