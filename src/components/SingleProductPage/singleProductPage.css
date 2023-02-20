@@ -147,3 +147,70 @@ ADD TO CART */
   font-size: 1.4rem;
   color: #e59819;
 }
+
+@media (max-width: 690px) {
+  .rating,
+  .stars {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 915px) {
+  .single-product-article {
+    display: grid;
+    grid-template-columns: 32rem 1fr;
+    gap: 2rem;
+  }
+
+  .single-product-article-single-img {
+    width: 6.4rem;
+  }
+
+  .btn-add-to-cart {
+    width: 32%;
+    margin-top: 4.1rem;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-product-article {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .single-product-article-single-img {
+    width: 8rem;
+  }
+
+  .btn-add-to-cart {
+    margin-top: 0;
+    padding: 1rem !important;
+    font-size: 1.2rem !important;
+    margin-top: 2rem;
+    width: 21%;
+  }
+
+  .single-product-article-info-div {
+    margin-top: 0.4rem;
+  }
+
+  .single-product-article-info {
+    font-size: 1rem;
+  }
+
+  .rating {
+    font-size: 1rem;
+  }
+
+  .stars {
+    font-size: 1rem;
+  }
+
+  .single-product-article-review {
+    font-size: 0.6rem !important;
+  }
+
+  .single-product-article-info-div {
+    margin-top: 1.2rem;
+  }
+}
