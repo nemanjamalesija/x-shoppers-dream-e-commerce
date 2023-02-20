@@ -172,10 +172,65 @@ ADD TO CART */
   }
 }
 
-@media (max-width: 480px) {
+@media (max-width: 770px) {
   .single-product-article {
     display: flex;
     flex-direction: column;
+  }
+
+  .single-product-article-single-img {
+    width: 13rem;
+  }
+
+  .btn-add-to-cart {
+    margin-top: 0;
+    padding: 1rem !important;
+    font-size: 1.6rem !important;
+    margin-top: 2rem;
+    width: 18.5%;
+  }
+
+  .single-product-article-info-div {
+    margin-top: 0.4rem;
+  }
+
+  .display-info-heading {
+    font-size: 1.6rem !important;
+  }
+
+  .single-product-article-info {
+    font-size: 1.6rem;
+  }
+
+  .rating {
+    font-size: 1.7rem;
+  }
+
+  .stars {
+    font-size: 1.7rem;
+  }
+
+  .single-product-article-review,
+  .single-product-article-price {
+    font-size: 1.6rem !important;
+  }
+
+  .single-product-article-description {
+    font-size: 1.6rem !important;
+  }
+
+  .single-product-article-info-div {
+    margin-top: 1.6rem;
+  }
+
+  .btn-back-to-products {
+    font-size: 1.6rem !important;
+  }
+}
+
+@media (max-width: 480px) {
+  .single-product-main-img {
+    height: 32rem;
   }
 
   .single-product-article-single-img {
@@ -183,9 +238,7 @@ ADD TO CART */
   }
 
   .btn-add-to-cart {
-    margin-top: 0;
-    padding: 1rem !important;
-    font-size: 1.2rem !important;
+    font-size: 1.4rem !important;
     margin-top: 2rem;
     width: 21%;
   }
@@ -193,24 +246,52 @@ ADD TO CART */
   .single-product-article-info-div {
     margin-top: 0.4rem;
   }
+}
 
-  .single-product-article-info {
-    font-size: 1rem;
+@media (max-width: 380px) {
+  .single-product-main-img {
+    height: 32rem;
   }
 
-  .rating {
-    font-size: 1rem;
+  .single-product-article-single-img {
+    width: 7rem;
   }
 
-  .stars {
-    font-size: 1rem;
-  }
-
-  .single-product-article-review {
-    font-size: 0.6rem !important;
+  .btn-add-to-cart {
+    padding: 0.8rem !important;
+    width: 24%;
   }
 
   .single-product-article-info-div {
-    margin-top: 1.2rem;
+    margin-top: 0.4rem;
+  }
+
+  .single-product-article-info {
+    font-size: 1.2rem;
+  }
+
+  .rating {
+    font-size: 1.5rem;
+  }
+
+  .stars {
+    font-size: 1.5rem;
+  }
+
+  .single-product-article-review,
+  .single-product-article-price {
+    font-size: 1.3rem !important;
+  }
+
+  .single-product-article-description {
+    font-size: 1.3rem !important;
+  }
+
+  .single-product-article-info-div {
+    margin-top: 1.3rem;
+  }
+
+  .btn-back-to-products {
+    font-size: 1.3rem !important;
   }
 }
