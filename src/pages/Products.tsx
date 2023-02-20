@@ -35,7 +35,10 @@ const Products = () => {
       <button className="btn-sidebar" onClick={toggleSidebar}>
         <BsReverseLayoutTextSidebarReverse />
       </button>
-      <div className={isSidebarHidden ? 'overlay-hidden' : 'overlay'}></div>
+      <div
+        className={isSidebarHidden ? 'overlay-hidden' : 'overlay'}
+        onClick={() => setIsSidebarHidden(true)}
+      ></div>
     </section>
   );
 };
