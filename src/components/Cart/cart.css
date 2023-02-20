@@ -192,8 +192,8 @@
 }
 
 @media (max-width: 480px) {
-  .container-cart {
-    max-width: 45rem;
+  .cart-container-width {
+    max-width: 38rem;
   }
 
   .heading-cat {
@@ -208,6 +208,14 @@
     grid-template-columns: 5rem 15rem 5rem 13rem 0rem;
   }
 
+  .heading-cart-item {
+    font-size: 0.9rem !important;
+  }
+
+  .cart-color-description {
+    font-size: 1rem;
+  }
+
   .cart-img-h-color {
     display: flex;
     flex-direction: column;
@@ -220,10 +228,6 @@
 
   .heading-cart-price {
     font-size: 1.4rem !important;
-  }
-
-  .cart-container-width {
-    max-width: 37rem;
   }
 
   .total-price-calculation-container {
