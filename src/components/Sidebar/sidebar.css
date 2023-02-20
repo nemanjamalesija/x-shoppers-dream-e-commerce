@@ -158,11 +158,11 @@
 
 @media (max-width: 482px) {
   .sidebar-fixed {
-    top: 17%;
+    top: 21%;
   }
 
   .btn-sidebar {
-    top: 7%;
+    top: 9%;
   }
 }
 
