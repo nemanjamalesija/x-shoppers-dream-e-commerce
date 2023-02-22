@@ -6,6 +6,7 @@ import Products from './Products';
 import SharedLayout from './SharedLayout';
 import SharedLayoutProduct from './SharedLayoutProduct';
 import SingleProductPage from './SingleProductPage';
+import Footer from './Footer';
 
 export {
   About,
@@ -16,4 +17,5 @@ export {
   SharedLayout,
   SharedLayoutProduct,
   SingleProductPage,
+  Footer,
 };
