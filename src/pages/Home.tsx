@@ -5,7 +5,7 @@ import FeaturedProducts from '../components/Home/FeaturedProducts';
 import Hero from '../components/Home/Hero';
 import Slider from '../components/Home/Slider';
 import Tabs from '../components/Home/Tabs';
-
+import Form from '../components/Home/Form';
 const Home = () => {
   return (
     <>
@@ -15,6 +15,7 @@ const Home = () => {
       <Creeds />
       <Tabs />
       <Slider />
+      <Form />
     </>
   );
 };
