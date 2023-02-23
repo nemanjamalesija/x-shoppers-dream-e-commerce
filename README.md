@@ -13,4 +13,8 @@ Website produts functionality:
 - Add product to cart and increase the amount of purchased products without depassing products on stock.
 - Count total price before checkout.
 
-Routing done with react router. State managed with multiple contexts and reducers. Fetching of data done with axios.
+- Routing done with react router.
+- State managed with multiple contexts and reducers.
+- Fetching of data done with axios.
+- Made fully responsive with media queries.
+- Typescript type checking.
